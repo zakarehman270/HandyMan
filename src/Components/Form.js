@@ -1,5 +1,5 @@
-import React, {useState, useRef} from 'react';
-import { useLocation } from 'react-router-dom'
+import React, {useState, useRef,useEffect} from 'react';
+import {useLocation} from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 import Handyman from '../assets/Handyman.jpg';
@@ -38,15 +38,23 @@ function Form (props) {
   const [IndexSelectedDropDownHours, setIndexSelectedDropDownHours] = useState (
     0
   );
-  const [HoursData, setHoursData] = useState ([1,2, 3, 4, 5, 6, 7, 8]);
-  const [PriceValue, setPriceValue] = useState(115)
-  const [VatValue, setVatValue] = useState(5.75)
-  const location = useLocation()
-  const { from } = location.state
-  console.log ('jj',from);
+  const [HoursData, setHoursData] = useState ([1, 2, 3, 4, 5, 6, 7, 8]);
+  const [PriceValue, setPriceValue] = useState (115);
+  const [VatValue, setVatValue] = useState (5.75);
+  const location = useLocation ();
+  const [Content, setContent] = useState ('');
+  const {from} = location.state;
+  useEffect (() => {
+    if (from === undefined) {
+      setContent ('');
+    } else {
+      setContent (from);
+    }
+  }, []);
+
+  console.log ('jj', from);
 
   const sendEmail = e => {
-   
     if (
       Name !== '' &&
       Email !== '' &&
@@ -255,10 +263,10 @@ function Form (props) {
                               onClick={() => {
                                 setIndexSelectedDropDownHours (index);
                                 setHours (item);
-                                let TotalPrice = item*115;
-                                let TotalVat = item*5.75
-                                setPriceValue(TotalPrice)
-                                setVatValue(TotalVat)
+                                let TotalPrice = item * 115;
+                                let TotalVat = item * 5.75;
+                                setPriceValue (TotalPrice);
+                                setVatValue (TotalVat);
                                 setDisplayDropDownHours (false);
                               }}
                             >
@@ -269,7 +277,7 @@ function Form (props) {
                       </div>}
                   </div>
                   <p className="LabelContentUnderHoursDropDown">
-                    {from}
+                    {Content}
                   </p>
                 </div>
 
@@ -282,17 +290,17 @@ function Form (props) {
                       <textarea
                         name="message"
                         value={`name: ${Name} email: ${Email} phone: ${Phone} address: ${Address}
-                         date:${Date} area:${Area} service${Service} message:${Message} totalPrice${PriceValue+VatValue}
+                         date:${Date} area:${Area} service${Service} message:${Message} totalPrice${PriceValue + VatValue}
                          `}
-                         onChange={()=>{
-                           console.log("ching")
-                         }}
+                        onChange={() => {
+                          console.log ('ching');
+                        }}
                       />
                     </div>
                     Submit
                   </form>
                 </div>
- 
+
               </div>
             </Col>
             <Col className=" d-flex justify-content-center">
@@ -390,7 +398,7 @@ function Form (props) {
                     </div>
                     <div className="d-flex justify-content-between">
                       <p>TOTAL PRICE</p>
-                      <p style={{color: '#FFBB00'}}>{PriceValue+VatValue}</p>
+                      <p style={{color: '#FFBB00'}}>{PriceValue + VatValue}</p>
                     </div>
                   </div>
                   <div className="DisplayButtonsLower">
@@ -403,9 +411,9 @@ function Form (props) {
                           name="message"
                           value={`name: ${Name} email: ${Email} phone: ${Phone} 
                           address: ${Address} date:${Date} area:${Area} service${Service}
-                          message:${Message} totalPrice${PriceValue+VatValue} `}
-                          onChange={()=>{
-                            console.log("chaing")
+                          message:${Message} totalPrice${PriceValue + VatValue} `}
+                          onChange={() => {
+                            console.log ('chaing');
                           }}
                         />
                       </div>
