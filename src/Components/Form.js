@@ -1,4 +1,4 @@
-import React, {useState, useRef,useEffect} from 'react';
+import React, {useState,useEffect} from 'react';
 import {useLocation} from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
@@ -15,7 +15,6 @@ function Form (props) {
   const [Email, setEmail] = useState ('');
   const [Phone, setPhone] = useState ();
   const [Message, setMessage] = useState ('');
-  const [CheckMArk, setCheckMArk] = useState (false);
   const [Address, setAddress] = useState ('');
   const [ValidationFName, setValidationFName] = useState (false);
   const [ValidationEmail, setValidationEmail] = useState (false);
