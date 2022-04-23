@@ -3,7 +3,7 @@ import {Container, Row, Col} from 'react-bootstrap';
 import MobileAppImage from '../assets/MobileApp.png';
 import googleAppStore from '../assets/Icons/googleAppStore.png'
 import appStore from '../assets/Icons/appStore.jpg'
-function MobileApp (props) {
+function MobileApp () {
   return (
     <div>
       <Container>

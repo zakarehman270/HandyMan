@@ -1,5 +1,4 @@
 import React from 'react';
-
 function Banners (props) {
   return (
     <div className="CardsBanners BackGroundColor">

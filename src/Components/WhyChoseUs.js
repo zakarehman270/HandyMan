@@ -4,7 +4,7 @@ import personnelStaff from '../assets/Icons/personnelStaff.png';
 import CustomerAvail from '../assets/Icons/CustomerAvail24by7.jpg';
 import OneSpe from '../assets/Icons/OneSpe.png';
 import CustomerTrust from '../assets/Icons/CustomerTrust.jpg';
-function WhyChoseUs (props) {
+function WhyChoseUs () {
   return (
     <div>
       <div className="d-flex justify-content-center align-items-center Gap pb-5">

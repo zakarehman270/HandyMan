@@ -52,8 +52,6 @@ function Form (props) {
     }
   }, []);
 
-  console.log ('jj', from);
-
   const sendEmail = e => {
     if (
       Name !== '' &&
@@ -293,7 +291,7 @@ function Form (props) {
                          date:${Date} area:${Area} service${Service} message:${Message} totalPrice${PriceValue + VatValue}
                          `}
                         onChange={() => {
-                          console.log ('ching');
+                          console.log ('Onchange');
                         }}
                       />
                     </div>
@@ -413,7 +411,7 @@ function Form (props) {
                           address: ${Address} date:${Date} area:${Area} service${Service}
                           message:${Message} totalPrice${PriceValue + VatValue} `}
                           onChange={() => {
-                            console.log ('chaing');
+                            console.log ('Onchange');
                           }}
                         />
                       </div>

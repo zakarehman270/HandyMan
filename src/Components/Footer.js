@@ -1,13 +1,11 @@
 import React from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
-
 import {GrLocation} from 'react-icons/gr';
 import {MdOutlinePhoneInTalk} from 'react-icons/md';
 import {BsInstagram} from 'react-icons/bs';
 import {FaFacebookF} from 'react-icons/fa';
 import {FaTwitter} from 'react-icons/fa';
-
-function Footer (props) {
+function Footer () {
   return (
     <div style={{backgroundColor: '#0D0D0D'}}>
       <Container>

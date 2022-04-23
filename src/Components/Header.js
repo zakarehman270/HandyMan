@@ -1,11 +1,11 @@
 import React from 'react';
-import {Navbar, Container, Nav, NavDropdown} from 'react-bootstrap';
-import {Link, Element} from 'react-scroll';
+import {Navbar, Container, Nav} from 'react-bootstrap';
+import {Link} from 'react-scroll';
 import Logo from '../assets/Logo.png';
 import {
   NavLink
 } from "react-router-dom";
-function Header (props) {
+function Header () {
   return (
     <div>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -55,7 +55,6 @@ function Header (props) {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
     </div>
   );
 }

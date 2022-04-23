@@ -11,7 +11,7 @@ import Footer from './Footer';
 import teamwork from '../assets/Icons/teamwork.png';
 import justice from '../assets/Icons/justice.png';
 import shield from '../assets/Icons/shield.png';
-import {Link, Element} from 'react-scroll';
+import {Element} from 'react-scroll';
 function Home () {
   return (
     <div>
