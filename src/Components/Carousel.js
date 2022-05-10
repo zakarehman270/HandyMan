@@ -6,11 +6,6 @@ import CarouselImage3 from '../assets/Carousel/Cleaning3.jpg';
 import CarouselImage4 from '../assets/Carousel/Cleaning4.jpg';
 import CarouselImage5 from '../assets/Carousel/Cleaning6.jpg';
 import CarouselImage6 from '../assets/Carousel/Cleaning6.jpg';
-import CarouselImage7 from '../assets/Carousel/Cleaning7.jpg';
-import CarouselImage8 from '../assets/Carousel/Cleaning8.jpg';
-import CarouselImage9 from '../assets/Carousel/Cleaning9.jpg';
-import CarouselImage10 from '../assets/Carousel/Cleaning10.jpg';
-import CarouselImage11 from '../assets/Carousel/Cleaning11.jpg';
 function CarouselSlider (props) {
   return (
     <div>
@@ -110,90 +105,6 @@ function CarouselSlider (props) {
             </p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item interval={1000}>
-          <div style={{height: '500px'}}>
-            <img
-              className="d-block w-100"
-              src={CarouselImage7}
-              alt="Third slide"
-              style={{width:"100%",height:"100%",objectFit:"cover"}}
-            />
-          </div>
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item interval={1000}>
-          <div style={{height: '500px'}}>
-            <img
-              className="d-block w-100"
-              src={CarouselImage8}
-              alt="Third slide"
-              style={{width:"100%",height:"100%",objectFit:"cover"}}
-            />
-          </div>
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item interval={1000}>
-          <div style={{height: '500px'}}>
-            <img
-              className="d-block w-100"
-              src={CarouselImage9}
-              alt="Third slide"
-              style={{width:"100%",height:"100%",objectFit:"cover"}}
-            />
-          </div>
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-
-        <Carousel.Item interval={1000}>
-          <div style={{height: '500px'}}>
-            <img
-              className="d-block w-100"
-              src={CarouselImage10}
-              alt="Third slide"
-              style={{width:"100%",height:"100%",objectFit:"cover"}}
-            />
-          </div>
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-
-        <Carousel.Item interval={1000}>
-          <div style={{height: '500px'}}>
-            <img
-              className="d-block w-100"
-              src={CarouselImage11}
-              alt="Third slide"
-              
-              style={{width:"100%",height:"100%",objectFit:"cover"}}
-            />
-          </div>
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-
       </Carousel>
     </div>
   );

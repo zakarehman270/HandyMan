@@ -2,7 +2,7 @@ import React from 'react';
 import Service from './Service';
 import CleaningImage from '../assets/Icons/CleaningConvert.jpg';
 import carPainter from '../assets/Icons/carPainter.jpg';
-import deepCleaning from '../assets/Icons/deepCleaning.png';
+import deepCleaning from '../assets/Icons/deepCleaning.jpg';
 import Electrician from '../assets/Icons/electrician.webp';
 import Handyman from '../assets/Icons/handyman.jpg';
 import paintWork from '../assets/Carousel/Cleaning1.jpg';

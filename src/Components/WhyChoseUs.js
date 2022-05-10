@@ -1,6 +1,6 @@
 import React from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
-import personnelStaff from '../assets/Icons/personnelStaff.png';
+import personnelStaff from '../assets/Icons/personnelStaff.jpg';
 import CustomerAvail from '../assets/Icons/CustomerAvail24by7.jpg';
 import OneSpe from '../assets/Icons/OneSpe.png';
 import CustomerTrust from '../assets/Icons/CustomerTrust.jpg';
