@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkhandyman=self.webpackChunkhandyman||[]).push([[91],{1091:function(a,e,n){n.r(e);n(2791);var s=n(184);e.default=function(a){return(0,s.jsxs)("div",{className:"CardsBanners BackGroundColor",children:[(0,s.jsx)("div",{className:"BannersOuterWidth",children:(0,s.jsx)("div",{className:"OuterWrapperBannerImage",children:(0,s.jsx)("img",{src:a.image,alt:"teamwork",style:{width:"56px",color:"#FFBB00"}})})}),(0,s.jsx)("div",{children:(0,s.jsx)("p",{className:"TextInCard",children:a.name})})]})}}}]);
+//# sourceMappingURL=91.8e1a43d6.chunk.js.map
