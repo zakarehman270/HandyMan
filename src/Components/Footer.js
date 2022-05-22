@@ -75,7 +75,6 @@ function Footer () {
             </div>
           </Col>
         </Row>
-
       </Container>
       <div style={{backgroundColor: '#000000'}}>
         <Container>
