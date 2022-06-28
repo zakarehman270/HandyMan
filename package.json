@@ -1,6 +1,6 @@
 {
-  "homepage": "https://zakarehman270.github.io/HandyMan",
   "name": "handyman",
+  "homepage": "http://handyman.babalqar",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
