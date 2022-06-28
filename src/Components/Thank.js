@@ -15,7 +15,6 @@ function Thank (props) {
           backgroundPosition: 'center',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
-          
           width:"100%"
         }}
       >
