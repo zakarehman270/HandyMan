@@ -1,287 +1,362 @@
-.outerWrapperBanners{
-background-color: #CCCCCC;
+.outerWrapperBanners {
+  background-color: #cccccc;
 }
-.PrimaryColor{
-    color: #FFBB00;
+.backgroundColor-grey {
+  background-color: #f9f9ff;
 }
-.BackGroundColor{
-    background-color: #FFBB00;
+h5 {
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 0rem !important;
 }
-.FontWeight{
-    font-weight: 600;
+.PrimaryColor {
+  color: #ffbb00;
 }
-.Gap{
-    gap: 12px;
+.BackGroundColor {
+  background-color: #ffbb00 !important;
 }
-.FontSize30{
-font-size: 30px !important;
+.btn {
+  border-color: #ffbb00 !important;
 }
-.FontSize14{
-    font-size: 14px;
+.btn:focus {
+  box-shadow: none !important;
 }
-.FontSize16{
-    font-size: 16px;
+.FontWeight {
+  font-weight: 600;
 }
-.FontSize20{
-    font-size: 20px !important;
+.Gap {
+  gap: 12px;
 }
-.CardsBanners{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    gap: 12px;
-    padding: 20px;
-    border-radius:5px ;
-    cursor: pointer;
-    height: 185px;
-    width: 332px;
+.FontSize30 {
+  font-size: 30px !important;
 }
-.OuterWrapperBannerImage{
-    background-color: #202020;
-    width: 98px;
-    height: 98px;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.FontSize14 {
+  font-size: 14px;
 }
-.TextInCard{
-    text-align: center;
-    font-size: 30px;
-    font-weight: 700;
+.FontSize16 {
+  font-size: 16px;
 }
-p{
-    padding: 0% !important;
-    margin: 0% !important;
-    margin-bottom:0% !important;
+.FontSize20 {
+  font-size: 20px !important;
 }
-.HeadingOurServices{
-    font-size: 45px;
-    font-weight: 600;
+.CardsBanners {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 185px;
+  width: 332px;
+}
+.OuterWrapperBannerImage {
+  background-color: #202020;
+  width: 98px;
+  height: 98px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.TextInCard {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+p {
+  padding: 0% !important;
+  margin: 0% !important;
+  margin-bottom: 0% !important;
+}
+.HeadingOurServices {
+  font-size: 45px;
+  font-weight: 600;
 }
 .OuterWrapperServicesImages {
-    width: 116px;
-    height: 115px;
-    border: 4px solid;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    box-shadow: rgb(0 0 0 / 45%) 0px 32px 23px -19px;
+  width: 116px;
+  height: 115px;
+  border: 4px solid;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: rgb(0 0 0 / 45%) 0px 32px 23px -19px;
 }
 .outerWrapperServices {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 299px;
+  text-align: center;
 }
-.ServiceHeading{
-    font-size: 24px;
+.ServiceHeading {
+  font-size: 24px;
 }
-.BookServiceButtons{
-padding: 12px;
-border-radius:5px ;
-font-size: 14px;
-cursor: pointer;
+.BookServiceButtons {
+  padding: 12px;
+  border-radius: 5px !important;
+  font-size: 14px !important;
+  cursor: pointer !important;
 }
-.BookServiceButtons:hover{
-    background-color: white;
-    color: #FFBB00;
+.BookServiceButtons:hover {
+  background-color: white !important;
+  color: #ffbb00 !important;
 }
-.CircleWhyChooseUs{
-    border-radius: 50%;
+.CircleWhyChooseUs {
+  border-radius: 50%;
 }
-.ButtonsTextAppLink{
-    background-color: black;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 8px !important;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.ButtonsTextAppLink {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 8px !important;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.ButtonsTextAppLink:hover{
-    background-color: #FFBB00;
+.ButtonsTextAppLink:hover {
+  background-color: #ffbb00;
 }
 input[type="text"] {
-    outline: none;
+  outline: none;
 }
-.HeadingDownloadApp{
-    font-size: 48px;
-    font-weight: 700;
+.HeadingDownloadApp {
+  font-size: 48px;
+  font-weight: 700;
 }
-.FooterMidContent{
-    font-size: 16px;
-    line-height: 33px;
+.FooterMidContent {
+  font-size: 16px;
+  line-height: 33px;
 }
-.HeadingFooterMidContent{
-    font-size: 32px;
+.HeadingFooterMidContent {
+  font-size: 32px;
 }
-.FooterLeftContent{
-    font-size: 15px;
-    line-height: 24px;
+.FooterLeftContent {
+  font-size: 15px;
+  line-height: 24px;
 }
-.SocialIconsInFooter:hover{
- margin-top: -8px;
- color: white;
- cursor: pointer;
- transition: margin-top 0.2s, color 0.1s;
+.SocialIconsInFooter:hover {
+  margin-top: -8px;
+  color: white;
+  cursor: pointer;
+  transition: margin-top 0.2s, color 0.1s;
 }
-.HeadingBookService{
-    display: flex;
+.HeadingBookService {
+  display: flex;
 }
-.LabelContentUnderHoursDropDown{
-    margin-top: -15px;
+.LabelContentUnderHoursDropDown {
+  margin-top: -15px;
 }
-.DisplayButtonsLower{
-    display:none;
+.DisplayButtonsLower {
+  display: none;
 }
-@media only screen and (max-width:888px) {
-    .HeadingBookService{
-        display:unset !important;
-        text-align: center;
-    }
+.outerWrapperUpperHeader {
+  background-color: #222222;
 }
-@media only screen and (max-width:767px) {
-    .MobileAppImage{
-        display:none !important;
-    }
+.outerWrapperFeedback {
+  background-color: #ffc21a;
 }
-@media only screen and (max-width:443px) {
-    .HeadingDownloadApp{
-        font-size: 35px;
-    }
+.FooterIconLocation {
+  color: white !important;
+}
+.outerWrapperFeedBackBox {
+  width: 92%;
+  height: 374px;
+}
+.outerWrapperFeedbackUserImage {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+}
+.outerWrapperFeedbackUserImage img {
+  width: 100%;
+}
+.outerWrapperParagraphAboutUs {
+  width: 48%;
+}
+.ParagraphFeedBackBox {
+  color: #777;
+  font-size: 14px;
+  font-weight: 300;
+}
+.heightParagraphFeedBack {
+  height: 180px;
+}
+.outerWrapperStars {
+  color: #ffbb00;
+  margin: 3px;
+}
+.iconsContactUS {
+  font-size: 39px;
+  color: #ffbb00;
+}
+.labelAboutUs {
+  font-weight: 900;
+  font-size: 17px;
+}
+.whatsappIcon {
+  bottom: 200px;
+  right: 10px;
+  font-size: 30px;
+  z-index: 5;
+  cursor: pointer;
+}
+.PhoneIcon {
+  bottom: 14px;
+  left: 13px;
+  font-size: 30px;
+  z-index: 5;
+  cursor: pointer;
+}
+@media only screen and (max-width: 888px) {
+  .HeadingBookService {
+    display: unset !important;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .MobileAppImage {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 443px) {
+  .HeadingDownloadApp {
+    font-size: 35px;
+  }
 }
 
-@media only screen and (max-width:329px) {
-    .HeadingDownloadApp{
-        font-size: 30px;
-    }
-    .CardsBanners{
-        width: 300px;
-    }
-    .TextInCard{
-       font-size: 25px;
-    }
+@media only screen and (max-width: 329px) {
+  .HeadingDownloadApp {
+    font-size: 30px;
+  }
+  .CardsBanners {
+    width: 300px;
+  }
+  .TextInCard {
+    font-size: 25px;
+  }
 }
-@media only screen and (max-width:354px) {
-    .ButtonsTextAppLink{
-        font-size: 13px;
-    }
+@media only screen and (max-width: 354px) {
+  .ButtonsTextAppLink {
+    font-size: 13px;
+  }
 }
-@media only screen and (max-width:321px) {
-    .ButtonsTextAppLink{
-        font-size: 12px;
-    }
+@media only screen and (max-width: 321px) {
+  .ButtonsTextAppLink {
+    font-size: 12px;
+  }
 }
-@media only screen and (max-width:450px) {
-    .BannersOuterWidth{
-        width: 290px;
-    }
+@media only screen and (max-width: 450px) {
+  .BannersOuterWidth {
+    width: 290px;
+  }
 }
 
 .carousel-caption {
-    bottom: 4.25rem !important;
+  bottom: 4.25rem !important;
 }
-.HeaderLinks{
-    display: flex;
-    gap: 12px;
-    cursor: pointer;
+.HeaderLinks {
+  display: flex;
+  gap: 12px;
+  cursor: pointer;
 }
-.FormBackGroundImage{
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-   padding-bottom: 60px;
+.FormBackGroundImage {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-bottom: 60px;
 }
-.FormsInputFields{
-    border-radius: 5px;
-    padding: 12px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border: 1px solid transparent;
+.FormsInputFields {
+  border-radius: 5px;
+  padding: 12px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: 1px solid transparent;
 }
-.Label{
-    font-size: 21px;
-    font-weight: 700;
+.Label {
+  font-size: 21px;
+  font-weight: 700;
 }
-.OuterWrapperDropDown{
-    height: 200px;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    padding: 12px;
-    overflow-y: scroll;
-    position:absolute;
-    top: 50px;
-    width: 100%;
-    z-index: 5;
+.OuterWrapperDropDown {
+  height: 200px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 12px;
+  overflow-y: scroll;
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  z-index: 5;
 }
-.FormsInputFieldsDropDown{
-    background-color: white;
-    border-radius: 5px;
-    padding: 12px !important;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid transparent;
+.FormsInputFieldsDropDown {
+  background-color: white;
+  border-radius: 5px;
+  padding: 12px !important;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid transparent;
 }
-.OuterContainerDropDown{
-    position: relative;
+.OuterContainerDropDown {
+  position: relative;
 }
-.DropDownLabel{
-    padding: 3px;
-    cursor: pointer;
-    font-size: 18px;
+.DropDownLabel {
+  padding: 3px;
+  cursor: pointer;
+  font-size: 18px;
 }
-.DropDownLabel:hover{
-    color: #FFBB00;
+.DropDownLabel:hover {
+  color: #ffbb00;
 }
-.FormsInputFieldsDatePicker{
-    background-color: white;
-    border-radius: 5px;
-    padding: 12px !important;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    cursor: pointer;
+.FormsInputFieldsDatePicker {
+  background-color: white;
+  border-radius: 5px;
+  padding: 12px !important;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
 }
 .react-date-picker__wrapper {
-    border: unset !important;
+  border: unset !important;
 }
 textarea {
-    outline: none;
+  outline: none;
 }
-.OuterWrapperLogoImage{
-    width: 50px;
-    height: 50px;
+.OuterWrapperLogoImage {
+  width: 70px;
+  height: 60px;
 }
 .PhoneInputInput {
-    border: none !important;
+  border: none !important;
 }
-.ContentPriceDetails{
-    font-size: 18px;
+.ContentPriceDetails {
+  font-size: 18px;
+}
+.outerWrapperNavBar {
+  position: sticky !important;
+  top: 0px !important;
+  z-index: 2 !important;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+}
+@media only screen and (max-width: 990px) {
+  .BookServiceButtons {
+    width: 100%;
+  }
 }
 
-.DisplayButtonsUpper{
+@media only screen and (max-width: 502px) {
+  .DisplayButtonsLower {
     display: flex;
-    justify-content: flex-start;
-}
-@media only screen and (max-width:990px) {
-    .BookServiceButtons{
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width:502px) {
-    .DisplayButtonsLower{
-        display: flex;
-    }
-    .DisplayButtonsUpper{
-        display: none !important;
-    }
+  }
 }
