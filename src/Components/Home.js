@@ -6,7 +6,6 @@ import teamwork from "../assets/Icons/teamwork.png";
 import justice from "../assets/Icons/justice.png";
 import shield from "../assets/Icons/shield.png";
 import { Element } from "react-scroll";
-import { Container } from "react-bootstrap";
 import FeedBackFromClient from "./FeedBackFromClient";
 
 const Banners = lazy(() => import("./Banners"));
@@ -15,7 +14,6 @@ const BookService = lazy(() => import("./BookService"));
 const WhyChoseUs = lazy(() => import("./WhyChoseUs"));
 const MobileApp = lazy(() => import("./MobileApp"));
 const Footer = lazy(() => import("./Footer"));
-
 function Home() {
   const [BannersArray, setBannersArray] = useState([
     { name: "Professional staff", images: teamwork },
