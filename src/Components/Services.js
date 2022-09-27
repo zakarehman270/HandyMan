@@ -1,14 +1,8 @@
 import React from "react";
-import Service from "./Service";
-import CleaningImage from "../assets/Icons/CleaningConvert.jpg";
-import carPainter from "../assets/Icons/carPainter.jpg";
-import deepCleaning from "../assets/Icons/deepCleaning.jpg";
-import Electrician from "../assets/Icons/electrician.webp";
-import Handyman from "../assets/Icons/handyman.jpg";
-import paintWork from "../assets/Carousel/Cleaning1.jpg";
-import plumbing from "../assets/Icons/plumbing.jpg";
+import { Link } from "react-router-dom";
 import { Container } from "react-bootstrap";
-function Services(props) {
+import { ServicesArray } from "../Data";
+function Services() {
   return (
     <Container className="pt-5 pb-5">
       <div className="d-flex justify-content-center align-items-center Gap pb-5">
@@ -19,31 +13,35 @@ function Services(props) {
         className="d-flex justify-content-center flex-wrap"
         style={{ gap: "30px" }}
       >
-        <Service image={CleaningImage} Heading={"Cleaning"} />
-        <Service image={carPainter} Heading={"Car Painter"} />
-        <Service image={deepCleaning} Heading={"Deep Cleaning"} />
-        <Service
-          image={Electrician}
-          Heading={"Electrician"}
-          data={
-            "First hour include survey and 1 hour job, after that 60 drhm for every 30 minutes"
-          }
-        />
-        <Service
-          image={Handyman}
-          Heading={"Handy Man"}
-          data={
-            "First hour include survey and 1 hour job, after that 60 drhm for every 30 minutes"
-          }
-        />
-        <Service image={paintWork} Heading={"Paint Work"} />
-        <Service
-          image={plumbing}
-          Heading={"Plumbing"}
-          data={
-            "First hour include survey and 1 hour job, after that 60 drhm for every 30 minutes"
-          }
-        />
+        {ServicesArray.map((item, index) => {
+          return (
+            <div key={index} className="outerWrapperServices">
+              <Link
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                }}
+                className="text-decoration-none text-black"
+                to={`/form/${item.name.replace(/\s/g, "")}/?vat=${item.vat}+${
+                  item.price
+                }`}
+              >
+                <div className="d-flex justify-content-center">
+                  <div className="OuterWrapperServicesImages">
+                    <img
+                      src={item.img}
+                      alt={item.name}
+                      style={{ width: "90px" }}
+                    />
+                  </div>
+                </div>
+                <p className="pt-2 PrimaryColor FontWeight ServiceHeading">
+                  {item.name}
+                </p>
+                <p className="ParagraphFeedBackBox">{item.description}</p>
+              </Link>
+            </div>
+          );
+        })}
       </div>
     </Container>
   );

@@ -5,13 +5,14 @@ import Footer from "./Footer";
 import Handyman from "../assets/Handyman.jpg";
 import { Container, Row, Col } from "react-bootstrap";
 import emailjs from "emailjs-com";
-import { Data, ServiceData } from "./AreaJsonData";
+import { ServicesArray, AreaArray, HoursData } from "../Data";
 import { FaAngleDown } from "react-icons/fa";
 import DatePicker from "react-date-picker";
 import "react-phone-number-input/style.css";
 import Thank from "./Thank";
 import PhoneInput from "react-phone-number-input";
-function Form(props) {
+import { Link } from "react-router-dom";
+function Form() {
   const [Name, setName] = useState("");
   const [Email, setEmail] = useState("");
   const [Phone, setPhone] = useState();
@@ -35,30 +36,42 @@ function Form(props) {
   const [DisplayDropDownHours, setDisplayDropDownHours] = useState(false);
   const [IndexSelectedDropDownHours, setIndexSelectedDropDownHours] =
     useState(0);
-  const [HoursData, setHoursData] = useState([1, 2, 3, 4, 5, 6, 7, 8]);
-  const [PriceValue, setPriceValue] = useState(115);
-  const [VatValue, setVatValue] = useState(5.75);
-  const location = useLocation();
+  const [PriceValue, setPriceValue] = useState(0);
+  const [VatValue, setVatValue] = useState(0);
+  const [PriceDefaultValue, setPriceDefaultValue] = useState(115);
+  const [VatDefaultValue, setVatDefaultValue] = useState(5);
   const [Content, setContent] = useState("");
   const [RedirectToThanPage, setRedirectToThanPage] = useState(false);
-  const { from } = location.state;
+  const location = useLocation();
+  const search = useLocation().search;
+  const vat = new URLSearchParams(search).get("vat");
   useEffect(() => {
-    if (from === undefined) {
-      setContent("");
+    let Split = location.pathname.split("/");
+    console.log("vat==", Split);
+    let price = vat.substring(vat.indexOf(" ") + 1);
+    setPriceDefaultValue(price);
+    setVatDefaultValue(parseInt(vat));
+    setService(Split[2]);
+    if (
+      Split[2] === "plumbing" ||
+      Split[2] === "HandyMan" ||
+      Split[2] === "Electrician"
+    ) {
+      setContent(
+        "First hour include survey and 1 hour job, after that 60 drhm for every 30 minutes."
+      );
     } else {
-      setContent(from);
+      setContent("");
     }
-  }, []);
+  }, [location]);
 
   const sendEmail = (e) => {
-    console.log("e", e.target);
     if (
       Name !== "" &&
       Email !== "" &&
       Phone !== "" &&
       Address !== "" &&
-      Area !== "Area" &&
-      Service !== "Choose Service"
+      Area !== "Area"
     ) {
       let re =
         /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -112,19 +125,20 @@ function Form(props) {
       } else {
         setValidationArea(false);
       }
-      if (Service === "Choose Service") {
-        setValidationService(true);
-      } else {
-        setValidationService(false);
-      }
     }
   };
-
   if (RedirectToThanPage) {
     return <Thank />;
   } else {
     return (
-      <div>
+      <div
+        onClick={(e) => {
+          console.log("hello calling");
+          setDisplayDropDown(false);
+          setDisplayDropDownHours(false);
+          setDisplayDropDownArea(false);
+        }}
+      >
         <Header />
         <div
           className="FormBackGroundImage"
@@ -141,7 +155,6 @@ function Form(props) {
               <span className="text-white">Get</span>
               <span className="PrimaryColor">Start</span>
             </div>
-
             <Row className=" d-flex justify-content-center order-1">
               <Col className=" d-flex  justify-content-center">
                 <div className="d-flex flex-column w-100">
@@ -188,8 +201,8 @@ function Form(props) {
                       className="FormsInputFieldsDatePicker"
                       style={{ borderColor: ValidationPhone ? "red" : "" }}
                       value={Phone}
-                      onChange={(e) => {
-                        setPhone();
+                      onChange={(value) => {
+                        setPhone(value);
                         setValidationPhone(false);
                       }}
                     />
@@ -203,8 +216,9 @@ function Form(props) {
                         <p
                           className="FormsInputFieldsDropDown"
                           style={{ borderColor: ValidationArea ? "red" : "" }}
-                          onClick={() => {
+                          onClick={(e) => {
                             setDisplayDropDown(!DisplayDropDown);
+                            e.stopPropagation();
                           }}
                         >
                           {Area}
@@ -213,7 +227,7 @@ function Form(props) {
                       </div>
                       {DisplayDropDown && (
                         <div className="OuterWrapperDropDown">
-                          {Data.map((item, index) => {
+                          {AreaArray.map((item, index) => {
                             let selected = false;
                             if (IndexSelectedDropDown === index) {
                               selected = true;
@@ -246,8 +260,9 @@ function Form(props) {
                       <div>
                         <p
                           className="FormsInputFieldsDropDown"
-                          onClick={() => {
+                          onClick={(e) => {
                             setDisplayDropDownHours(!DisplayDropDownHours);
+                            e.stopPropagation();
                           }}
                         >
                           {Hours}
@@ -269,8 +284,8 @@ function Form(props) {
                                 onClick={() => {
                                   setIndexSelectedDropDownHours(index);
                                   setHours(item);
-                                  let TotalPrice = item * 115;
-                                  let TotalVat = item * 5.75;
+                                  let TotalPrice = item * PriceDefaultValue;
+                                  let TotalVat = item * VatDefaultValue;
                                   setPriceValue(TotalPrice);
                                   setVatValue(TotalVat);
                                   setDisplayDropDownHours(false);
@@ -300,8 +315,9 @@ function Form(props) {
                           style={{
                             borderColor: ValidationService ? "red" : "",
                           }}
-                          onClick={() => {
+                          onClick={(e) => {
                             setDisplayDropDownArea(!DisplayDropDownArea);
+                            e.stopPropagation();
                           }}
                         >
                           {Service}
@@ -310,25 +326,36 @@ function Form(props) {
                       </div>
                       {DisplayDropDownArea && (
                         <div className="OuterWrapperDropDown">
-                          {ServiceData.map((item, index) => {
+                          {ServicesArray.map((item, index) => {
                             let selected = false;
                             if (IndexSelectedDropDownArea === index) {
                               selected = true;
                             }
                             return (
-                              <div
-                                key={index}
-                                className="DropDownLabel"
-                                style={{ color: selected ? "#FFBB00" : "" }}
+                              <Link
                                 onClick={() => {
-                                  setIndexSelectedDropDownArea(index);
-                                  setService(item.name);
-                                  setDisplayDropDownArea(false);
-                                  setValidationService(false);
+                                  window.scrollTo(0, 0);
                                 }}
+                                className="text-decoration-none text-black"
+                                to={`/form/${item.name.replace(
+                                  /\s/g,
+                                  ""
+                                )}/?vat=${item.vat}+${item.price}`}
                               >
-                                {item.name}
-                              </div>
+                                <p
+                                  key={index}
+                                  className="DropDownLabel"
+                                  style={{ color: selected ? "#FFBB00" : "" }}
+                                  onClick={() => {
+                                    setIndexSelectedDropDownArea(index);
+                                    setService(item.name);
+                                    setDisplayDropDownArea(false);
+                                    setValidationService(false);
+                                  }}
+                                >
+                                  {item.name}
+                                </p>
+                              </Link>
                             );
                           })}
                         </div>
@@ -341,7 +368,8 @@ function Form(props) {
                     </label>
                     <DatePicker
                       className="FormsInputFieldsDatePicker"
-                      onChange={setDateValue}
+                      // onChange={setDateValue}
+                      onChange={(value, e) => setDateValue(value, e)}
                       value={DateValue}
                     />
                   </div>
@@ -367,7 +395,7 @@ function Form(props) {
                     </label>
                     <textarea
                       className="FormsInputFields"
-                      placeholder="Phone"
+                      placeholder="Message.."
                       rows={5}
                       cols={5}
                       value={Message}
@@ -404,9 +432,9 @@ function Form(props) {
                         <div className="d-none">
                           <textarea
                             name="message"
-                            value={`name: ${Name} email: ${Email} phone: ${Phone} 
-                          address: ${Address} date:${Date} area:${Area} service${Service}
-                          message:${Message} totalPrice${
+                            value={`Name: ${Name} Email: ${Email} Phone: ${Phone} 
+                          Address: ${Address} Date:${DateValue} Area:${Area} Service${Service}
+                          Message:${Message} TotalPrice${
                               PriceValue + VatValue
                             } `}
                             onChange={() => {

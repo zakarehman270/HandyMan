@@ -9,7 +9,7 @@ function Routing () {
   return (
     <Routes>
       <Route exact path="/" element={<Home />} />
-      <Route exact path="/form" element={<Form />} />
+      <Route exact path="/form/:id" element={<Form />} />
       <Route exact path="/about-us" element={<AboutUs />} />
       <Route exact path="/contact-us" element={<ContactUs />} />
     </Routes>
