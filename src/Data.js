@@ -184,7 +184,7 @@ export const ServicesArray = [
     name: "paintWork",
     img: paintWork,
     description:
-      "With the increase in weather temperatures everywhere, the last thing you want to deal with is air conditioner repair and maintenance to keep it running. Not everyone is...",
+      "Best painters and Wall art designers in Dubai, the last thing you want to deal with is air conditioner repair and maintenance to keep it running. Not everyone is...",
     vat: "13",
     price: "113",
   },
