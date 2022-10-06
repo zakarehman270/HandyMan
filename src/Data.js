@@ -184,50 +184,7 @@ export const ServicesArray = [
 		},
 	},
 	{
-		name: "Car Painter",
-		img: carPainter,
-		description:
-			"With the increase in weather temperatures everywhere, the last thing you want to deal with is air conditioner repair and maintenance to keep it running. Not everyone is...",
-		vat: "14",
-		price: "114",
-		detail: {
-			bannerImage: bannerImage,
-			upperLeftDetail: {
-				heading: "Toolboys, Dubai's best painting service!",
-				details:
-					"The outer layer of the walls tends to get worn out due to rain, dust, accidental handprints, children’s drawings, furniture marks, stains and whatnot. This reduces the overall look and brightness of the house. Hence, buildings often require time to time painting job done to keep their charm up. A lick of paint can do wonders to the entire building, whether its interiors or exteriors of the structure. But if you’re wondering where you can get expert-level wall painting services in Dubai- Toolboys is the answer!",
-			},
-			upperRightDetail: {
-				heading: "Book Painting Service",
-				number: " 800 8289",
-				details:
-					"Toolboys’ one of the many expertise is painting services which can be used for all your residential and commercial structures. They are currently the superior painting company in Dubai known majorly for handling different kinds of painting services for various types of infrastructures. With our skilled and efficient painters in Dubai, you can decorate or redecorate your homes, offices, or any other buildings you own. So get together with the Toolboys painters and avail exquisite makeover to your building.",
-			},
-			midDetail: {
-				heading: "Checkout Toolboys Assorted Wall Painting Services in Dubai",
-				video: "https://www.youtube.com/watch?v=ysz5S6PUM-U",
-				details:
-					"Our painting company has tremendously proficient painters ready to avail our various wall painting services along with other maintenance assistances. These include:",
-			},
-			lowerLeftDetail: {
-				heading: "Interior decoration:",
-				details:
-					"We help you choose from a variety of paints to suit your interiors. Guiding our clients through some samples and offering them an idea of how their rooms will transform after painting, we ensure their content before going ahead with the actual paint job. Our painters also make sure that all your furniture, carpets and other items in the interior rooms of the building remain clean and undamaged.",
-			},
-			lowerCenterDetail: {
-				heading: "Exterior painting:",
-				details:
-					"The outer look of the building is as important as inner. Hence, we cater to painting all kinds of walls (concrete, stone, brick or whatever), windows, doors, gates and such similar things. Our master painters will also advise you on the weather conditions and the paint that will perfectly suit the Dubai buildings. Toolboys painters are always equipped with appropriate tools like ladders, ropes, paintbrushes and every other thing required to finish the job accurately.",
-			},
-			lowerRightDetail: {
-				heading: "Maintenance works:",
-				details:
-					"Timely maintenance of the structures will make them look bright and also stand tall for decades. Hence, it’s not just the new building we work on. Both the new and old structures are tended to by our handyman crew equally. We offer house painting service, apartment painting services, commercial buildings and also villa painting services in Dubai among several other works. For the maintenance works of old buildings, we first patch up holes, cracks, and such breaks in the walls. Then we sand the wall properly to apply primer. Once this foundation has been laid, we move to avail our flawless wall painting services",
-			},
-		},
-	},
-	{
-		name: "Car Painter",
+		name: "CarPenter",
 		img: carPainter,
 		description:
 			"With the increase in weather temperatures everywhere, the last thing you want to deal with is air conditioner repair and maintenance to keep it running. Not everyone is...",

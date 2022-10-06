@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Container, Nav } from "react-bootstrap";
+import { Navbar, Container, Nav, Button } from "react-bootstrap";
 import { Link } from "react-scroll";
 import Logo from "../assets/Logo.PNG";
 import { NavLink } from "react-router-dom";
@@ -38,8 +38,12 @@ function Header() {
 						</a>
 					</div>
 					<div className="d-flex align-items-center Gap">
-						<p>03313571616</p>
-						<p>zakarehman270@gmail.com</p>
+						<a href="tel:+923313571616" className="C-pointer">
+							<p>03313571616</p>
+						</a>
+						<a href="https://mail.google.com/mail/?view=cm&fs=1&to=zakarehman270@gmail.com">
+							<p>zakarehman270@gmail.com</p>
+						</a>
 					</div>
 				</Container>
 			</div>
@@ -62,27 +66,38 @@ function Header() {
 								to="our-services"
 								spy={true}
 								smooth={true}
-								duration={500}
+								duration={50}
+								offset={-140}
 								className="text-decoration-none text-black HeaderLinks"
 							>
-								Our Services
+								<NavLink to="/" className="text-decoration-none text-black">
+									Our Services
+								</NavLink>
 							</Link>
 							<Link
 								to="book-service"
-								spy={true}
 								smooth={true}
-								duration={500}
+								duration={50}
+								offset={-140}
 								className="text-decoration-none text-black HeaderLinks"
 							>
-								Book Service
+								<NavLink to="/" className="text-decoration-none text-black">
+									Book Service
+								</NavLink>
 							</Link>
 							<NavLink
+								onClick={() => {
+									window.scrollTo(0, 0);
+								}}
 								to="/about-us"
 								className="text-decoration-none text-black HeaderLinks"
 							>
 								About Us
 							</NavLink>
 							<NavLink
+								onClick={() => {
+									window.scrollTo(0, 0);
+								}}
 								to="/contact-us"
 								className="text-decoration-none text-black HeaderLinks"
 							>

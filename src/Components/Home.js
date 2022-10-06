@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import "./Style.css";
 import Header from "./Header";
 import CarouselSlider from "./Carousel";
@@ -10,11 +10,18 @@ import WhyChoseUs from "./WhyChoseUs";
 import Footer from "./Footer";
 import Services from "./Services";
 function Home() {
+	const divRef = useRef(null);
+	useEffect(() => {
+		divRef.current.scrollIntoView({ behavior: "smooth" });
+	}, []);
 	return (
 		<div>
 			<Header />
 			<CarouselSlider />
-			<ProjectCompleted />
+			<div ref={divRef}>
+				<ProjectCompleted />
+			</div>
+
 			{/* <div className="outerWrapperBanners">
         <Container>
           <div
@@ -34,7 +41,9 @@ function Home() {
 			<Element id="our-services">
 				<Services />
 			</Element>
-			<BookService />
+			<Element id="book-service">
+				<BookService />
+			</Element>
 			<Element id="why-choose-us?">
 				<WhyChoseUs />
 			</Element>

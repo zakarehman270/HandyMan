@@ -1,6 +1,6 @@
 import React from "react";
-import BookServiceButtons from "./BookServiceButtons";
 import Cleaning from "../assets/Carousel/Cleaning10.jpg";
+import { Link } from "react-router-dom";
 function BookService(props) {
 	return (
 		<div
@@ -20,7 +20,17 @@ function BookService(props) {
 					<p className="PrimaryColor">Handyman Service Related</p>
 				</div>
 				<div className="d-flex justify-content-center align-items-center pt-3">
-					<BookServiceButtons />
+					<Link
+						onClick={() => {
+							window.scrollTo(0, 0);
+						}}
+						className="text-decoration-none text-black"
+						to={`/form/choseService/?vat=${0}+${0}`}
+					>
+						<div className="BookServiceButtons BackGroundColor text-center">
+							Book Your Service Now
+						</div>
+					</Link>
 				</div>
 			</div>
 		</div>

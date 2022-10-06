@@ -118,6 +118,9 @@ p {
 .CircleWhyChooseUs {
 	border-radius: 50%;
 }
+.C-pointer {
+	cursor: pointer;
+}
 .ButtonsTextAppLink {
 	background-color: black;
 	color: white;
@@ -367,12 +370,12 @@ textarea {
 	outline: none;
 }
 .navbar {
-	padding-top: 0 rem !important;
-	padding-bottom: 0rem;
+	padding-top: 0rem !important;
+	padding-bottom: 0rem !important;
 }
 .OuterWrapperLogoImage {
 	width: 119px;
-	height: 87px;
+	height: 77px;
 }
 .PhoneInputInput {
 	border: none !important;

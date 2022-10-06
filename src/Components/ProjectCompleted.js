@@ -1,18 +1,11 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
 import CountUp from "react-countup";
 import { MdOutlineHomeWork } from "react-icons/md";
 import { FaPeopleArrows } from "react-icons/fa";
 import { GiHumanPyramid } from "react-icons/gi";
 const ProjectCompleted = () => {
-	const divRef = useRef(null);
-	useEffect(() => {
-		divRef.current.scrollIntoView({ behavior: "smooth" });
-	}, []);
 	return (
-		<div
-			className="outerContainerProjectCompleted text-white text-center pt-4 pb-5"
-			ref={divRef}
-		>
+		<div className="outerContainerProjectCompleted text-white text-center pt-4 pb-5">
 			<h2>The way to achieve your own success</h2>
 			<div className="mt-3 d-flex align-item-center justify-content-center gap-50">
 				<div className="text-center">

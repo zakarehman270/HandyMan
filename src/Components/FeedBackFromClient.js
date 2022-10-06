@@ -43,7 +43,9 @@ const FeedBackFromClient = () => {
 	return (
 		<div className="pt-4 pb-5 outerWrapperFeedback">
 			<div className="d-flex justify-content-center align-items-center Gap pb-4">
-				<p className="HeadingOurServices">Feedback from our real clients</p>
+				<p className="HeadingOurServices text-white">
+					Feedback from our real clients
+				</p>
 			</div>
 			<Container>
 				<Row>

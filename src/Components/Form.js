@@ -32,7 +32,7 @@ function Form() {
 	const [Area, setArea] = useState("Area");
 	const [DisplayDropDownArea, setDisplayDropDownArea] = useState(false);
 	const [DateValue, setDateValue] = useState(new Date());
-	const [Hours, setHours] = useState(1);
+	const [Hours, setHours] = useState(0);
 	const [DisplayDropDownHours, setDisplayDropDownHours] = useState(false);
 	const [IndexSelectedDropDownHours, setIndexSelectedDropDownHours] =
 		useState(0);
