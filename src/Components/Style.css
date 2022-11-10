@@ -32,6 +32,9 @@ h1 {
 .Gap {
 	gap: 12px;
 }
+.Gap-22 {
+	gap: 22px;
+}
 .FontSize30 {
 	font-size: 30px !important;
 }
@@ -247,14 +250,14 @@ input[type="text"] {
 .HeaderLinks {
 	cursor: pointer;
 	transition: all 0.2s ease-in-out;
-	border-bottom: 2px solid transparent;
+	border-bottom: 3px solid transparent;
 	padding-bottom: 3px;
-	font-size: 18px;
+	font-size: 21px;
+	font-weight: 500;
 }
 .HeaderLinks:hover {
 	cursor: pointer;
-	color: #ffbb00 !important;
-	border-bottom: 2px solid #ffbb00;
+	border-color: #ffbb00;
 }
 .HeaderSocialMediaIcons {
 	font-size: 21px;
@@ -374,8 +377,8 @@ textarea {
 	padding-bottom: 0rem !important;
 }
 .OuterWrapperLogoImage {
-	width: 119px;
-	height: 77px;
+	width: 121px;
+	height: 96px;
 }
 .PhoneInputInput {
 	border: none !important;
@@ -388,6 +391,9 @@ textarea {
 	top: 0px !important;
 	z-index: 2 !important;
 	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+}
+.FontSizeTextHolderTopOfHeader {
+	font-size: 19px;
 }
 @media only screen and (max-width: 990px) {
 	.BookServiceButtons {

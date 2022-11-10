@@ -29,6 +29,8 @@ const FeedBackFromClient = () => {
 					slidesToShow: 2,
 					slidesToScroll: 2,
 					initialSlide: 2,
+					dots: false,
+					arrows: false,
 				},
 			},
 			{

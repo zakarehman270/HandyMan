@@ -9,9 +9,9 @@ import { ImWhatsapp } from "react-icons/im";
 function Header() {
 	return (
 		<div className="outerWrapperNavBar bg-white">
-			<div className="outerWrapperUpperHeader pt-2 pb-2">
+			<div className="outerWrapperUpperHeader pt-3 pb-3 FontSizeTextHolderTopOfHeader">
 				<Container className="d-flex justify-content-between align-items-center text-white">
-					<div className="d-flex align-items-center Gap">
+					<div className="d-flex align-items-center Gap-22">
 						<a
 							href="https://www.instagram.com/"
 							rel="nofollow noopener"
@@ -37,7 +37,7 @@ function Header() {
 							<ImWhatsapp className="SocialIconsInFooter HeaderSocialMediaIcons" />
 						</a>
 					</div>
-					<div className="d-flex align-items-center Gap">
+					<div className="d-flex align-items-center Gap-22">
 						<a href="tel:+923313571616" className="C-pointer">
 							<p>03313571616</p>
 						</a>
@@ -68,9 +68,9 @@ function Header() {
 								smooth={true}
 								duration={50}
 								offset={-140}
-								className="text-decoration-none text-black HeaderLinks"
+								className="text-decoration-none HeaderLinks"
 							>
-								<NavLink to="/" className="text-decoration-none text-black">
+								<NavLink to="/" className="text-decoration-none">
 									Our Services
 								</NavLink>
 							</Link>
@@ -79,9 +79,9 @@ function Header() {
 								smooth={true}
 								duration={50}
 								offset={-140}
-								className="text-decoration-none text-black HeaderLinks"
+								className="text-decoration-none HeaderLinks"
 							>
-								<NavLink to="/" className="text-decoration-none text-black">
+								<NavLink to="/" className="text-decoration-none">
 									Book Service
 								</NavLink>
 							</Link>
@@ -90,7 +90,7 @@ function Header() {
 									window.scrollTo(0, 0);
 								}}
 								to="/about-us"
-								className="text-decoration-none text-black HeaderLinks"
+								className="text-decoration-none HeaderLinks"
 							>
 								About Us
 							</NavLink>
@@ -99,7 +99,7 @@ function Header() {
 									window.scrollTo(0, 0);
 								}}
 								to="/contact-us"
-								className="text-decoration-none text-black HeaderLinks"
+								className="text-decoration-none HeaderLinks"
 							>
 								Contact Us
 							</NavLink>
