@@ -5,7 +5,6 @@ import CarouselImage2 from "../assets/Carousel/Cleaning2.jpg";
 import CarouselImage3 from "../assets/Carousel/Cleaning3.jpg";
 import CarouselImage4 from "../assets/Carousel/Cleaning4.jpg";
 import CarouselImage5 from "../assets/Carousel/Cleaning6.jpg";
-import CarouselImage6 from "../assets/Carousel/Cleaning6.jpg";
 function CarouselSlider(props) {
 	return (
 		<div>
@@ -20,7 +19,7 @@ function CarouselSlider(props) {
 						/>
 					</div>
 					<Carousel.Caption>
-						<h3>First slide label</h3>
+						<h3>CarPenter</h3>
 						<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
 					</Carousel.Caption>
 				</Carousel.Item>
@@ -33,13 +32,11 @@ function CarouselSlider(props) {
 							style={{ width: "100%", height: "100%", objectFit: "cover" }}
 						/>
 					</div>
-
 					<Carousel.Caption>
-						<h3>Second slide label</h3>
+						<h3>Plumbing</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</Carousel.Caption>
 				</Carousel.Item>
-
 				<Carousel.Item interval={1000}>
 					<div style={{ height: "450px" }}>
 						<img
@@ -50,7 +47,7 @@ function CarouselSlider(props) {
 						/>
 					</div>
 					<Carousel.Caption>
-						<h3>Third slide label</h3>
+						<h3>Deep Cleaning</h3>
 						<p>
 							Praesent commodo cursus magna, vel scelerisque nisl consectetur.
 						</p>
@@ -67,7 +64,7 @@ function CarouselSlider(props) {
 						/>
 					</div>
 					<Carousel.Caption>
-						<h3>Third slide label</h3>
+						<h3>Home Maintenance</h3>
 						<p>
 							Praesent commodo cursus magna, vel scelerisque nisl consectetur.
 						</p>
@@ -83,23 +80,7 @@ function CarouselSlider(props) {
 						/>
 					</div>
 					<Carousel.Caption>
-						<h3>Third slide label</h3>
-						<p>
-							Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-						</p>
-					</Carousel.Caption>
-				</Carousel.Item>
-				<Carousel.Item interval={1000}>
-					<div style={{ height: "450px" }}>
-						<img
-							className="d-block w-100"
-							src={CarouselImage6}
-							alt="Third slide"
-							style={{ width: "100%", height: "100%", objectFit: "cover" }}
-						/>
-					</div>
-					<Carousel.Caption>
-						<h3>Third slide label</h3>
+						<h3>Painting</h3>
 						<p>
 							Praesent commodo cursus magna, vel scelerisque nisl consectetur.
 						</p>

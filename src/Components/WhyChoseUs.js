@@ -53,10 +53,10 @@ function WhyChoseUs() {
 						</div>
 					</Col>
 
-					<Col className="d-none d-xl-block">
+					<Col className="d-none d-xl-flex justify-content-center">
 						<div
 							style={{ padding: "8px" }}
-							className="CircleWhyChooseUs BackGroundColor d-flex flex-column justify-content-center align-items-center"
+							className="CircleWhyChooseUs BackGroundColor WidthCircleTextHolder d-flex flex-column justify-content-center align-items-center"
 						>
 							<div
 								style={{
@@ -108,7 +108,8 @@ function WhyChoseUs() {
 									ONE STOP SHOP
 								</p>
 								<p className="FontSize14">
-									All types of handyman services are available under one roof
+									All types of HomeRepairFix services are available under one
+									roof
 								</p>
 							</div>
 						</div>

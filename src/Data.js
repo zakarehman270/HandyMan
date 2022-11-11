@@ -7,136 +7,135 @@ import Handyman from "./assets/Icons/handyman.jpg";
 import paintWork from "./assets/Carousel/Cleaning1.jpg";
 import plumbing from "./assets/Icons/plumbing.jpg";
 import bannerImage from "./assets/contact.jpg";
+import zaka from "./assets/zaka.jpg";
+import Zulqer from "./assets/Zulqer.PNG";
+import UsamaSam from "./assets/UsamaSam.PNG";
+import Aqeel from "./assets/Aqeel.PNG";
+import Asfand from "./assets/Asfand.PNG";
 export const AboutUsData = [
 	{
 		heading: "Appointment:",
 		detail:
-			"Toolboys is a professional handyman team in Dubai offering various kinds of Home and Commercial product installations, assembly, maintenance and repair solutions. Our handymen cater to services of all sizes from small household work to bulk commercial projects. We also take up general inspection routinely for various infrastructural needs.",
+			"HomeRepairFix is a professional handyman team in Dubai offering various kinds of Home and Commercial product installations, assembly, maintenance and repair solutions. Our handymen cater to services of all sizes from small household work to bulk commercial projects. We also take up general inspection routinely for various infrastructural needs.",
 	},
 	{
 		heading: "Appointment:",
 		detail:
-			"Toolboys is a professional handyman team in Dubai offering various kinds of Home and Commercial product installations, assembly, maintenance and repair solutions. Our handymen cater to services of all sizes from small household work to bulk commercial projects. We also take up general inspection routinely for various infrastructural needs.",
+			"HomeRepairFix is a professional handyman team in Dubai offering various kinds of Home and Commercial product installations, assembly, maintenance and repair solutions. Our handymen cater to services of all sizes from small household work to bulk commercial projects. We also take up general inspection routinely for various infrastructural needs.",
 	},
 	{
 		heading: "Appointment:",
 		detail:
-			"Toolboys is a professional handyman team in Dubai offering various kinds of Home and Commercial product installations, assembly, maintenance and repair solutions. Our handymen cater to services of all sizes from small household work to bulk commercial projects. We also take up general inspection routinely for various infrastructural needs.",
+			"HomeRepairFix is a professional handyman team in Dubai offering various kinds of Home and Commercial product installations, assembly, maintenance and repair solutions. Our handymen cater to services of all sizes from small household work to bulk commercial projects. We also take up general inspection routinely for various infrastructural needs.",
 	},
 	{
 		heading: "Appointment:",
 		detail:
-			"Toolboys is a professional handyman team in Dubai offering various kinds of Home and Commercial product installations, assembly, maintenance and repair solutions. Our handymen cater to services of all sizes from small household work to bulk commercial projects. We also take up general inspection routinely for various infrastructural needs.",
+			"HomeRepairFix is a professional handyman team in Dubai offering various kinds of Home and Commercial product installations, assembly, maintenance and repair solutions. Our handymen cater to services of all sizes from small household work to bulk commercial projects. We also take up general inspection routinely for various infrastructural needs.",
 	},
 	{
 		heading: "Appointment:",
 		detail:
-			"Toolboys is a professional handyman team in Dubai offering various kinds of Home and Commercial product installations, assembly, maintenance and repair solutions. Our handymen cater to services of all sizes from small household work to bulk commercial projects. We also take up general inspection routinely for various infrastructural needs.",
+			"HomeRepairFix is a professional handyman team in Dubai offering various kinds of Home and Commercial product installations, assembly, maintenance and repair solutions. Our handymen cater to services of all sizes from small household work to bulk commercial projects. We also take up general inspection routinely for various infrastructural needs.",
 	},
 	{
 		heading: "Appointment:",
 		detail:
-			"Toolboys is a professional handyman team in Dubai offering various kinds of Home and Commercial product installations, assembly, maintenance and repair solutions. Our handymen cater to services of all sizes from small household work to bulk commercial projects. We also take up general inspection routinely for various infrastructural needs.",
+			"HomeRepairFix is a professional handyman team in Dubai offering various kinds of Home and Commercial product installations, assembly, maintenance and repair solutions. Our handymen cater to services of all sizes from small household work to bulk commercial projects. We also take up general inspection routinely for various infrastructural needs.",
 	},
 	{
 		heading: "Appointment:",
 		detail:
-			"Toolboys is a professional handyman team in Dubai offering various kinds of Home and Commercial product installations, assembly, maintenance and repair solutions. Our handymen cater to services of all sizes from small household work to bulk commercial projects. We also take up general inspection routinely for various infrastructural needs.",
+			"HomeRepairFix is a professional handyman team in Dubai offering various kinds of Home and Commercial product installations, assembly, maintenance and repair solutions. Our handymen cater to services of all sizes from small household work to bulk commercial projects. We also take up general inspection routinely for various infrastructural needs.",
 	},
 	{
 		heading: "Appointment:",
 		detail:
-			"Toolboys is a professional handyman team in Dubai offering various kinds of Home and Commercial product installations, assembly, maintenance and repair solutions. Our handymen cater to services of all sizes from small household work to bulk commercial projects. We also take up general inspection routinely for various infrastructural needs.",
+			"HomeRepairFix is a professional handyman team in Dubai offering various kinds of Home and Commercial product installations, assembly, maintenance and repair solutions. Our handymen cater to services of all sizes from small household work to bulk commercial projects. We also take up general inspection routinely for various infrastructural needs.",
 	},
 	{
 		heading: "Appointment:",
 		detail:
-			"Toolboys is a professional handyman team in Dubai offering various kinds of Home and Commercial product installations, assembly, maintenance and repair solutions. Our handymen cater to services of all sizes from small household work to bulk commercial projects. We also take up general inspection routinely for various infrastructural needs.",
+			"HomeRepairFix is a professional handyman team in Dubai offering various kinds of Home and Commercial product installations, assembly, maintenance and repair solutions. Our handymen cater to services of all sizes from small household work to bulk commercial projects. We also take up general inspection routinely for various infrastructural needs.",
 	},
 ];
 export const WhyUsData = [
 	{
 		heading: "Appointment:",
 		detail:
-			"Toolboys is a professional handyman team in Dubai offering various kinds of Home and Commercial product installations, assembly, maintenance and repair solutions. Our handymen cater to services of all sizes from small household work to bulk commercial projects. We also take up general inspection routinely for various infrastructural needs.",
+			"HomeRepairFix is a professional handyman team in Dubai offering various kinds of Home and Commercial product installations, assembly, maintenance and repair solutions. Our handymen cater to services of all sizes from small household work to bulk commercial projects. We also take up general inspection routinely for various infrastructural needs.",
 	},
 	{
 		heading: "Appointment:",
 		detail:
-			"Toolboys is a professional handyman team in Dubai offering various kinds of Home and Commercial product installations, assembly, maintenance and repair solutions. Our handymen cater to services of all sizes from small household work to bulk commercial projects. We also take up general inspection routinely for various infrastructural needs.",
+			"HomeRepairFix is a professional handyman team in Dubai offering various kinds of Home and Commercial product installations, assembly, maintenance and repair solutions. Our handymen cater to services of all sizes from small household work to bulk commercial projects. We also take up general inspection routinely for various infrastructural needs.",
 	},
 	{
 		heading: "Appointment:",
 		detail:
-			"Toolboys is a professional handyman team in Dubai offering various kinds of Home and Commercial product installations, assembly, maintenance and repair solutions. Our handymen cater to services of all sizes from small household work to bulk commercial projects. We also take up general inspection routinely for various infrastructural needs.",
+			"HomeRepairFix is a professional handyman team in Dubai offering various kinds of Home and Commercial product installations, assembly, maintenance and repair solutions. Our handymen cater to services of all sizes from small household work to bulk commercial projects. We also take up general inspection routinely for various infrastructural needs.",
 	},
 	{
 		heading: "Appointment:",
 		detail:
-			"Toolboys is a professional handyman team in Dubai offering various kinds of Home and Commercial product installations, assembly, maintenance and repair solutions. Our handymen cater to services of all sizes from small household work to bulk commercial projects. We also take up general inspection routinely for various infrastructural needs.",
+			"HomeRepairFix is a professional handyman team in Dubai offering various kinds of Home and Commercial product installations, assembly, maintenance and repair solutions. Our handymen cater to services of all sizes from small household work to bulk commercial projects. We also take up general inspection routinely for various infrastructural needs.",
 	},
 	{
 		heading: "Appointment:",
 		detail:
-			"Toolboys is a professional handyman team in Dubai offering various kinds of Home and Commercial product installations, assembly, maintenance and repair solutions. Our handymen cater to services of all sizes from small household work to bulk commercial projects. We also take up general inspection routinely for various infrastructural needs.",
+			"HomeRepairFix is a professional handyman team in Dubai offering various kinds of Home and Commercial product installations, assembly, maintenance and repair solutions. Our handymen cater to services of all sizes from small household work to bulk commercial projects. We also take up general inspection routinely for various infrastructural needs.",
 	},
 	{
 		heading: "Appointment:",
 		detail:
-			"Toolboys is a professional handyman team in Dubai offering various kinds of Home and Commercial product installations, assembly, maintenance and repair solutions. Our handymen cater to services of all sizes from small household work to bulk commercial projects. We also take up general inspection routinely for various infrastructural needs.",
+			"HomeRepairFix is a professional handyman team in Dubai offering various kinds of Home and Commercial product installations, assembly, maintenance and repair solutions. Our handymen cater to services of all sizes from small household work to bulk commercial projects. We also take up general inspection routinely for various infrastructural needs.",
 	},
 	{
 		heading: "Appointment:",
 		detail:
-			"Toolboys is a professional handyman team in Dubai offering various kinds of Home and Commercial product installations, assembly, maintenance and repair solutions. Our handymen cater to services of all sizes from small household work to bulk commercial projects. We also take up general inspection routinely for various infrastructural needs.",
+			"HomeRepairFix is a professional handyman team in Dubai offering various kinds of Home and Commercial product installations, assembly, maintenance and repair solutions. Our handymen cater to services of all sizes from small household work to bulk commercial projects. We also take up general inspection routinely for various infrastructural needs.",
 	},
 	{
 		heading: "Appointment:",
 		detail:
-			"Toolboys is a professional handyman team in Dubai offering various kinds of Home and Commercial product installations, assembly, maintenance and repair solutions. Our handymen cater to services of all sizes from small household work to bulk commercial projects. We also take up general inspection routinely for various infrastructural needs.",
+			"HomeRepairFix is a professional handyman team in Dubai offering various kinds of Home and Commercial product installations, assembly, maintenance and repair solutions. Our handymen cater to services of all sizes from small household work to bulk commercial projects. We also take up general inspection routinely for various infrastructural needs.",
 	},
 	{
 		heading: "Appointment:",
 		detail:
-			"Toolboys is a professional handyman team in Dubai offering various kinds of Home and Commercial product installations, assembly, maintenance and repair solutions. Our handymen cater to services of all sizes from small household work to bulk commercial projects. We also take up general inspection routinely for various infrastructural needs.",
+			"HomeRepairFix is a professional handyman team in Dubai offering various kinds of Home and Commercial product installations, assembly, maintenance and repair solutions. Our handymen cater to services of all sizes from small household work to bulk commercial projects. We also take up general inspection routinely for various infrastructural needs.",
 	},
 ];
 export const feedBackData = [
 	{
-		img: press,
+		img: zaka,
 		name: "zaka Rehman",
 		detail:
-			"Highly recommended! Responsive team, and they fixed my Electrical work very quickly. They took all the necessary steps adhering to the Covid-19 safety measures and precautions when entering my place. Would hire them again if anything else needs repairing. Keep it up guys!",
+			"This Company is very great. Employee of this company is very nice and hardworking.",
 	},
 	{
-		img: press,
-		name: "zaka Rehman",
+		img: UsamaSam,
+		name: "Usama Sam",
 		detail:
-			"Responsible group of individuals who gets the work done in the most professional way. Very straight and professional approach towards the issue and concerns. For me they are the To-go guys for all sorts of maintenance and repair in the house. Highly recommended from my side.",
+			"highly suggesting! sensitive group, and they fixed my electrics work very quickly. They took all the necessary steps being fixed to the Covid-19 1 safety measures and things done to keep off danger when going in, coming in my place. would get use of person for money them again if anything else needs putting right. Keep it up men, boys!",
 	},
 	{
-		img: press,
-		name: "zaka Rehman",
+		img: Zulqer,
+		name: "Zulqer Nain Ali Abad",
 		detail:
-			"Very professional work done for my villa, they have an amazing plumber service. highly recommended.",
+			"Very Impressive And HeardWorking Professionals in Dubai. And Their Work is Very Impressive. Keep It Up Boys. One day you will achieve very high position in dubai",
 	},
 	{
-		img: press,
-		name: "zaka Rehman",
+		img: Aqeel,
+		name: "Aqeel",
 		detail:
-			"We had some urgent work on a Friday late evening...our bathroom faucet had a leak. They came to fix this late evening when other two refused. Good work and reasonable charges...whats noticable they came in full PPE and sanitized before they left. Highly recommended!!",
+			"We had some urgent work on a Friday late evening - our bathroom faucet had a leak. They came to fix it at 7:00pm when two of the other refused. A good job and reasonable charges given the circumstances, recommended.",
 	},
 	{
-		img: press,
-		name: "zaka Rehman",
+		img: Asfand,
+		name: "Asfand Yar Khan",
 		detail:
-			"The team of Tool Boys is really efficient and helpful, specially when u have emergency. I had a massive water leaking outside my villa during the lockdown.The major water supply pipe got leakage. Tool Boys was only one who came and solve the issue out of 6 companies which I was try to contact . Thank u guys for being so helpful!",
-	},
-	{
-		img: press,
-		name: "zaka Rehman",
-		detail:
-			"Highly recommended! Responsive team, and they fixed my Electrical work very quickly. They took all the necessary steps adhering to the Covid-19 safety measures and precautions when entering my place. Would hire them again if anything else needs repairing. Keep it up guys!",
+			"The guys from HomeRepairFix really efficient and helpful, specially would resolve your service issue during appsfg. There was even an emergency trip was only one of company which I contacted and HomeRepairFix were among the 6 companies I tried to contact.",
 	},
 ];
 export const ServicesArray = [
@@ -150,18 +149,19 @@ export const ServicesArray = [
 		detail: {
 			bannerImage: bannerImage,
 			upperLeftDetail: {
-				heading: "Toolboys, Dubai's best painting service!",
+				heading: "HomeRepairFix, Dubai's best painting service!",
 				details:
-					"The outer layer of the walls tends to get worn out due to rain, dust, accidental handprints, children’s drawings, furniture marks, stains and whatnot. This reduces the overall look and brightness of the house. Hence, buildings often require time to time painting job done to keep their charm up. A lick of paint can do wonders to the entire building, whether its interiors or exteriors of the structure. But if you’re wondering where you can get expert-level wall painting services in Dubai- Toolboys is the answer!",
+					"The outer layer of the walls tends to get worn out due to rain, dust, accidental handprints, children’s drawings, furniture marks, stains and whatnot. This reduces the overall look and brightness of the house. Hence, buildings often require time to time painting job done to keep their charm up. A lick of paint can do wonders to the entire building, whether its interiors or exteriors of the structure. But if you’re wondering where you can get expert-level wall painting services in Dubai- HomeRepairFix is the answer!",
 			},
 			upperRightDetail: {
 				heading: "Book Painting Service",
 				number: " 800 8289",
 				details:
-					"Toolboys’ one of the many expertise is painting services which can be used for all your residential and commercial structures. They are currently the superior painting company in Dubai known majorly for handling different kinds of painting services for various types of infrastructures. With our skilled and efficient painters in Dubai, you can decorate or redecorate your homes, offices, or any other buildings you own. So get together with the Toolboys painters and avail exquisite makeover to your building.",
+					"HomeRepairFix’ one of the many expertise is painting services which can be used for all your residential and commercial structures. They are currently the superior painting company in Dubai known majorly for handling different kinds of painting services for various types of infrastructures. With our skilled and efficient painters in Dubai, you can decorate or redecorate your homes, offices, or any other buildings you own. So get together with the HomeRepairFix painters and avail exquisite makeover to your building.",
 			},
 			midDetail: {
-				heading: "Checkout Toolboys Assorted Wall Painting Services in Dubai",
+				heading:
+					"Checkout HomeRepairFix Assorted Wall Painting Services in Dubai",
 				video: "https://www.youtube.com/watch?v=ysz5S6PUM-U",
 				details:
 					"Our painting company has tremendously proficient painters ready to avail our various wall painting services along with other maintenance assistances. These include:",
@@ -174,7 +174,7 @@ export const ServicesArray = [
 			lowerCenterDetail: {
 				heading: "Exterior painting:",
 				details:
-					"The outer look of the building is as important as inner. Hence, we cater to painting all kinds of walls (concrete, stone, brick or whatever), windows, doors, gates and such similar things. Our master painters will also advise you on the weather conditions and the paint that will perfectly suit the Dubai buildings. Toolboys painters are always equipped with appropriate tools like ladders, ropes, paintbrushes and every other thing required to finish the job accurately.",
+					"The outer look of the building is as important as inner. Hence, we cater to painting all kinds of walls (concrete, stone, brick or whatever), windows, doors, gates and such similar things. Our master painters will also advise you on the weather conditions and the paint that will perfectly suit the Dubai buildings. HomeRepairFix painters are always equipped with appropriate tools like ladders, ropes, paintbrushes and every other thing required to finish the job accurately.",
 			},
 			lowerRightDetail: {
 				heading: "Maintenance works:",
@@ -193,18 +193,19 @@ export const ServicesArray = [
 		detail: {
 			bannerImage: bannerImage,
 			upperLeftDetail: {
-				heading: "Toolboys, Dubai's best painting service!",
+				heading: "HomeRepairFix, Dubai's best painting service!",
 				details:
-					"The outer layer of the walls tends to get worn out due to rain, dust, accidental handprints, children’s drawings, furniture marks, stains and whatnot. This reduces the overall look and brightness of the house. Hence, buildings often require time to time painting job done to keep their charm up. A lick of paint can do wonders to the entire building, whether its interiors or exteriors of the structure. But if you’re wondering where you can get expert-level wall painting services in Dubai- Toolboys is the answer!",
+					"The outer layer of the walls tends to get worn out due to rain, dust, accidental handprints, children’s drawings, furniture marks, stains and whatnot. This reduces the overall look and brightness of the house. Hence, buildings often require time to time painting job done to keep their charm up. A lick of paint can do wonders to the entire building, whether its interiors or exteriors of the structure. But if you’re wondering where you can get expert-level wall painting services in Dubai- HomeRepairFix is the answer!",
 			},
 			upperRightDetail: {
 				heading: "Book Painting Service",
 				number: " 800 8289",
 				details:
-					"Toolboys’ one of the many expertise is painting services which can be used for all your residential and commercial structures. They are currently the superior painting company in Dubai known majorly for handling different kinds of painting services for various types of infrastructures. With our skilled and efficient painters in Dubai, you can decorate or redecorate your homes, offices, or any other buildings you own. So get together with the Toolboys painters and avail exquisite makeover to your building.",
+					"HomeRepairFix’ one of the many expertise is painting services which can be used for all your residential and commercial structures. They are currently the superior painting company in Dubai known majorly for handling different kinds of painting services for various types of infrastructures. With our skilled and efficient painters in Dubai, you can decorate or redecorate your homes, offices, or any other buildings you own. So get together with the HomeRepairFix painters and avail exquisite makeover to your building.",
 			},
 			midDetail: {
-				heading: "Checkout Toolboys Assorted Wall Painting Services in Dubai",
+				heading:
+					"Checkout HomeRepairFix Assorted Wall Painting Services in Dubai",
 				video: "https://www.youtube.com/watch?v=ysz5S6PUM-U",
 				details:
 					"Our painting company has tremendously proficient painters ready to avail our various wall painting services along with other maintenance assistances. These include:",
@@ -217,7 +218,7 @@ export const ServicesArray = [
 			lowerCenterDetail: {
 				heading: "Exterior painting:",
 				details:
-					"The outer look of the building is as important as inner. Hence, we cater to painting all kinds of walls (concrete, stone, brick or whatever), windows, doors, gates and such similar things. Our master painters will also advise you on the weather conditions and the paint that will perfectly suit the Dubai buildings. Toolboys painters are always equipped with appropriate tools like ladders, ropes, paintbrushes and every other thing required to finish the job accurately.",
+					"The outer look of the building is as important as inner. Hence, we cater to painting all kinds of walls (concrete, stone, brick or whatever), windows, doors, gates and such similar things. Our master painters will also advise you on the weather conditions and the paint that will perfectly suit the Dubai buildings. HomeRepairFix painters are always equipped with appropriate tools like ladders, ropes, paintbrushes and every other thing required to finish the job accurately.",
 			},
 			lowerRightDetail: {
 				heading: "Maintenance works:",
@@ -236,18 +237,19 @@ export const ServicesArray = [
 		detail: {
 			bannerImage: bannerImage,
 			upperLeftDetail: {
-				heading: "Toolboys, Dubai's best painting service!",
+				heading: "HomeRepairFix, Dubai's best painting service!",
 				details:
-					"The outer layer of the walls tends to get worn out due to rain, dust, accidental handprints, children’s drawings, furniture marks, stains and whatnot. This reduces the overall look and brightness of the house. Hence, buildings often require time to time painting job done to keep their charm up. A lick of paint can do wonders to the entire building, whether its interiors or exteriors of the structure. But if you’re wondering where you can get expert-level wall painting services in Dubai- Toolboys is the answer!",
+					"The outer layer of the walls tends to get worn out due to rain, dust, accidental handprints, children’s drawings, furniture marks, stains and whatnot. This reduces the overall look and brightness of the house. Hence, buildings often require time to time painting job done to keep their charm up. A lick of paint can do wonders to the entire building, whether its interiors or exteriors of the structure. But if you’re wondering where you can get expert-level wall painting services in Dubai- HomeRepairFix is the answer!",
 			},
 			upperRightDetail: {
 				heading: "Book Painting Service",
 				number: " 800 8289",
 				details:
-					"Toolboys’ one of the many expertise is painting services which can be used for all your residential and commercial structures. They are currently the superior painting company in Dubai known majorly for handling different kinds of painting services for various types of infrastructures. With our skilled and efficient painters in Dubai, you can decorate or redecorate your homes, offices, or any other buildings you own. So get together with the Toolboys painters and avail exquisite makeover to your building.",
+					"HomeRepairFix’ one of the many expertise is painting services which can be used for all your residential and commercial structures. They are currently the superior painting company in Dubai known majorly for handling different kinds of painting services for various types of infrastructures. With our skilled and efficient painters in Dubai, you can decorate or redecorate your homes, offices, or any other buildings you own. So get together with the HomeRepairFix painters and avail exquisite makeover to your building.",
 			},
 			midDetail: {
-				heading: "Checkout Toolboys Assorted Wall Painting Services in Dubai",
+				heading:
+					"Checkout HomeRepairFix Assorted Wall Painting Services in Dubai",
 				video: "https://www.youtube.com/watch?v=ysz5S6PUM-U",
 				details:
 					"Our painting company has tremendously proficient painters ready to avail our various wall painting services along with other maintenance assistances. These include:",
@@ -260,7 +262,7 @@ export const ServicesArray = [
 			lowerCenterDetail: {
 				heading: "Exterior painting:",
 				details:
-					"The outer look of the building is as important as inner. Hence, we cater to painting all kinds of walls (concrete, stone, brick or whatever), windows, doors, gates and such similar things. Our master painters will also advise you on the weather conditions and the paint that will perfectly suit the Dubai buildings. Toolboys painters are always equipped with appropriate tools like ladders, ropes, paintbrushes and every other thing required to finish the job accurately.",
+					"The outer look of the building is as important as inner. Hence, we cater to painting all kinds of walls (concrete, stone, brick or whatever), windows, doors, gates and such similar things. Our master painters will also advise you on the weather conditions and the paint that will perfectly suit the Dubai buildings. HomeRepairFix painters are always equipped with appropriate tools like ladders, ropes, paintbrushes and every other thing required to finish the job accurately.",
 			},
 			lowerRightDetail: {
 				heading: "Maintenance works:",
@@ -279,18 +281,19 @@ export const ServicesArray = [
 		detail: {
 			bannerImage: bannerImage,
 			upperLeftDetail: {
-				heading: "Toolboys, Dubai's best painting service!",
+				heading: "HomeRepairFix, Dubai's best painting service!",
 				details:
-					"The outer layer of the walls tends to get worn out due to rain, dust, accidental handprints, children’s drawings, furniture marks, stains and whatnot. This reduces the overall look and brightness of the house. Hence, buildings often require time to time painting job done to keep their charm up. A lick of paint can do wonders to the entire building, whether its interiors or exteriors of the structure. But if you’re wondering where you can get expert-level wall painting services in Dubai- Toolboys is the answer!",
+					"The outer layer of the walls tends to get worn out due to rain, dust, accidental handprints, children’s drawings, furniture marks, stains and whatnot. This reduces the overall look and brightness of the house. Hence, buildings often require time to time painting job done to keep their charm up. A lick of paint can do wonders to the entire building, whether its interiors or exteriors of the structure. But if you’re wondering where you can get expert-level wall painting services in Dubai- HomeRepairFix is the answer!",
 			},
 			upperRightDetail: {
 				heading: "Book Painting Service",
 				number: " 800 8289",
 				details:
-					"Toolboys’ one of the many expertise is painting services which can be used for all your residential and commercial structures. They are currently the superior painting company in Dubai known majorly for handling different kinds of painting services for various types of infrastructures. With our skilled and efficient painters in Dubai, you can decorate or redecorate your homes, offices, or any other buildings you own. So get together with the Toolboys painters and avail exquisite makeover to your building.",
+					"HomeRepairFix’ one of the many expertise is painting services which can be used for all your residential and commercial structures. They are currently the superior painting company in Dubai known majorly for handling different kinds of painting services for various types of infrastructures. With our skilled and efficient painters in Dubai, you can decorate or redecorate your homes, offices, or any other buildings you own. So get together with the HomeRepairFix painters and avail exquisite makeover to your building.",
 			},
 			midDetail: {
-				heading: "Checkout Toolboys Assorted Wall Painting Services in Dubai",
+				heading:
+					"Checkout HomeRepairFix Assorted Wall Painting Services in Dubai",
 				video: "https://www.youtube.com/watch?v=ysz5S6PUM-U",
 				details:
 					"Our painting company has tremendously proficient painters ready to avail our various wall painting services along with other maintenance assistances. These include:",
@@ -303,7 +306,7 @@ export const ServicesArray = [
 			lowerCenterDetail: {
 				heading: "Exterior painting:",
 				details:
-					"The outer look of the building is as important as inner. Hence, we cater to painting all kinds of walls (concrete, stone, brick or whatever), windows, doors, gates and such similar things. Our master painters will also advise you on the weather conditions and the paint that will perfectly suit the Dubai buildings. Toolboys painters are always equipped with appropriate tools like ladders, ropes, paintbrushes and every other thing required to finish the job accurately.",
+					"The outer look of the building is as important as inner. Hence, we cater to painting all kinds of walls (concrete, stone, brick or whatever), windows, doors, gates and such similar things. Our master painters will also advise you on the weather conditions and the paint that will perfectly suit the Dubai buildings. HomeRepairFix painters are always equipped with appropriate tools like ladders, ropes, paintbrushes and every other thing required to finish the job accurately.",
 			},
 			lowerRightDetail: {
 				heading: "Maintenance works:",
@@ -322,18 +325,19 @@ export const ServicesArray = [
 		detail: {
 			bannerImage: bannerImage,
 			upperLeftDetail: {
-				heading: "Toolboys, Dubai's best painting service!",
+				heading: "HomeRepairFix, Dubai's best painting service!",
 				details:
-					"The outer layer of the walls tends to get worn out due to rain, dust, accidental handprints, children’s drawings, furniture marks, stains and whatnot. This reduces the overall look and brightness of the house. Hence, buildings often require time to time painting job done to keep their charm up. A lick of paint can do wonders to the entire building, whether its interiors or exteriors of the structure. But if you’re wondering where you can get expert-level wall painting services in Dubai- Toolboys is the answer!",
+					"The outer layer of the walls tends to get worn out due to rain, dust, accidental handprints, children’s drawings, furniture marks, stains and whatnot. This reduces the overall look and brightness of the house. Hence, buildings often require time to time painting job done to keep their charm up. A lick of paint can do wonders to the entire building, whether its interiors or exteriors of the structure. But if you’re wondering where you can get expert-level wall painting services in Dubai- HomeRepairFix is the answer!",
 			},
 			upperRightDetail: {
 				heading: "Book Painting Service",
 				number: " 800 8289",
 				details:
-					"Toolboys’ one of the many expertise is painting services which can be used for all your residential and commercial structures. They are currently the superior painting company in Dubai known majorly for handling different kinds of painting services for various types of infrastructures. With our skilled and efficient painters in Dubai, you can decorate or redecorate your homes, offices, or any other buildings you own. So get together with the Toolboys painters and avail exquisite makeover to your building.",
+					"HomeRepairFix’ one of the many expertise is painting services which can be used for all your residential and commercial structures. They are currently the superior painting company in Dubai known majorly for handling different kinds of painting services for various types of infrastructures. With our skilled and efficient painters in Dubai, you can decorate or redecorate your homes, offices, or any other buildings you own. So get together with the HomeRepairFix painters and avail exquisite makeover to your building.",
 			},
 			midDetail: {
-				heading: "Checkout Toolboys Assorted Wall Painting Services in Dubai",
+				heading:
+					"Checkout HomeRepairFix Assorted Wall Painting Services in Dubai",
 				video: "https://www.youtube.com/watch?v=ysz5S6PUM-U",
 				details:
 					"Our painting company has tremendously proficient painters ready to avail our various wall painting services along with other maintenance assistances. These include:",
@@ -346,7 +350,7 @@ export const ServicesArray = [
 			lowerCenterDetail: {
 				heading: "Exterior painting:",
 				details:
-					"The outer look of the building is as important as inner. Hence, we cater to painting all kinds of walls (concrete, stone, brick or whatever), windows, doors, gates and such similar things. Our master painters will also advise you on the weather conditions and the paint that will perfectly suit the Dubai buildings. Toolboys painters are always equipped with appropriate tools like ladders, ropes, paintbrushes and every other thing required to finish the job accurately.",
+					"The outer look of the building is as important as inner. Hence, we cater to painting all kinds of walls (concrete, stone, brick or whatever), windows, doors, gates and such similar things. Our master painters will also advise you on the weather conditions and the paint that will perfectly suit the Dubai buildings. HomeRepairFix painters are always equipped with appropriate tools like ladders, ropes, paintbrushes and every other thing required to finish the job accurately.",
 			},
 			lowerRightDetail: {
 				heading: "Maintenance works:",
@@ -365,18 +369,19 @@ export const ServicesArray = [
 		detail: {
 			bannerImage: bannerImage,
 			upperLeftDetail: {
-				heading: "Toolboys, Dubai's best painting service!",
+				heading: "HomeRepairFix, Dubai's best painting service!",
 				details:
-					"The outer layer of the walls tends to get worn out due to rain, dust, accidental handprints, children’s drawings, furniture marks, stains and whatnot. This reduces the overall look and brightness of the house. Hence, buildings often require time to time painting job done to keep their charm up. A lick of paint can do wonders to the entire building, whether its interiors or exteriors of the structure. But if you’re wondering where you can get expert-level wall painting services in Dubai- Toolboys is the answer!",
+					"The outer layer of the walls tends to get worn out due to rain, dust, accidental handprints, children’s drawings, furniture marks, stains and whatnot. This reduces the overall look and brightness of the house. Hence, buildings often require time to time painting job done to keep their charm up. A lick of paint can do wonders to the entire building, whether its interiors or exteriors of the structure. But if you’re wondering where you can get expert-level wall painting services in Dubai- HomeRepairFix is the answer!",
 			},
 			upperRightDetail: {
 				heading: "Book Painting Service",
 				number: " 800 8289",
 				details:
-					"Toolboys’ one of the many expertise is painting services which can be used for all your residential and commercial structures. They are currently the superior painting company in Dubai known majorly for handling different kinds of painting services for various types of infrastructures. With our skilled and efficient painters in Dubai, you can decorate or redecorate your homes, offices, or any other buildings you own. So get together with the Toolboys painters and avail exquisite makeover to your building.",
+					"HomeRepairFix’ one of the many expertise is painting services which can be used for all your residential and commercial structures. They are currently the superior painting company in Dubai known majorly for handling different kinds of painting services for various types of infrastructures. With our skilled and efficient painters in Dubai, you can decorate or redecorate your homes, offices, or any other buildings you own. So get together with the HomeRepairFix painters and avail exquisite makeover to your building.",
 			},
 			midDetail: {
-				heading: "Checkout Toolboys Assorted Wall Painting Services in Dubai",
+				heading:
+					"Checkout HomeRepairFix Assorted Wall Painting Services in Dubai",
 				video: "https://www.youtube.com/watch?v=ysz5S6PUM-U",
 				details:
 					"Our painting company has tremendously proficient painters ready to avail our various wall painting services along with other maintenance assistances. These include:",
@@ -389,7 +394,7 @@ export const ServicesArray = [
 			lowerCenterDetail: {
 				heading: "Exterior painting:",
 				details:
-					"The outer look of the building is as important as inner. Hence, we cater to painting all kinds of walls (concrete, stone, brick or whatever), windows, doors, gates and such similar things. Our master painters will also advise you on the weather conditions and the paint that will perfectly suit the Dubai buildings. Toolboys painters are always equipped with appropriate tools like ladders, ropes, paintbrushes and every other thing required to finish the job accurately.",
+					"The outer look of the building is as important as inner. Hence, we cater to painting all kinds of walls (concrete, stone, brick or whatever), windows, doors, gates and such similar things. Our master painters will also advise you on the weather conditions and the paint that will perfectly suit the Dubai buildings. HomeRepairFix painters are always equipped with appropriate tools like ladders, ropes, paintbrushes and every other thing required to finish the job accurately.",
 			},
 			lowerRightDetail: {
 				heading: "Maintenance works:",
@@ -408,18 +413,19 @@ export const ServicesArray = [
 		detail: {
 			bannerImage: bannerImage,
 			upperLeftDetail: {
-				heading: "Toolboys, Dubai's best painting service!",
+				heading: "HomeRepairFix, Dubai's best painting service!",
 				details:
-					"The outer layer of the walls tends to get worn out due to rain, dust, accidental handprints, children’s drawings, furniture marks, stains and whatnot. This reduces the overall look and brightness of the house. Hence, buildings often require time to time painting job done to keep their charm up. A lick of paint can do wonders to the entire building, whether its interiors or exteriors of the structure. But if you’re wondering where you can get expert-level wall painting services in Dubai- Toolboys is the answer!",
+					"The outer layer of the walls tends to get worn out due to rain, dust, accidental handprints, children’s drawings, furniture marks, stains and whatnot. This reduces the overall look and brightness of the house. Hence, buildings often require time to time painting job done to keep their charm up. A lick of paint can do wonders to the entire building, whether its interiors or exteriors of the structure. But if you’re wondering where you can get expert-level wall painting services in Dubai- HomeRepairFix is the answer!",
 			},
 			upperRightDetail: {
 				heading: "Book Painting Service",
 				number: " 800 8289",
 				details:
-					"Toolboys’ one of the many expertise is painting services which can be used for all your residential and commercial structures. They are currently the superior painting company in Dubai known majorly for handling different kinds of painting services for various types of infrastructures. With our skilled and efficient painters in Dubai, you can decorate or redecorate your homes, offices, or any other buildings you own. So get together with the Toolboys painters and avail exquisite makeover to your building.",
+					"HomeRepairFix’ one of the many expertise is painting services which can be used for all your residential and commercial structures. They are currently the superior painting company in Dubai known majorly for handling different kinds of painting services for various types of infrastructures. With our skilled and efficient painters in Dubai, you can decorate or redecorate your homes, offices, or any other buildings you own. So get together with the HomeRepairFix painters and avail exquisite makeover to your building.",
 			},
 			midDetail: {
-				heading: "Checkout Toolboys Assorted Wall Painting Services in Dubai",
+				heading:
+					"Checkout HomeRepairFix Assorted Wall Painting Services in Dubai",
 				video: "https://www.youtube.com/watch?v=ysz5S6PUM-U",
 				details:
 					"Our painting company has tremendously proficient painters ready to avail our various wall painting services along with other maintenance assistances. These include:",
@@ -432,7 +438,7 @@ export const ServicesArray = [
 			lowerCenterDetail: {
 				heading: "Exterior painting:",
 				details:
-					"The outer look of the building is as important as inner. Hence, we cater to painting all kinds of walls (concrete, stone, brick or whatever), windows, doors, gates and such similar things. Our master painters will also advise you on the weather conditions and the paint that will perfectly suit the Dubai buildings. Toolboys painters are always equipped with appropriate tools like ladders, ropes, paintbrushes and every other thing required to finish the job accurately.",
+					"The outer look of the building is as important as inner. Hence, we cater to painting all kinds of walls (concrete, stone, brick or whatever), windows, doors, gates and such similar things. Our master painters will also advise you on the weather conditions and the paint that will perfectly suit the Dubai buildings. HomeRepairFix painters are always equipped with appropriate tools like ladders, ropes, paintbrushes and every other thing required to finish the job accurately.",
 			},
 			lowerRightDetail: {
 				heading: "Maintenance works:",

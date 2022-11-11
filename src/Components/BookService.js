@@ -17,7 +17,7 @@ function BookService(props) {
 					style={{ fontSize: "45px" }}
 				>
 					<p className="text-white">If You Need Any</p>
-					<p className="PrimaryColor">Handyman Service Related</p>
+					<p className="PrimaryColor">HomeRepairFix Service Related</p>
 				</div>
 				<div className="d-flex justify-content-center align-items-center pt-3">
 					<Link

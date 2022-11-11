@@ -39,10 +39,10 @@ function Header() {
 					</div>
 					<div className="d-flex align-items-center Gap-22">
 						<a href="tel:+923313571616" className="C-pointer">
-							<p>03313571616</p>
+							<p>+971558504862</p>
 						</a>
-						<a href="https://mail.google.com/mail/?view=cm&fs=1&to=zakarehman270@gmail.com">
-							<p>zakarehman270@gmail.com</p>
+						<a href="https://mail.google.com/mail/?view=cm&fs=1&to=Babalqarya4@gmail.com">
+							<p>Babalqarya4@gmail.com</p>
 						</a>
 					</div>
 				</Container>

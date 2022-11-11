@@ -12,7 +12,7 @@ const FeedBackFromClient = () => {
 		speed: 500,
 		slidesToShow: 3,
 		slidesToScroll: 1,
-		autoplay: true,
+		autoplay: false,
 		responsive: [
 			{
 				breakpoint: 1024,
@@ -46,7 +46,7 @@ const FeedBackFromClient = () => {
 		<div className="pt-4 pb-5 outerWrapperFeedback">
 			<div className="d-flex justify-content-center align-items-center Gap pb-4">
 				<p className="HeadingOurServices text-white">
-					Feedback from our real clients
+					Feedback from our clients
 				</p>
 			</div>
 			<Container>
@@ -54,7 +54,7 @@ const FeedBackFromClient = () => {
 					<Slider {...settings}>
 						{feedBackData.map((item, index) => {
 							return (
-								<div key={index}>
+								<div key={index} className=" ms-5 w-75">
 									<FeedBackBox
 										name={item.name}
 										img={item.img}

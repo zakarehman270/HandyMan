@@ -11,7 +11,7 @@ const ProjectCompleted = () => {
 				<div className="text-center">
 					<MdOutlineHomeWork className="outerWrapperIconInProjectCompleted mb-3" />
 					<div className="CountUp">
-						<CountUp className="account-balance" start={0} end={100} delay={0}>
+						<CountUp className="account-balance" start={0} end={1000} delay={0}>
 							{({ countUpRef }) => (
 								<div>
 									<span ref={countUpRef} />
@@ -26,11 +26,11 @@ const ProjectCompleted = () => {
 					<div className="CountUp">
 						<CountUp
 							className="account-balance"
-							start={-875.039}
-							end={160527.012}
+							start={1}
+							end={100}
 							duration={2.75}
 							separator=" "
-							decimals={4}
+							decimals={2}
 							decimal=","
 							onEnd={() => console.log("Ended! 👏")}
 							onStart={() => console.log("Started! 💨")}
@@ -43,11 +43,11 @@ const ProjectCompleted = () => {
 					<div className="CountUp">
 						<CountUp
 							className="account-balance"
-							start={-875.039}
-							end={160527.012}
+							start={1}
+							end={800}
 							duration={2.75}
 							separator=" "
-							decimals={4}
+							decimals={1}
 							decimal=","
 							onEnd={() => console.log("Ended! 👏")}
 							onStart={() => console.log("Started! 💨")}
