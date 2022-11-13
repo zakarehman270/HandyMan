@@ -3,16 +3,22 @@ import { Container, Row, Col } from "react-bootstrap";
 import Footer from "./Footer";
 import Header from "./Header";
 import { useLocation } from "react-router-dom";
-import ReactPlayer from "react-player";
+import { Player } from "video-react";
+import {} from "../../node_modules/video-react/dist/video-react.css";
+import HomeFixDeepCleaning from "../assets/HomeFixDeepCleaning.mp4";
 const Details = (props) => {
 	const [DetailName, setDetailName] = useState("");
 	const location = useLocation();
+	const [VideoURL, setVideoURL] = useState(HomeFixDeepCleaning);
 	let Split = location.pathname.split("/");
 	const { state } = useLocation();
 	useEffect(() => {
 		setDetailName(Split[Split.length - 1]);
+		if (Split[Split.length - 1] === "DeepCleaning") {
+			setVideoURL(HomeFixDeepCleaning);
+		}
 	}, []);
-	console.log("kala", state);
+
 	return (
 		<div className="backgroundColor-grey">
 			<Header />
@@ -44,11 +50,9 @@ const Details = (props) => {
 			<Container className="pt-5 pb-5">
 				<Row>
 					<Col>
-						<ReactPlayer
-							width="100%"
-							height="600px"
-							url={state.details.midDetail.video}
-						/>
+						<Player>
+							<source src={state.details.midDetail.video} />
+						</Player>
 					</Col>
 					<Col>
 						<h3>{state.details.midDetail.heading}</h3>

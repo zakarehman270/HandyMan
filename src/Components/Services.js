@@ -39,7 +39,9 @@ function Services() {
 							<p className="pt-2 PrimaryColor FontWeight ServiceHeading">
 								{item.name}
 							</p>
-							<p className="ParagraphFeedBackBox">{item.description}</p>
+							<p className="ParagraphFeedBackBox HightTextHolderServiceDescription">
+								{item.description}
+							</p>
 							<Link
 								to={`/detail/${item.name.replace(/\s/g, "")}`}
 								state={{ details: item.detail }}

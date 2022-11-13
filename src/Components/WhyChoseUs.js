@@ -22,11 +22,11 @@ function WhyChoseUs() {
 						<div className="d-flex justify-content-center align-items-center Gap">
 							<div className="text-end">
 								<p className="PrimaryColor FontSize30 FontWeight">
-									PROFESSIONAL STAFF
+									Expert Group of Workers
 								</p>
 								<p className="FontSize14">
-									Intellectual and Knowledgeable staff in
-									<br /> their respective fields.
+									Intrinsic and knowledgeable staff in <br /> their respective
+									fields.
 								</p>
 							</div>
 							<div>
@@ -41,7 +41,9 @@ function WhyChoseUs() {
 						<div className="d-flex justify-content-center align-items-center Gap">
 							<div className="text-end">
 								<p className="FontSize30 FontWeight">24/7 ASSISTANCE</p>
-								<p className="FontSize14">Easy availability round the clock.</p>
+								<p className="FontSize14">
+									Smooth Availability Spherical The Clock.
+								</p>
 							</div>
 							<div>
 								<img
@@ -91,7 +93,7 @@ function WhyChoseUs() {
 							<div className="text-end">
 								<p className="FontSize30 FontWeight">RELIABLE CREW</p>
 								<p className="FontSize14">
-									Customer friendly and reliable staff.
+									Consumer Pleasant And Dependable Team Of Workers.
 								</p>
 							</div>
 						</div>
@@ -105,11 +107,11 @@ function WhyChoseUs() {
 							</div>
 							<div className="text-end">
 								<p className="FontSize30 PrimaryColor FontWeight">
-									ONE STOP SHOP
+									ONE Prevent Shop
 								</p>
 								<p className="FontSize14">
-									All types of HomeRepairFix services are available under one
-									roof
+									All Sorts Of HomeRepairFix Services Are Available Beneath One
+									Roof.
 								</p>
 							</div>
 						</div>

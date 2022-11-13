@@ -1,5 +1,5 @@
 import React from "react";
-import Cleaning from "../assets/Carousel/Cleaning10.jpg";
+import HomeFixDeepCleaningImage from "../assets/HomeFixDeepCleaningImage.jpeg";
 import { Link } from "react-router-dom";
 function BookService(props) {
 	return (
@@ -7,7 +7,7 @@ function BookService(props) {
 			className="pt-4 pb-5"
 			style={{
 				opacity: "0.9",
-				backgroundImage: `url(${Cleaning})`,
+				backgroundImage: `url(${HomeFixDeepCleaningImage})`,
 				position: "relative",
 			}}
 		>

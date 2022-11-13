@@ -38,10 +38,16 @@ function Header() {
 						</a>
 					</div>
 					<div className="d-flex align-items-center Gap-22">
-						<a href="tel:+923313571616" className="C-pointer">
+						<a
+							href="tel:+923313571616"
+							className="C-pointer PrimaryColor HoverTextColor text-decoration-none"
+						>
 							<p>+971558504862</p>
 						</a>
-						<a href="https://mail.google.com/mail/?view=cm&fs=1&to=Babalqarya4@gmail.com">
+						<a
+							href="https://mail.google.com/mail/?view=cm&fs=1&to=Babalqarya4@gmail.com"
+							className="PrimaryColor HoverTextColor text-decoration-none"
+						>
 							<p>Babalqarya4@gmail.com</p>
 						</a>
 					</div>
@@ -61,7 +67,7 @@ function Header() {
 					<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 					<Navbar.Collapse id="responsive-navbar-nav">
 						<Nav className="me-auto"></Nav>
-						<Nav className="Gap">
+						<Nav className="Gap-18">
 							<Link
 								to="our-services"
 								spy={true}
@@ -70,7 +76,7 @@ function Header() {
 								offset={-140}
 								className="text-decoration-none HeaderLinks"
 							>
-								<NavLink to="/" className="text-decoration-none">
+								<NavLink to="/" className="text-decoration-none text-black ">
 									Our Services
 								</NavLink>
 							</Link>
@@ -81,7 +87,7 @@ function Header() {
 								offset={-140}
 								className="text-decoration-none HeaderLinks"
 							>
-								<NavLink to="/" className="text-decoration-none">
+								<NavLink to="/" className="text-decoration-none text-black">
 									Book Service
 								</NavLink>
 							</Link>
@@ -90,7 +96,7 @@ function Header() {
 									window.scrollTo(0, 0);
 								}}
 								to="/about-us"
-								className="text-decoration-none HeaderLinks"
+								className="text-decoration-none HeaderLinks text-black"
 							>
 								About Us
 							</NavLink>
@@ -99,7 +105,7 @@ function Header() {
 									window.scrollTo(0, 0);
 								}}
 								to="/contact-us"
-								className="text-decoration-none HeaderLinks"
+								className="text-decoration-none HeaderLinks text-black"
 							>
 								Contact Us
 							</NavLink>

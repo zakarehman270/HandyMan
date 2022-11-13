@@ -51,13 +51,12 @@ function Footer() {
 							<p>Us</p>
 						</div>
 						<div className="d-flex  mt-3 align-items-center Gap FontSize20 FontWeight">
-							<ImLocation2 className="FooterIconLocation" />
-							<p>Location:</p>
+							<ImLocation2 className="FooterIconLocation SizeFooterIcon" />
 							<p>Jessco market building, office 204, Albraha area</p>
 						</div>
 						<hr />
 						<div className="d-flex  align-items-center Gap FontSize20 FontWeight">
-							<MdOutlinePhoneInTalk />
+							<MdOutlinePhoneInTalk className="SizeFooterIcon" />
 							<p>+971558504862</p>
 						</div>
 						<div className="d-flex Gap mt-5 FontSize20 ">
@@ -67,7 +66,7 @@ function Footer() {
 								target="_blank"
 								className="text-decoration-none text-white"
 							>
-								<BsInstagram className="SocialIconsInFooter" />
+								<BsInstagram className="SocialIconsInFooter SizeFooterIcon" />
 							</a>
 							<a
 								href="https://www.facebook.com/"
@@ -75,7 +74,7 @@ function Footer() {
 								target="_blank"
 								className="text-decoration-none text-white"
 							>
-								<FaFacebookF className="SocialIconsInFooter" />
+								<FaFacebookF className="SocialIconsInFooter SizeFooterIcon" />
 							</a>
 							<a
 								href="https://twitter.com/"
@@ -83,7 +82,7 @@ function Footer() {
 								target="_blank"
 								className="text-decoration-none text-white"
 							>
-								<FaTwitter className="SocialIconsInFooter" />
+								<FaTwitter className="SocialIconsInFooter SizeFooterIcon" />
 							</a>
 						</div>
 					</Col>

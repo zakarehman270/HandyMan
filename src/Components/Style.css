@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter&family=Chivo&family=Exo+2:wght@300&family=Faustina:wght@300&family=Karla:wght@300;400&family=Lato&family=Montserrat+Alternates&family=Oswald&family=Poppins&family=Raleway&family=Rubik&family=Volkhov&display=swap");
+
+.fontFamily {
+	font-family: "Chivo", serif;
+}
+
 .outerWrapperBanners {
 	background-color: #cccccc;
 }
@@ -17,6 +23,9 @@ h1 {
 .PrimaryColor {
 	color: #ffbb00;
 }
+.HoverTextColor:hover {
+	color: #ff8800;
+}
 .BackGroundColor {
 	background-color: #ffbb00 !important;
 }
@@ -34,6 +43,9 @@ h1 {
 }
 .Gap {
 	gap: 12px;
+}
+.Gap-18 {
+	gap: 18px;
 }
 .Gap-22 {
 	gap: 22px;
@@ -81,7 +93,7 @@ p {
 	margin-bottom: 0% !important;
 }
 .HeadingOurServices {
-	font-size: 45px;
+	font-size: 43px;
 	font-weight: 600;
 }
 .OuterWrapperServicesImages {
@@ -183,6 +195,9 @@ input[type="text"] {
 .FooterIconLocation {
 	color: white !important;
 }
+.SizeFooterIcon {
+	font-size: 33px;
+}
 .outerWrapperFeedBackBox {
 	min-height: 300px;
 }
@@ -206,6 +221,22 @@ input[type="text"] {
 	color: #777;
 	font-size: 16px;
 	font-weight: 500;
+}
+.HightTextHolderServiceDescription {
+	width: 290px;
+	height: 100px;
+	line-height: 20px;
+	word-break: break-all;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-moz-box-orient: vertical;
+	-ms-box-orient: vertical;
+	box-orient: vertical;
+	-webkit-line-clamp: 5;
+	-moz-line-clamp: 5;
+	-ms-line-clamp: 5;
+	line-clamp: 5;
+	overflow: hidden;
 }
 .outerContainerProjectCompleted {
 	background-color: #282f40;
@@ -235,7 +266,7 @@ input[type="text"] {
 }
 .labelAboutUs {
 	font-weight: 900;
-	font-size: 17px;
+	font-size: 22px;
 }
 .whatsappIcon {
 	bottom: 200px;
@@ -265,6 +296,19 @@ input[type="text"] {
 }
 .HeaderSocialMediaIcons {
 	font-size: 21px;
+}
+.CarouselHeading {
+	font-size: 74px;
+	letter-spacing: 3px;
+	font-weight: 500;
+	margin: 0px !important;
+	color: #ffbb00 !important;
+}
+.CarouselDescription {
+	font-size: 30px;
+	letter-spacing: 3px;
+	font-weight: 500;
+	color: #ffbb00 !important;
 }
 @media only screen and (max-width: 888px) {
 	.HeadingBookService {
