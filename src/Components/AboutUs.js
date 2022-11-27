@@ -3,10 +3,10 @@ import { Container } from "react-bootstrap";
 import Footer from "./Footer";
 import Header from "./Header";
 import { AboutUsData, WhyUsData } from "../Data";
-import HomeFixRepair from "../assets/HomeFixRepair.mp4";
+import HomeFixRepair from "../assets/Videos/HomeFixAboutUs.mp4";
 import { Player } from "video-react";
 import {} from "../../node_modules/video-react/dist/video-react.css";
-import DubaiWater from "../assets/DubaiWater.jpg";
+import DubaiWater from "../assets/handyManService.jpg";
 export const AboutUs = () => {
 	return (
 		<div className="backgroundColor-grey">

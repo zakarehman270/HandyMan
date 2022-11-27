@@ -9,22 +9,72 @@ import Zulqer from "./assets/Zulqer.PNG";
 import UsamaSam from "./assets/UsamaSam.PNG";
 import Aqeel from "./assets/Aqeel.PNG";
 import Asfand from "./assets/Asfand.PNG";
-import HomeFixDeepCleaningImage from "./assets/HomeFixDeepCleaningImage.jpeg";
-import HomeFixElectricianPic from "./assets/HomeFixElectricianPic.jpg";
-import HomeFixRepairPlumbing from "./assets/HomeFixRepairPlumbing.jpg";
-import DubaiPic from "./assets/DubaiPic.jpg";
 import HomeFixPicPainting from "./assets/HomeFixPicPainting.jpg";
-import handyManPic from "./assets/handyManPic.jpg";
-import HomeFixCarpenterPic from "./assets/HomeFixCarpenterPic.jpg";
+import CarpenterBanner from "./assets/Banners/CarpenterPic.jpg";
+import CleaningBanner from "./assets/Banners/CleaningPic.jpg";
+import DeepCleaningBanner from "./assets/Banners/DeepCleaningPic.jpg";
+import ElectricianBanner from "./assets/Banners/ElectricianPic.png";
+import HandyManBanner from "./assets/Banners/HandyManPic.jpg";
+import PaintingBanner from "./assets/Banners/PaintingPic.png";
+import PlumbingBanner from "./assets/Banners/PlumbingPic.jpg";
+import HomeFixCarpenterVideo from "./assets/Videos/HomeFixCarpenter.mp4";
+import HomeFixCleaningVideo from "./assets/Videos/HomeFixCleaning.mp4";
+import HomeFixDeepCleaningVideo from "./assets/Videos/HomeFixDeepCleaning.mp4";
+import HomeFixElectricianVideo from "./assets/Videos/HomeFixElectrician.mp4";
+import HomeFixHandyManVideo from "./assets/Videos/HomeFixHandyMan.mp4";
+import HomeFixPaintingVideo from "./assets/Videos/HomeFixPainting.mp4";
+import HomeFixPlumbingVideo from "./assets/Videos/HomeFixPlumbing.mp4";
 
-import HomeFixDeepCleaning from "./assets/HomeFixDeepCleaning.mp4";
-import HomeFixHandyMan from "./assets/HomeFixHandyMan.mp4";
-import HomeFixCarpenter from "./assets/HomeFixCarpenter.mp4";
-import HomeFixElectrician from "./assets/HomeFixElectrician.mp4";
-import HomeFixHouseCleaning from "./assets/HomeFixHouseCleaning.mp4";
-import HomeFixPlumbingVideo from "./assets/HomeFixPlumbingVideo.mp4";
-import HomeFixPainting from "./assets/HomeFixPainting.mp4";
 export const AboutUsData = [
+	{
+		heading: "10+ YEARS EXPERIENCE",
+		detail:
+			"HomeFixRepair is one of the leading regional incorporated centers management answers company within the center East. Its service specialties are unfold across integrated facilities control, waste control, and lots of greater. HomeFixRepair released its domestic pro maintenance offerings in 2009 as an one-of-a-kind carrier department to hold and keep houses within the UAE.HomeFixRepair has accrued a group of reliable home preservation specialists to decorate the value, life, and beauty of your house. Our 24/7 preservation carrier team takes care of your house so you can cognizance at the critical things in existence. Time is treasured and so is your private home. HomeFixRepair is here to serve you so you in no way ought to surrender on both of them.",
+	},
+	{
+		heading: "Our records",
+		detail:
+			"HomeFixRepair renovation services in 2009 as an specific provider department to keep and keep houses inside the UAE.",
+	},
+	{
+		heading: "Our challenge",
+		detail:
+			"To emerge as a pacesetter in top rate home protection services and solutions for the duration of the UAE with an first rate crew of professionals.",
+	},
+	{
+		heading: "Our imaginative and prescient",
+		detail:
+			"HomeFixRepair dedicates itself to guaranteeing expert domestic preservation offerings through a dating of accept as true with, revel in, and reliability that continues to exceed purchaser expectations.",
+	},
+	{
+		heading: "HomeFixRepair offerings",
+		detail:
+			" actual to their call, are available pretty available. And it isn't simply while you are shifting residence or sporting out a renovation which you need professional handyman offerings – you could even be making a brand new addition, require an extraordinary process achieved or need an emergency handyman due to the fact something wishes an pressing spot of repair. some thing your need and but small or complex the job, HomeGenie has the great handyman in Dubai for you. So whether or not it is your tv that wishes to be relocated or it's miles striking up the state-of-the-art curtains which you simply bought for the dwelling room, we've got a reasonably-priced handyman who will get your job completed.All we need you to do is down load the free HomeGenie app for Android and iOS, and a totally skilled handyman will reach your own home at a date and time that suits you. if your atypical process is some thing that needs to be sorted right now, HomeGenie also offers Emergency and identical Day handyman offerings.reserving our Emergency facility approach that a handyman will arrive at your property within 2 hours of reserving the carrier, at an extra price. The same Day carrier will location a handyman at your home to collect your modular furnishings or restore the door lock before 6PM that day, supplied you booked among 8 AM and 12 PM.",
+	},
+	{
+		heading: "while is a HomeFixRepair generally required to be known as in?",
+		detail:
+			"HomeFixRepair are typically required for all form of atypical jobs in the house, but, in the main for jobs require professional drilling into partitions and ceilings to grasp, mount or deploy fixtures. in addition, handyman additionally offer IKEA or other modular furniture assembly required upon a new purchase or after a pass.",
+	},
+	{
+		heading:
+			"What are a number of the things to be careful about whilst hiring a HomeFixRepair ?",
+		detail:
+			"while looking and hiring a HomeFixRepair in Dubai or UAE, it is essential to keep in mind the subsequent :1. The HomeFixRepair has the visa from a business enterprise with the perfect exchange license, with unique HomeFixRepair related classes, accepted via the financial development department.2. All essential insurances are in region – third birthday party liability, people' medical insurance, and employees’ compensation in your peace of mind.3. because the high-quality of the carrier is dependent on the person’s qualification, experience, mind-set, and communique competencies, it is important to have the HomeFixRepair, and no longer the company, checked.four. The HomeFixRepair is prompt and responds to consumer queries, either directly or directing to the proper professional individual in case unsure approximately the provider.Failure to conform with neighborhood rules, as mentioned above, can result in hefty fines for customers",
+	},
+	{
+		heading: "Why do HomeFixRepair charge by the hour?",
+		detail:
+			"HomeFixRepair offerings do now not typically require an inspection and may be done right away e.g. mounting a tv, curtain, or blind installation if the components are available. It, therefore, does now not make experience to do an inspection and charge a name-out. consequently it is more obvious and honest to each parties, to observe a in keeping with hour charging technique.",
+	},
+	{
+		heading:
+			"What are commonplace accidents that could occur because of low-satisfactory HomeFixRepair services?",
+		detail:
+			"Even as hanging furniture, you may drill via a twine containment or a water pipe in the wall or drill the hollow too unfastened that the fixture isn’t firmly hung to the wall. also, the strength of the screw won't be appropriate to take the burden of the wall fixture making it liable to fall over time. also, the level of the wall fixture if no longer done well will cause a fall as weight of the fixture does not get balanced and remains hinged to one aspect. If proper cleanup isn't finished there could a nail that would hurt someone walking casually across the work place.",
+	},
+];
+export const TermAndConditions = [
 	{
 		heading: "10+ YEARS EXPERIENCE",
 		detail:
@@ -156,7 +206,7 @@ export const ServicesArray = [
 		vat: "12",
 		price: "112",
 		detail: {
-			bannerImage: DubaiPic,
+			bannerImage: CleaningBanner,
 			upperLeftDetail: {
 				heading: "HomeRepairFix, Dubai's best house Cleaning service!",
 				details:
@@ -170,7 +220,7 @@ export const ServicesArray = [
 			},
 			midDetail: {
 				heading: "what's residence cleaning service?",
-				video: HomeFixHouseCleaning,
+				video: HomeFixCleaningVideo,
 				details:
 					"HomeFixRepair's house cleaning provider includes everything you need for a very well wiped clean home. Our experts are well-educated, and are geared up to easy your home with the pleasant tools. house cleansing isn't any comic story, and with HomeFixRepair, you may depart it to professionals.",
 			},
@@ -200,7 +250,7 @@ export const ServicesArray = [
 		vat: "14",
 		price: "114",
 		detail: {
-			bannerImage: HomeFixCarpenterPic,
+			bannerImage: CarpenterBanner,
 			upperLeftDetail: {
 				heading: "HomeRepairFix, Dubai's best Carpenter service!",
 				details:
@@ -214,7 +264,7 @@ export const ServicesArray = [
 			},
 			midDetail: {
 				heading: "Kitchen Door Hinges Fixing Dubai:",
-				video: HomeFixCarpenter,
+				video: HomeFixCarpenterVideo,
 				details:
 					"if your kitchen door hinges want a restore, our organisation Handyman chippie Dubai can help. we've got a group of experienced carpenters who can quick and effortlessly fix any door hinge problem you can have. Door hinges are an important a part of any door, and maintaining them in precise operating order is critical to the overall feature of your door. Our chippie in Dubai is professional in fixing all sorts of door hinges, from small ones to massive ones. We keep in mind that occasionally doors can get damaged or wiped out over time, and we are here to help you repair those problems. We want to make certain that your doors are functioning properly and searching their excellent.",
 			},
@@ -243,7 +293,7 @@ export const ServicesArray = [
 		vat: "17",
 		price: "117",
 		detail: {
-			bannerImage: HomeFixDeepCleaningImage,
+			bannerImage: DeepCleaningBanner,
 			upperLeftDetail: {
 				heading:
 					"HomeRepairFix, Dubai's best Deep Cleaning service! In the living room",
@@ -259,7 +309,7 @@ export const ServicesArray = [
 			midDetail: {
 				heading:
 					"Checkout HomeRepairFix Deep Cleaning Services In the in Dubai",
-				video: HomeFixDeepCleaning,
+				video: HomeFixDeepCleaningVideo,
 				details:
 					"All surfaces might be vacuumed and sanitized as wanted. We make certain all toilets, tubs, and showers are scrubbed and disinfected. Mirrors and flooring also are scrubbed and cleaned nicely.",
 			},
@@ -288,7 +338,7 @@ export const ServicesArray = [
 		vat: "19",
 		price: "119",
 		detail: {
-			bannerImage: HomeFixElectricianPic,
+			bannerImage: ElectricianBanner,
 			upperLeftDetail: {
 				heading: "HomeRepairFix, Dubai's best Electrician service!",
 				details:
@@ -302,7 +352,7 @@ export const ServicesArray = [
 			midDetail: {
 				heading:
 					"Checkout HomeRepairFix Reasons to Hire a Professional Electrician Services in Dubai",
-				video: HomeFixElectrician,
+				video: HomeFixElectricianVideo,
 				details:
 					"things can speedy cross incorrect while electronic obligations and issues emerge, and any amateurish or poorly controlled technique can be probably deadly. but now not with HomeFixRepair, whose nearby electricians are qualified experts with years of enjoy acting all sorts of electrical offerings and repairs, from predominant to minor, anywhere needed. As one of the UAE’s pinnacle electric maintenance agencies, we focus on:,1: Wiring and rewiring as necessary,2: mild change, outlet, and fuse spur preservation and renewal,3: examination, protection, and set up of number one and tiny energy distribution units4: repairs to the electrical system and circuit change,5: fixing damaged mild furniture,6: swapping out transformers7: checks and maintenance for emergency lights,8: analyzing door access mechanisms",
 			},
@@ -333,7 +383,7 @@ export const ServicesArray = [
 		vat: "12",
 		price: "112",
 		detail: {
-			bannerImage: handyManPic,
+			bannerImage: HandyManBanner,
 			upperLeftDetail: {
 				heading: "HomeRepairFix, Dubai's best handyMan service!",
 				details:
@@ -347,7 +397,7 @@ export const ServicesArray = [
 			},
 			midDetail: {
 				heading: "Drilling and Hanging",
-				video: HomeFixHandyMan,
+				video: HomeFixHandyManVideo,
 				details:
 					"Drilling and placing tasks need to be finished while moving to a brand new area or building a domestic. there are numerous obligations for which you may want the offerings of a handyman, together with mounting a valuable painting or piece of paintings, mounting your television on a wall bracket, or placing a few mirrors. if you ask yourself where the handyman is near me, you're within the right vicinity.",
 			},
@@ -376,7 +426,7 @@ export const ServicesArray = [
 		vat: "13",
 		price: "113",
 		detail: {
-			bannerImage: HomeFixPicPainting,
+			bannerImage: PaintingBanner,
 			upperLeftDetail: {
 				heading: "HomeRepairFix, Dubai's best painting service!",
 				details:
@@ -390,7 +440,7 @@ export const ServicesArray = [
 			},
 			midDetail: {
 				heading: "Experienced Painting Company in Dubai",
-				video: HomeFixPainting,
+				video: HomeFixPaintingVideo,
 				details:
 					"In Paint services assist with the aid of the giant experience, we offer whole makeover answers for our customers, be it relate to the inner and external wall painting offerings in Dubai with the filling of holes and cracks, subject layout, wallpapers, wall covers, or maybe a touch/patch-up paintings, end of tenancy paintworks. we've years of understanding inside the discipline. we have finished quality painting work in Dubai to test what our clients say about us in Testimonials.",
 			},
@@ -419,7 +469,7 @@ export const ServicesArray = [
 		vat: "14",
 		price: "114",
 		detail: {
-			bannerImage: HomeFixRepairPlumbing,
+			bannerImage: PlumbingBanner,
 			upperLeftDetail: {
 				heading: "HomeRepairFix, Dubai's best Plumbing service!",
 				details:
@@ -454,6 +504,55 @@ export const ServicesArray = [
 					"One of the best plumbing companies, HomeFixRepair, employ qualified, skilled, and certified plumbers. They can handle all kinds of leaks, issues with the plumbing in the bathroom and kitchen, and hot water system repairs. Before you consider leaving for your vacation, you can even request that they check your house for plumbing problems. Plumbing problems in your home can be brought on by blockages in the drains, sewer line damage, and a lack of clean water. The most frequent residential service is pipe installation and maintenance. Residential services come in many different forms, including gas plumbing, stormwater drainage upgrades, and indoor and outdoor household plumbing. Drain clearing and cleaning . Proper disposal of the trash . Upkeep of pipes and valves. Repair of water jets. Identifying any gas leaks and fixing them. Main pipeline cleaning. Heater, softener care, and filtration of the water. Sewage maintenance . In addition to this, our electricians are licensed to handle all types of electrical work, including problems with socket wiring and residential electrical wiring. Our handymen are knowledgeable experts who can handle any job, including mounting a TV and assembling new furniture.",
 			},
 		},
+	},
+];
+export const RequestCallBack = [
+	{
+		heading: "10+ YEARS EXPERIENCE",
+		detail:
+			"HomeFixRepair is one of the leading regional incorporated centers management answers company within the center East. Its service specialties are unfold across integrated facilities control, waste control, and lots of greater. HomeFixRepair released its domestic pro maintenance offerings in 2009 as an one-of-a-kind carrier department to hold and keep houses within the UAE.HomeFixRepair has accrued a group of reliable home preservation specialists to decorate the value, life, and beauty of your house. Our 24/7 preservation carrier team takes care of your house so you can cognizance at the critical things in existence. Time is treasured and so is your private home. HomeFixRepair is here to serve you so you in no way ought to surrender on both of them.",
+	},
+	{
+		heading: "Our records",
+		detail:
+			"HomeFixRepair renovation services in 2009 as an specific provider department to keep and keep houses inside the UAE.",
+	},
+	{
+		heading: "Our challenge",
+		detail:
+			"To emerge as a pacesetter in top rate home protection services and solutions for the duration of the UAE with an first rate crew of professionals.",
+	},
+	{
+		heading: "Our imaginative and prescient",
+		detail:
+			"HomeFixRepair dedicates itself to guaranteeing expert domestic preservation offerings through a dating of accept as true with, revel in, and reliability that continues to exceed purchaser expectations.",
+	},
+	{
+		heading: "HomeFixRepair offerings",
+		detail:
+			" actual to their call, are available pretty available. And it isn't simply while you are shifting residence or sporting out a renovation which you need professional handyman offerings – you could even be making a brand new addition, require an extraordinary process achieved or need an emergency handyman due to the fact something wishes an pressing spot of repair. some thing your need and but small or complex the job, HomeGenie has the great handyman in Dubai for you. So whether or not it is your tv that wishes to be relocated or it's miles striking up the state-of-the-art curtains which you simply bought for the dwelling room, we've got a reasonably-priced handyman who will get your job completed.All we need you to do is down load the free HomeGenie app for Android and iOS, and a totally skilled handyman will reach your own home at a date and time that suits you. if your atypical process is some thing that needs to be sorted right now, HomeGenie also offers Emergency and identical Day handyman offerings.reserving our Emergency facility approach that a handyman will arrive at your property within 2 hours of reserving the carrier, at an extra price. The same Day carrier will location a handyman at your home to collect your modular furnishings or restore the door lock before 6PM that day, supplied you booked among 8 AM and 12 PM.",
+	},
+	{
+		heading: "while is a HomeFixRepair generally required to be known as in?",
+		detail:
+			"HomeFixRepair are typically required for all form of atypical jobs in the house, but, in the main for jobs require professional drilling into partitions and ceilings to grasp, mount or deploy fixtures. in addition, handyman additionally offer IKEA or other modular furniture assembly required upon a new purchase or after a pass.",
+	},
+	{
+		heading:
+			"What are a number of the things to be careful about whilst hiring a HomeFixRepair ?",
+		detail:
+			"while looking and hiring a HomeFixRepair in Dubai or UAE, it is essential to keep in mind the subsequent :1. The HomeFixRepair has the visa from a business enterprise with the perfect exchange license, with unique HomeFixRepair related classes, accepted via the financial development department.2. All essential insurances are in region – third birthday party liability, people' medical insurance, and employees’ compensation in your peace of mind.3. because the high-quality of the carrier is dependent on the person’s qualification, experience, mind-set, and communique competencies, it is important to have the HomeFixRepair, and no longer the company, checked.four. The HomeFixRepair is prompt and responds to consumer queries, either directly or directing to the proper professional individual in case unsure approximately the provider.Failure to conform with neighborhood rules, as mentioned above, can result in hefty fines for customers",
+	},
+	{
+		heading: "Why do HomeFixRepair charge by the hour?",
+		detail:
+			"HomeFixRepair offerings do now not typically require an inspection and may be done right away e.g. mounting a tv, curtain, or blind installation if the components are available. It, therefore, does now not make experience to do an inspection and charge a name-out. consequently it is more obvious and honest to each parties, to observe a in keeping with hour charging technique.",
+	},
+	{
+		heading:
+			"What are commonplace accidents that could occur because of low-satisfactory HomeFixRepair services?",
+		detail:
+			"Even as hanging furniture, you may drill via a twine containment or a water pipe in the wall or drill the hollow too unfastened that the fixture isn’t firmly hung to the wall. also, the strength of the screw won't be appropriate to take the burden of the wall fixture making it liable to fall over time. also, the level of the wall fixture if no longer done well will cause a fall as weight of the fixture does not get balanced and remains hinged to one aspect. If proper cleanup isn't finished there could a nail that would hurt someone walking casually across the work place.",
 	},
 ];
 export let AreaArray = [

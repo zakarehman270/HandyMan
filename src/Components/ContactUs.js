@@ -91,7 +91,6 @@ export const ContactUs = () => {
 									<Form.Control required type="text" placeholder="You Name" />
 									<Form.Control.Feedback>Looks good!</Form.Control.Feedback>
 								</Form.Group>
-
 								<div className="d-flex mb-3 Gap">
 									<Form.Group className="w-50" controlId="validationCustom02">
 										<Form.Control required type="text" placeholder="Phone" />

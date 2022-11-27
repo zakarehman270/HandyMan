@@ -5,7 +5,7 @@ import Header from "./Header";
 import { useLocation } from "react-router-dom";
 import { Player } from "video-react";
 import {} from "../../node_modules/video-react/dist/video-react.css";
-import HomeFixDeepCleaning from "../assets/HomeFixDeepCleaning.mp4";
+import HomeFixDeepCleaning from "../assets/Videos/HomeFixDeepCleaning.mp4";
 const Details = (props) => {
 	const [DetailName, setDetailName] = useState("");
 	const location = useLocation();

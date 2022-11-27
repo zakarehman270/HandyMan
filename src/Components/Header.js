@@ -67,7 +67,7 @@ function Header() {
 					<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 					<Navbar.Collapse id="responsive-navbar-nav">
 						<Nav className="me-auto"></Nav>
-						<Nav className="Gap-18">
+						<Nav className="Gap-30">
 							<Link
 								to="our-services"
 								spy={true}

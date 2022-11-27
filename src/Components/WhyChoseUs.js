@@ -70,14 +70,13 @@ function WhyChoseUs() {
 							>
 								<div className="d-flex flex-column justify-content-center align-items-center">
 									<p className="text-white HeadingOurServices">Why</p>
-									<p className="HeadingOurServices" style={{ width: "235px" }}>
+									<p className="HeadingOurServices" style={{ width: "236px" }}>
 										Choose Us?
 									</p>
 								</div>
 							</div>
 						</div>
 					</Col>
-
 					<Col
 						className="d-flex flex-column justify-content-start me-4 mt-lg-0 mt-5"
 						style={{ gap: "112px" }}

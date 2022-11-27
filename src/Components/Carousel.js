@@ -3,7 +3,7 @@ import { Carousel } from "react-bootstrap";
 import HomeFixElectricianPic from "../assets/HomeFixElectricianPic.jpg";
 import HomeFixCarpenterPic from "../assets/HomeFixCarpenterPic.jpg";
 import HomeFixRepairPlumbing from "../assets/HomeFixRepairPlumbing.jpg";
-import HomeFixDeepCleaningImage from "../assets/HomeFixDeepCleaningImage.jpeg";
+import HomeFixDeepCleaningImage from "../assets/Banners/DeepCleaningPic.jpg";
 import HomeFixPicPainting from "../assets/HomeFixPicPainting.jpg";
 import handyManPic from "../assets/handyManPic.jpg";
 function CarouselSlider() {
@@ -11,7 +11,7 @@ function CarouselSlider() {
 		<div>
 			<Carousel fade indicators={false}>
 				<Carousel.Item interval={1000}>
-					<div style={{ height: "450px" }}>
+					<div className="outerWrapperCarouselImages">
 						<img
 							className="d-block w-100"
 							src={HomeFixCarpenterPic}
@@ -29,7 +29,7 @@ function CarouselSlider() {
 					</Carousel.Caption>
 				</Carousel.Item>
 				<Carousel.Item interval={1000}>
-					<div style={{ height: "450px" }}>
+					<div className="outerWrapperCarouselImages">
 						<img
 							className="d-block w-100"
 							src={HomeFixRepairPlumbing}
@@ -46,7 +46,7 @@ function CarouselSlider() {
 					</Carousel.Caption>
 				</Carousel.Item>
 				<Carousel.Item interval={1000}>
-					<div style={{ height: "450px" }}>
+					<div className="outerWrapperCarouselImages">
 						<img
 							className="d-block w-100"
 							src={HomeFixDeepCleaningImage}
@@ -64,7 +64,7 @@ function CarouselSlider() {
 				</Carousel.Item>
 
 				<Carousel.Item interval={1000}>
-					<div style={{ height: "450px" }}>
+					<div className="outerWrapperCarouselImages">
 						<img
 							className="d-block w-100"
 							src={handyManPic}
@@ -81,7 +81,7 @@ function CarouselSlider() {
 					</Carousel.Caption>
 				</Carousel.Item>
 				<Carousel.Item interval={1000}>
-					<div style={{ height: "450px" }}>
+					<div className="outerWrapperCarouselImages">
 						<img
 							className="d-block w-100"
 							src={HomeFixPicPainting}
@@ -98,7 +98,7 @@ function CarouselSlider() {
 					</Carousel.Caption>
 				</Carousel.Item>
 				<Carousel.Item interval={1000}>
-					<div style={{ height: "450px" }}>
+					<div className="outerWrapperCarouselImages">
 						<img
 							className="d-block w-100"
 							src={HomeFixElectricianPic}

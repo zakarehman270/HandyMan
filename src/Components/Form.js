@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
-import Handyman from "../assets/Handyman.jpg";
-import { Container, Row, Col } from "react-bootstrap";
+import Handyman from "../assets/HandyManFormPic.png";
+import { Container, Row, Col, Form } from "react-bootstrap";
 import emailjs from "emailjs-com";
 import { ServicesArray, AreaArray, HoursData } from "../Data";
 import { FaAngleDown } from "react-icons/fa";
@@ -12,7 +12,7 @@ import "react-phone-number-input/style.css";
 import Thank from "./Thank";
 import PhoneInput from "react-phone-number-input";
 import { Link } from "react-router-dom";
-function Form() {
+function FormComponent() {
 	const [Name, setName] = useState("");
 	const [Email, setEmail] = useState("");
 	const [Phone, setPhone] = useState();
@@ -42,6 +42,7 @@ function Form() {
 	const [VatDefaultValue, setVatDefaultValue] = useState(5);
 	const [Content, setContent] = useState("");
 	const [RedirectToThanPage, setRedirectToThanPage] = useState(false);
+	const [InputData, setInputData] = useState("");
 	const location = useLocation();
 	const search = useLocation().search;
 	const vat = new URLSearchParams(search).get("vat");
@@ -57,7 +58,7 @@ function Form() {
 			Split[2] === "Electrician"
 		) {
 			setContent(
-				"First hour include survey and 1 hour job, after that 60 drhm for every 30 minutes."
+				"we are going to provide 1 professional during the service, if work will extend we will charge 55 drhm for every additional 30 minutes, 1st hour will cover survey and 1 hour of work, any meterial that is used will be charged separatly,if you need more than 1 professional plz mention in instructions, or mention while our representative call you while confirmation.(new terms and conditions will display also for carpernter category)"
 			);
 		} else {
 			setContent("");
@@ -132,8 +133,6 @@ function Form() {
 		return (
 			<div
 				onClick={(e) => {
-					console.log("hello calling");
-					setDisplayDropDown(false);
 					setDisplayDropDownHours(false);
 					setDisplayDropDownArea(false);
 				}}
@@ -141,17 +140,17 @@ function Form() {
 				<Header />
 				<div
 					className="FormBackGroundImage"
-					style={{
-						opacity: "0.9",
-						backgroundImage: `url(${Handyman})`,
-					}}
+					// style={{
+					// 	opacity: "0.9",
+					// 	backgroundImage: `url(${Handyman})`,
+					// }}
 				>
 					<Container>
 						<div
 							className=" text-center w-100 pt-4 flex-nowrap justify-content-center align-items-center Gap FontWeight"
 							style={{ fontSize: "45px" }}
 						>
-							<span className="text-white">Get</span>
+							<span className="text-black">Get</span>
 							<span className="PrimaryColor">Start</span>
 						</div>
 						<Row className=" d-flex justify-content-center order-1">
@@ -207,49 +206,15 @@ function Form() {
 										/>
 									</div>
 									<div className="d-flex flex-column  pb-2">
-										<label htmlFor="phone" className="Label">
-											Choose Area:
+										<label htmlFor="email" className="Label">
+											Date:
 										</label>
-										<div className="OuterContainerDropDown">
-											<div>
-												<p
-													className="FormsInputFieldsDropDown"
-													style={{ borderColor: ValidationArea ? "red" : "" }}
-													onClick={(e) => {
-														setDisplayDropDown(!DisplayDropDown);
-														e.stopPropagation();
-													}}
-												>
-													{Area}
-													<FaAngleDown style={{ fontSize: "20px" }} />
-												</p>
-											</div>
-											{DisplayDropDown && (
-												<div className="OuterWrapperDropDown">
-													{AreaArray.map((item, index) => {
-														let selected = false;
-														if (IndexSelectedDropDown === index) {
-															selected = true;
-														}
-														return (
-															<div
-																key={index}
-																className="DropDownLabel"
-																style={{ color: selected ? "#FFBB00" : "" }}
-																onClick={() => {
-																	setIndexSelectedDropDown(index);
-																	setArea(item.name);
-																	setDisplayDropDown(false);
-																	setValidationArea(false);
-																}}
-															>
-																{item.name}
-															</div>
-														);
-													})}
-												</div>
-											)}
-										</div>
+										<DatePicker
+											className="FormsInputFieldsDatePicker"
+											// onChange={setDateValue}
+											onChange={(value, e) => setDateValue(value, e)}
+											value={DateValue}
+										/>
 									</div>
 									<div className="d-flex flex-column  pb-2">
 										<label htmlFor="phone" className="Label">
@@ -303,6 +268,87 @@ function Form() {
 							</Col>
 							<Col className=" d-flex justify-content-center">
 								<div className="d-flex flex-column w-100">
+									<div className="d-flex flex-column  pb-2">
+										<label htmlFor="phone" className="Label">
+											Choose Area:
+										</label>
+										<div className="OuterContainerDropDown">
+											<div>
+												<p
+													className="FormsInputFieldsDropDown"
+													style={{ borderColor: ValidationArea ? "red" : "" }}
+													onClick={(e) => {
+														setDisplayDropDown(!DisplayDropDown);
+														e.stopPropagation();
+													}}
+												>
+													{Area}
+													<FaAngleDown style={{ fontSize: "20px" }} />
+												</p>
+											</div>
+											{DisplayDropDown && (
+												<div className="OuterWrapperDropDown">
+													<div className="OuterWraperDivBoxes">
+														<input
+															value={InputData}
+															placeholder="search.."
+															onChange={(e) => {
+																setInputData(e.target.value);
+															}}
+															className="w-100 outerWrapperSearchField"
+														/>
+														{AreaArray.filter((val) => {
+															if (InputData == "") {
+																return val;
+															} else if (
+																val.name
+																	.toLowerCase()
+																	.includes(InputData.toLowerCase())
+															) {
+																return val;
+															}
+														}).map((item, index) => {
+															let selected = false;
+															if (IndexSelectedDropDown === index) {
+																selected = true;
+															}
+															return (
+																<div
+																	key={index}
+																	className="DropDownLabel"
+																	style={{ color: selected ? "#FFBB00" : "" }}
+																	onClick={() => {
+																		setIndexSelectedDropDown(index);
+																		setArea(item.name);
+																		setDisplayDropDown(false);
+																		setValidationArea(false);
+																	}}
+																>
+																	{item.name}
+																</div>
+															);
+														})}
+													</div>
+												</div>
+											)}
+										</div>
+									</div>
+									<div className="d-flex flex-column  pb-2">
+										<label htmlFor="phone" className="Label">
+											Address:
+										</label>
+										<input
+											type="text"
+											className="FormsInputFields"
+											placeholder="Address"
+											style={{ borderColor: ValidationAddress ? "red" : "" }}
+											value={Address}
+											onChange={(e) => {
+												setAddress(e.target.value);
+												setValidationAddress(false);
+											}}
+										/>
+									</div>
 									<div className="d-flex flex-column  pb-2">
 										<label htmlFor="phone" className="Label">
 											Choose Service:
@@ -362,39 +408,12 @@ function Form() {
 										</div>
 									</div>
 									<div className="d-flex flex-column  pb-2">
-										<label htmlFor="email" className="Label">
-											Date:
-										</label>
-										<DatePicker
-											className="FormsInputFieldsDatePicker"
-											// onChange={setDateValue}
-											onChange={(value, e) => setDateValue(value, e)}
-											value={DateValue}
-										/>
-									</div>
-									<div className="d-flex flex-column  pb-2">
 										<label htmlFor="phone" className="Label">
-											Address:
-										</label>
-										<input
-											type="text"
-											className="FormsInputFields"
-											placeholder="Address"
-											style={{ borderColor: ValidationAddress ? "red" : "" }}
-											value={Address}
-											onChange={(e) => {
-												setAddress(e.target.value);
-												setValidationAddress(false);
-											}}
-										/>
-									</div>
-									<div className="d-flex flex-column  pb-2">
-										<label htmlFor="phone" className="Label">
-											Message:
+											instructions:
 										</label>
 										<textarea
 											className="FormsInputFields"
-											placeholder="Message.."
+											placeholder="instructions.."
 											rows={5}
 											cols={5}
 											value={Message}
@@ -403,6 +422,31 @@ function Form() {
 											}}
 										/>
 									</div>
+									<Form className="d-flex align-items-center Gap">
+										<Form.Check type={"checkbox"} id={`default-radio`} />
+										<p className="textHolderTermCondition">
+											I agree to
+											<Link
+												onClick={() => {
+													window.scrollTo(0, 0);
+												}}
+												className="textHolderLinkTermCondition text-decoration-none"
+												to={`/term-and-condition`}
+											>
+												Terms of Service
+											</Link>
+											and{" "}
+											<Link
+												onClick={() => {
+													window.scrollTo(0, 0);
+												}}
+												className="textHolderLinkTermCondition text-decoration-none"
+												to={`/term-and-condition`}
+											>
+												Privacy policy *
+											</Link>
+										</p>
+									</Form>
 									<div className="d-flex flex-column  pb-2">
 										<label htmlFor="phone" className="Label text-center">
 											Price Details
@@ -457,4 +501,4 @@ function Form() {
 	}
 }
 
-export default Form;
+export default FormComponent;

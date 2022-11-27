@@ -44,11 +44,14 @@ h1 {
 .Gap {
 	gap: 12px;
 }
-.Gap-18 {
-	gap: 18px;
+.Gap-30 {
+	gap: 30px;
 }
 .Gap-22 {
 	gap: 22px;
+}
+.Gap-17 {
+	gap: 17px;
 }
 .FontSize30 {
 	font-size: 30px !important;
@@ -124,7 +127,7 @@ p {
 	font-size: 31px;
 }
 .BookServiceButtons {
-	padding: 12px;
+	padding: 8px 15px 5px 15px !important;
 	border-radius: 5px !important;
 	font-size: 14px !important;
 	cursor: pointer !important;
@@ -181,7 +184,7 @@ input[type="text"] {
 	display: flex;
 }
 .LabelContentUnderHoursDropDown {
-	margin-top: -15px;
+	font-size: 18px;
 }
 .DisplayButtonsLower {
 	display: none;
@@ -239,7 +242,12 @@ input[type="text"] {
 	overflow: hidden;
 }
 .outerContainerProjectCompleted {
-	background-color: #282f40;
+	background-color: #222222;
+	/* background-color: #282f40; */
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	width: 55%;
 }
 .gap-50 {
 	gap: 50px;
@@ -286,7 +294,7 @@ input[type="text"] {
 	cursor: pointer;
 	transition: all 0.2s ease-in-out;
 	border-bottom: 3px solid transparent;
-	padding-bottom: 3px;
+	padding-bottom: 2px;
 	font-size: 21px;
 	font-weight: 500;
 }
@@ -362,6 +370,7 @@ input[type="text"] {
 	background-repeat: no-repeat;
 	width: 100%;
 	padding-bottom: 60px;
+	background-color: #f9f9ff;
 }
 .FormsInputFields {
 	border-radius: 5px;
@@ -400,9 +409,10 @@ input[type="text"] {
 	position: relative;
 }
 .DropDownLabel {
-	padding: 3px;
 	cursor: pointer;
 	font-size: 18px;
+	padding: 7px 0px 3px 20px;
+	border-bottom: 1px solid;
 }
 .DropDownLabel:hover {
 	color: #ffbb00;
@@ -443,12 +453,77 @@ textarea {
 .FontSizeTextHolderTopOfHeader {
 	font-size: 19px;
 }
+.outerWrapperSearchField {
+	position: sticky;
+	top: 0px;
+	padding: 5px 42px 5px 18px;
+	font-size: 16px;
+	border-radius: 7px;
+}
+.outerWrapperMessageBanner {
+	background-color: #222222;
+}
+.outerWrapperSearchField:focus {
+	border-color: #ff8800;
+	outline: unset !important;
+}
+
+.outerWrapperLeftSideOfMessageBanner {
+	transform: skew(30deg);
+	background-color: #ffbb00;
+	height: 269px;
+	margin-left: -80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.innerWrapperLeftSideOfMessageBanner {
+	transform: skew(-30deg);
+}
+.outerWrapperRequestCallBackButton {
+	padding: 20px;
+	border-radius: 11px;
+	color: white;
+	background: black;
+	font-size: 34px;
+	font-weight: 600;
+	cursor: pointer;
+	box-shadow: rgb(0 0 0 / 19%) 0px 10px 20px, rgb(0 0 0 / 23%) 0px 6px 6px;
+}
+.outerWrapperCarouselImages {
+	height: 530px;
+}
+.outerWrapperDropDownRequestACallBack {
+	width: 100% !important;
+	border-color: #ced4da !important;
+	background: white !important;
+	color: #212529 !important;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: space-between !important;
+}
+
+.outerWrapperDropDownRequestACallBackMenu {
+	width: 96% !important;
+}
+.textHolderTermCondition {
+	font-size: 20px;
+	color: #384347;
+}
+.textHolderLinkTermCondition {
+	font-size: 22px;
+	color: #8c7cdb !important;
+	font-weight: 600;
+}
+.form-check-input {
+	width: 1.5rem !important;
+	height: 1.5rem !important;
+}
 @media only screen and (max-width: 990px) {
 	.BookServiceButtons {
 		width: 100%;
 	}
 }
-
 @media only screen and (max-width: 502px) {
 	.DisplayButtonsLower {
 		display: flex;
