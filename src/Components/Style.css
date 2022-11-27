@@ -387,7 +387,7 @@ input[type="text"] {
 	background-color: white;
 	border-radius: 5px;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-	padding: 12px;
+	padding: 12px !important;
 	overflow-y: scroll;
 	position: absolute;
 	top: 50px;
@@ -418,11 +418,11 @@ input[type="text"] {
 	color: #ffbb00;
 }
 .FormsInputFieldsDatePicker {
-	background-color: white;
-	border-radius: 5px;
+	background-color: white !important;
+	border-radius: 5px !important;
 	padding: 12px !important;
-	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-	cursor: pointer;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
+	cursor: pointer !important;
 }
 .react-date-picker__wrapper {
 	border: unset !important;
@@ -504,7 +504,7 @@ textarea {
 }
 
 .outerWrapperDropDownRequestACallBackMenu {
-	width: 96% !important;
+	width: 98% !important;
 }
 .textHolderTermCondition {
 	font-size: 20px;

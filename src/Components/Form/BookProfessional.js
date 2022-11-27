@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import Header from "./Header";
-import Footer from "./Footer";
-import Handyman from "../assets/HandyManFormPic.png";
+import Header from "../Header";
+import Footer from "../Footer";
 import { Container, Row, Col, Form } from "react-bootstrap";
 import emailjs from "emailjs-com";
-import { ServicesArray, AreaArray, HoursData } from "../Data";
+import { ServicesArray, AreaArray, HoursData } from "../../Data";
 import { FaAngleDown } from "react-icons/fa";
 import DatePicker from "react-date-picker";
 import "react-phone-number-input/style.css";
-import Thank from "./Thank";
+import Thank from "../Thank";
 import PhoneInput from "react-phone-number-input";
 import { Link } from "react-router-dom";
-function FormComponent() {
+import FormContentUs from "./FormComponent";
+function BookProfessional() {
 	const [Name, setName] = useState("");
 	const [Email, setEmail] = useState("");
 	const [Phone, setPhone] = useState();
@@ -36,6 +36,7 @@ function FormComponent() {
 	const [DisplayDropDownHours, setDisplayDropDownHours] = useState(false);
 	const [IndexSelectedDropDownHours, setIndexSelectedDropDownHours] =
 		useState(0);
+
 	const [PriceValue, setPriceValue] = useState(0);
 	const [VatValue, setVatValue] = useState(0);
 	const [PriceDefaultValue, setPriceDefaultValue] = useState(115);
@@ -127,6 +128,7 @@ function FormComponent() {
 			}
 		}
 	};
+
 	if (RedirectToThanPage) {
 		return <Thank />;
 	} else {
@@ -138,22 +140,17 @@ function FormComponent() {
 				}}
 			>
 				<Header />
-				<div
-					className="FormBackGroundImage"
-					// style={{
-					// 	opacity: "0.9",
-					// 	backgroundImage: `url(${Handyman})`,
-					// }}
-				>
+				<div className="FormBackGroundImage">
 					<Container>
 						<div
 							className=" text-center w-100 pt-4 flex-nowrap justify-content-center align-items-center Gap FontWeight"
 							style={{ fontSize: "45px" }}
 						>
-							<span className="text-black">Get</span>
-							<span className="PrimaryColor">Start</span>
+							<span className="text-black">Book</span>
+							<span className="PrimaryColor">professional</span>
 						</div>
-						<Row className=" d-flex justify-content-center order-1">
+						<FormContentUs />
+						{/* <Row className=" d-flex justify-content-center order-1">
 							<Col className=" d-flex  justify-content-center">
 								<div className="d-flex flex-column w-100">
 									<div className="d-flex flex-column  pb-2">
@@ -245,6 +242,7 @@ function FormComponent() {
 																key={index}
 																className="DropDownLabel"
 																style={{ color: selected ? "#FFBB00" : "" }}
+
 																onClick={() => {
 																	setIndexSelectedDropDownHours(index);
 																	setHours(item);
@@ -254,6 +252,7 @@ function FormComponent() {
 																	setVatValue(TotalVat);
 																	setDisplayDropDownHours(false);
 																}}
+
 															>
 																{item}
 															</div>
@@ -423,6 +422,7 @@ function FormComponent() {
 										/>
 									</div>
 									<Form className="d-flex align-items-center Gap">
+
 										<Form.Check type={"checkbox"} id={`default-radio`} />
 										<p className="textHolderTermCondition">
 											I agree to
@@ -468,31 +468,33 @@ function FormComponent() {
 											</div>
 										</div>
 										<div>
-											<form
-												onClick={sendEmail}
-												className="BookServiceButtons  text-center BackGroundColor mt-3 FontSize20 FontWeight "
-											>
-												<div className="d-none">
-													<textarea
-														name="message"
-														value={`Name: ${Name} Email: ${Email} Phone: ${Phone} 
+											<div>
+												<form
+													onClick={sendEmail}
+													className="BookServiceButtons  text-center BackGroundColor mt-3 FontSize20 FontWeight "
+												>
+													<div className="d-none">
+														<textarea
+															name="message"
+															value={`Name: ${Name} Email: ${Email} Phone: ${Phone} 
                           Address: ${Address} Date:${DateValue} Area:${Area} Service${Service}
                           Message:${Message} TotalPrice${
-															PriceValue + VatValue
-														} `}
-														onChange={() => {
-															console.log("Onchange");
-														}}
-													/>
-												</div>
-												Submit
-											</form>
+																PriceValue + VatValue
+															} `}
+															onChange={() => {
+																console.log("Onchange");
+															}}
+														/>
+													</div>
+													Submit
+												</form>
+											</div>
 										</div>
 									</div>
 								</div>
 							</Col>
-						</Row>
-						{ErrorMessage && <div>{ErrorMessage}</div>}
+						</Row> */}
+						{/* {ErrorMessage && <div>{ErrorMessage}</div>} */}
 					</Container>
 				</div>
 				<Footer />
@@ -501,4 +503,4 @@ function FormComponent() {
 	}
 }
 
-export default FormComponent;
+export default BookProfessional;
