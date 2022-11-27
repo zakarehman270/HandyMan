@@ -11,7 +11,6 @@ function MobileApp() {
 					<Col className="text-end">
 						<div className="d-flex mt-5">
 							<p className="PrimaryColor HeadingDownloadApp">Download </p>
-
 							<p className="HeadingDownloadApp">The App</p>
 						</div>
 						<div className="d-flex text-start FontSize16">
