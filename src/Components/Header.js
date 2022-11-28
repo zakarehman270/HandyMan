@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Container, Nav, Button } from "react-bootstrap";
+import { Navbar, Container, Nav } from "react-bootstrap";
 import { Link } from "react-scroll";
 import Logo from "../assets/Logo.PNG";
 import { NavLink } from "react-router-dom";
@@ -11,10 +11,10 @@ function Header() {
 		<div className="outerWrapperNavBar bg-white">
 			<div className="outerWrapperUpperHeader pt-3 pb-3 FontSizeTextHolderTopOfHeader">
 				<Container className="d-flex justify-content-between align-items-center text-white">
-					<div className="d-flex align-items-center Gap-22">
+					<div className="d-flex align-items-center GapBetWeenNumberAndEmailInTopHeader">
 						<a
 							href="https://www.instagram.com/"
-							rel="nofollow noopener"
+							rel="noopener"
 							target="_blank"
 							className="text-decoration-none text-white"
 						>
@@ -22,7 +22,7 @@ function Header() {
 						</a>
 						<a
 							href="https://www.facebook.com/"
-							rel="nofollow noopener"
+							rel="noopener"
 							target="_blank"
 							className="text-decoration-none text-white"
 						>
@@ -30,14 +30,14 @@ function Header() {
 						</a>
 						<a
 							href="https://web.whatsapp.com"
-							rel="nofollow noopener"
+							rel="noopener"
 							target="_blank"
 							className="text-decoration-none text-white"
 						>
 							<ImWhatsapp className="SocialIconsInFooter HeaderSocialMediaIcons" />
 						</a>
 					</div>
-					<div className="d-flex align-items-center Gap-22">
+					<div className="outerWrapperContentNumberTopHeader align-items-center Gap-22">
 						<a
 							href="tel:+923313571616"
 							className="C-pointer PrimaryColor HoverTextColor text-decoration-none"
@@ -80,17 +80,12 @@ function Header() {
 									Our Services
 								</NavLink>
 							</Link>
-							<Link
-								to="book-service"
-								smooth={true}
-								duration={50}
-								offset={-140}
-								className="text-decoration-none HeaderLinks"
+							<NavLink
+								to={`/form/choseService/?vat=${0}+${0}`}
+								className="text-decoration-none HeaderLinks text-black"
 							>
-								<NavLink to="/" className="text-decoration-none text-black">
-									Book Service
-								</NavLink>
-							</Link>
+								Book Service
+							</NavLink>
 							<NavLink
 								onClick={() => {
 									window.scrollTo(0, 0);

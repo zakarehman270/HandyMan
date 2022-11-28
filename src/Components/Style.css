@@ -50,6 +50,9 @@ h1 {
 .Gap-22 {
 	gap: 22px;
 }
+.GapBetWeenNumberAndEmailInTopHeader {
+	gap: 22px;
+}
 .Gap-17 {
 	gap: 17px;
 }
@@ -98,6 +101,7 @@ p {
 .HeadingOurServices {
 	font-size: 43px;
 	font-weight: 600;
+	text-align: center;
 }
 .OuterWrapperServicesImages {
 	width: 116px;
@@ -243,13 +247,12 @@ input[type="text"] {
 }
 .outerContainerProjectCompleted {
 	background-color: #222222;
-	/* background-color: #282f40; */
 	display: flex;
 	flex-direction: column;
 	justify-content: end;
 	width: 55%;
 }
-.gap-50 {
+.GapBetWeenProjectCompleteClientAndGoogleReview {
 	gap: 50px;
 }
 .CountUp {
@@ -314,52 +317,9 @@ input[type="text"] {
 }
 .CarouselDescription {
 	font-size: 30px;
-	letter-spacing: 3px;
 	font-weight: 500;
+	line-height: 30px;
 	color: #ffbb00 !important;
-}
-@media only screen and (max-width: 888px) {
-	.HeadingBookService {
-		display: unset !important;
-		text-align: center;
-	}
-}
-@media only screen and (max-width: 767px) {
-	.MobileAppImage {
-		display: none !important;
-	}
-}
-@media only screen and (max-width: 443px) {
-	.HeadingDownloadApp {
-		font-size: 35px;
-	}
-}
-
-@media only screen and (max-width: 329px) {
-	.HeadingDownloadApp {
-		font-size: 30px;
-	}
-	.CardsBanners {
-		width: 300px;
-	}
-	.TextInCard {
-		font-size: 25px;
-	}
-}
-@media only screen and (max-width: 354px) {
-	.ButtonsTextAppLink {
-		font-size: 13px;
-	}
-}
-@media only screen and (max-width: 321px) {
-	.ButtonsTextAppLink {
-		font-size: 12px;
-	}
-}
-@media only screen and (max-width: 450px) {
-	.BannersOuterWidth {
-		width: 290px;
-	}
 }
 .carousel-caption {
 	bottom: 4.25rem !important;
@@ -462,6 +422,7 @@ textarea {
 }
 .outerWrapperMessageBanner {
 	background-color: #222222;
+	display: flex;
 }
 .outerWrapperSearchField:focus {
 	border-color: #ff8800;
@@ -471,11 +432,12 @@ textarea {
 .outerWrapperLeftSideOfMessageBanner {
 	transform: skew(30deg);
 	background-color: #ffbb00;
-	height: 269px;
 	margin-left: -80px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding: 0 146px;
+	width: 50%;
 }
 .innerWrapperLeftSideOfMessageBanner {
 	transform: skew(-30deg);
@@ -519,13 +481,155 @@ textarea {
 	width: 1.5rem !important;
 	height: 1.5rem !important;
 }
+.bannersImages {
+	width: 100%;
+	height: 502px;
+	object-fit: cover;
+}
+.OuterWrapperFormRequestCallBack {
+	width: 40%;
+}
+.OuterWrapperContentRequestCallBack {
+	width: 60%;
+}
+.outerWrapperContentNumberTopHeader {
+	display: flex;
+}
+.OuterContainerRequestCallBack {
+	display: flex;
+}
+.OuterWrapperFormComponent {
+	display: flex;
+}
+.WidthFormComponent {
+	width: 50%;
+}
+@media only screen and (max-width: 1200px) {
+	.outerWrapperMessageBanner {
+		display: block;
+	}
+	.outerWrapperLeftSideOfMessageBanner {
+		width: 100%;
+		margin-left: unset;
+		transform: unset;
+		padding: 59px 0px;
+	}
+	.innerWrapperLeftSideOfMessageBanner {
+		transform: unset;
+	}
+	.outerContainerProjectCompleted {
+		width: 100%;
+		justify-content: center;
+	}
+}
 @media only screen and (max-width: 990px) {
 	.BookServiceButtons {
 		width: 100%;
 	}
 }
+@media only screen and (max-width: 992px) {
+	.outerWrapperParagraphAboutUs {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 888px) {
+	.HeadingBookService {
+		display: unset !important;
+		text-align: center;
+	}
+	.outerWrapperRequestCallBackButton {
+		font-size: 26px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.MobileAppImage {
+		display: none !important;
+	}
+	.OuterContainerRequestCallBack {
+		display: block;
+	}
+	.OuterWrapperFormRequestCallBack {
+		width: 100%;
+	}
+	.OuterWrapperContentRequestCallBack {
+		width: 100%;
+	}
+	.OuterWrapperFormComponent {
+		display: block;
+	}
+	.WidthFormComponent {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 380px) {
+	.outerWrapperContentDetail {
+		text-align: center;
+	}
+}
+@media only screen and (max-width: 354px) {
+	.GapBetWeenNumberAndEmailInTopHeader {
+		gap: 3px;
+	}
+	.ButtonsTextAppLink {
+		font-size: 13px;
+	}
+}
+@media only screen and (max-width: 329px) {
+	.HeadingDownloadApp {
+		font-size: 30px;
+	}
+	.CardsBanners {
+		width: 300px;
+	}
+	.TextInCard {
+		font-size: 25px;
+	}
+}
+
+@media only screen and (max-width: 321px) {
+	.ButtonsTextAppLink {
+		font-size: 12px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.HeadingOurServices {
+		font-size: 33px;
+	}
+}
+@media only screen and (max-width: 443px) {
+	.HeadingDownloadApp {
+		font-size: 35px;
+	}
+}
+@media only screen and (max-width: 450px) {
+	.BannersOuterWidth {
+		width: 290px;
+	}
+}
+@media only screen and (max-width: 418px) {
+	.GapBetWeenProjectCompleteClientAndGoogleReview {
+		gap: 12px;
+	}
+}
+@media only screen and (max-width: 566px) {
+	.outerWrapperContentNumberTopHeader {
+		display: block;
+	}
+	.CarouselHeading {
+		font-size: 30px;
+	}
+	.CarouselDescription {
+		font-size: 15px;
+	}
+}
 @media only screen and (max-width: 502px) {
 	.DisplayButtonsLower {
 		display: flex;
+	}
+}
+@media only screen and (max-width: 692px) {
+	.outerWrapperRequestCallBackButton {
+		font-size: 20px;
 	}
 }

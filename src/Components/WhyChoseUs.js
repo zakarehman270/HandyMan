@@ -16,7 +16,7 @@ function WhyChoseUs() {
 					<Col
 						sm={12}
 						lg={4}
-						className="d-flex flex-column justify-content-start me-4"
+						className="d-flex flex-column justify-content-start "
 						style={{ gap: "112px" }}
 					>
 						<div className="d-flex justify-content-center align-items-center Gap">
@@ -78,7 +78,7 @@ function WhyChoseUs() {
 						</div>
 					</Col>
 					<Col
-						className="d-flex flex-column justify-content-start me-4 mt-lg-0 mt-5"
+						className="d-flex flex-column justify-content-start  mt-lg-0 mt-5"
 						style={{ gap: "112px" }}
 					>
 						<div className="d-flex justify-content-center align-items-center Gap">

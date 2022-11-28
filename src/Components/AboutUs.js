@@ -11,11 +11,7 @@ export const AboutUs = () => {
 	return (
 		<div className="backgroundColor-grey">
 			<Header />
-			<img
-				src={DubaiWater}
-				alt="teamwork"
-				style={{ width: "100%", height: "800px" }}
-			/>
+			<img src={DubaiWater} alt="teamwork" className="bannersImages" />
 			<Container className="pt-5 pb-5">
 				<div className="d-flex justify-content-center align-items-center Gap pb-5">
 					<p className="PrimaryColor HeadingOurServices">About</p>
