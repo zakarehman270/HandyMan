@@ -235,6 +235,7 @@ const FormContentUs = (props) => {
 									}}
 									className="w-100 outerWrapperSearchField"
 								/>
+								
 								{AreaArray.filter((val) => {
 									if (InputData === "") {
 										return val;
