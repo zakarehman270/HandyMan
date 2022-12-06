@@ -7,11 +7,16 @@ import Thank from "../Thank";
 import FormContentUs from "./FormComponent";
 function BookProfessional() {
 	const [RedirectToThanPage, setRedirectToThanPage] = useState(false);
+	const [ShowServiceDropDown, setShowServiceDropDown] = useState(false);
 	if (RedirectToThanPage) {
 		return <Thank />;
 	} else {
 		return (
-			<div>
+			<div
+				onClick={(e) => {
+					setShowServiceDropDown(false);
+				}}
+			>
 				<Header />
 				<div className="FormBackGroundImage">
 					<Container>
@@ -22,6 +27,8 @@ function BookProfessional() {
 						<FormContentUs
 							display={true}
 							setRedirectToThanPage={setRedirectToThanPage}
+							ShowServiceDropDown={ShowServiceDropDown}
+							setShowServiceDropDown={setShowServiceDropDown}
 						/>
 					</Container>
 				</div>

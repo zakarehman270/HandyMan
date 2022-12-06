@@ -132,7 +132,6 @@ const FormContentUs = (props) => {
 							defaultCountry="AE"
 							placeholder="Enter phone number"
 							className="FormsInputFieldsDatePicker"
-							// style={{ borderColor: ValidationPhone ? "red" : "" }}
 							value={Phone}
 							onChange={(value) => {
 								setPhone(value);
@@ -188,11 +187,15 @@ const FormContentUs = (props) => {
 				</div>
 				<div className={`${props.display ? "WidthFormComponent" : "w-100"}`}>
 					{props.display && (
-						<Dropdown className="mb-3 w-100">
+						<Dropdown className="mb-3 w-100" show={props.ShowServiceDropDown}>
 							<label htmlFor="phone" className="Label">
-								Choose Services:
+								Choose Service:
 							</label>
 							<Dropdown.Toggle
+								onClick={(e) => {
+									props.setShowServiceDropDown(true);
+									e.stopPropagation();
+								}}
 								id="dropdown-basic"
 								className="outerWrapperDropDownRequestACallBack FormsInputFieldsDatePicker"
 							>
@@ -201,15 +204,20 @@ const FormContentUs = (props) => {
 							<Dropdown.Menu className="outerWrapperDropDownRequestACallBackMenu">
 								{ServicesArray.map((item, index) => {
 									return (
-										<Dropdown.Item
+										<Link
 											key={index}
-											href={`#/action-${index}`}
 											onClick={() => {
+												window.scrollTo(0, 0);
 												setService(item.name);
+												props.setShowServiceDropDown(false);
 											}}
+											className="text-decoration-none LinkService"
+											to={`/form/${item.name.replace(/\s/g, "")}/?vat=${
+												item.vat
+											}+${item.price}`}
 										>
 											{item.name}
-										</Dropdown.Item>
+										</Link>
 									);
 								})}
 							</Dropdown.Menu>
@@ -235,7 +243,6 @@ const FormContentUs = (props) => {
 									}}
 									className="w-100 outerWrapperSearchField"
 								/>
-								
 								{AreaArray.filter((val) => {
 									if (InputData === "") {
 										return val;
