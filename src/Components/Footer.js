@@ -5,6 +5,8 @@ import { MdOutlinePhoneInTalk } from "react-icons/md";
 import { BsInstagram } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
+import { ServicesArray } from "../Data";
+import { Link } from "react-router-dom";
 function Footer() {
 	return (
 		<div style={{ backgroundColor: "#0D0D0D" }}>
@@ -12,8 +14,8 @@ function Footer() {
 				<Row>
 					<Col className="pt-5 pb-5 text-white">
 						<p className="FooterLeftContent">
-							800 person doing work about the house mainly focuses 1 in making
-							living simple, not hard
+							HomeFixRepair person doing work about the house mainly focuses 1
+							in making living simple, not hard
 							<br />
 							and trouble free for the home maker by making ready
 							<br /> best support at the best price,that to all under one
@@ -32,17 +34,22 @@ function Footer() {
 							Popular Services
 						</p>
 						<Row className="FooterMidContent">
-							<Col>
-								<p>Cleaning</p>
-								<p>deep cleaning</p>
-								<p>handyman</p>
-								<p>plumbing</p>
-							</Col>
-							<Col>
-								<p>carpenter</p>
-								<p>paint work</p>
-								<p>electeician</p>
-							</Col>
+							{ServicesArray.map((item, index) => {
+								return (
+									<Link
+										key={index}
+										onClick={() => {
+											window.scrollTo(0, 0);
+										}}
+										className="text-decoration-none text-white"
+										to={`/form/${item.name.replace(/\s/g, "")}/?vat=${
+											item.vat
+										}+${item.price}`}
+									>
+										{item.name}
+									</Link>
+								);
+							})}
 						</Row>
 					</Col>
 					<Col className="pt-5 pb-5 text-start text-white">
@@ -62,7 +69,7 @@ function Footer() {
 						<div className="d-flex Gap mt-5 FontSize20 ">
 							<a
 								href="https://www.instagram.com/"
-								rel="nofollow noopener"
+								rel="noopener"
 								target="_blank"
 								className="text-decoration-none text-white"
 							>
@@ -70,7 +77,7 @@ function Footer() {
 							</a>
 							<a
 								href="https://www.facebook.com/"
-								rel="nofollow noopener"
+								rel="noopener"
 								target="_blank"
 								className="text-decoration-none text-white"
 							>
@@ -78,7 +85,7 @@ function Footer() {
 							</a>
 							<a
 								href="https://twitter.com/"
-								rel="nofollow noopener"
+								rel="noopener"
 								target="_blank"
 								className="text-decoration-none text-white"
 							>

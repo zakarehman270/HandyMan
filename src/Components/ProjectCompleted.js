@@ -7,8 +7,8 @@ import { FaPhone } from "react-icons/fa";
 import { Link } from "react-router-dom";
 const ProjectCompleted = () => {
 	return (
-		<div className="d-flex w-100 outerWrapperMessageBanner">
-			<div className="outerWrapperLeftSideOfMessageBanner w-50">
+		<div className="w-100 outerWrapperMessageBanner">
+			<div className="outerWrapperLeftSideOfMessageBanner">
 				<Link
 					onClick={() => {
 						window.scrollTo(0, 0);
@@ -26,7 +26,7 @@ const ProjectCompleted = () => {
 			</div>
 			<div className="outerContainerProjectCompleted text-white text-center pt-4 pb-5">
 				<h2>The way to achieve your own success</h2>
-				<div className="mt-3 d-flex align-item-center justify-content-center gap-50">
+				<div className="mt-3 d-flex align-item-center justify-content-center GapBetWeenProjectCompleteClientAndGoogleReview">
 					<div className="text-center">
 						<MdOutlineHomeWork className="outerWrapperIconInProjectCompleted mb-3" />
 						<div className="CountUp">

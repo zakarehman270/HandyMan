@@ -3,7 +3,7 @@ import { BrowserRouter } from "react-router-dom";
 import Routing from "./Components/Routing";
 import whatsapp from "./assets/whatsapp.png";
 import phone from "./assets/phone.png";
-function App(props) {
+function App() {
 	return (
 		<div className="fontFamily">
 			<BrowserRouter>
@@ -12,7 +12,7 @@ function App(props) {
 			<div className="whatsappIcon position-fixed">
 				<a
 					href="https://web.whatsapp.com"
-					rel="nofollow noopener"
+					rel="noopener"
 					target="_blank"
 					className="text-decoration-none text-white"
 				>
