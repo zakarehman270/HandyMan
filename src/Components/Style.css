@@ -515,6 +515,7 @@ textarea {
 	color: #ff8800;
 	background-color: #e9ecef;
 }
+
 @media only screen and (max-width: 1200px) {
 	.outerWrapperMessageBanner {
 		display: block;
