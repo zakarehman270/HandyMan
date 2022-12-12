@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar, Container, Nav, Button } from "react-bootstrap";
 import { Link } from "react-scroll";
-import Logo from "../assets/Logo.PNG";
+import Logo from "../assets/Logo.png";
 import { NavLink } from "react-router-dom";
 import { BsInstagram } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
