@@ -438,6 +438,7 @@ const FormContentUs = (props) => {
 													  Date:${DateValue} 
 														Area:${Area} 
 														Hours:${Hours}
+														Time:${BookingTime}
 													  Service${Service}
                             Message:${values.instruction} 
 													  suggestion:${values.suggestion}
