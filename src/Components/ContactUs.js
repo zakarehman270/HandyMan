@@ -11,8 +11,8 @@ import contact from "../assets/ContactUs.jpg";
 import FormContentUs from "./Form/FormComponent";
 import Thank from "./Thank";
 export const ContactUs = () => {
-	const [RedirectToThanPage, setRedirectToThanPage] = useState(false);
-	if (RedirectToThanPage) {
+	const [RedirectToFinalPage, setRedirectToFinalPage] = useState(false);
+	if (RedirectToFinalPage) {
 		return <Thank />;
 	} else {
 		return (
@@ -60,7 +60,7 @@ export const ContactUs = () => {
 						<Col>
 							<FormContentUs
 								display={false}
-								setRedirectToThanPage={setRedirectToThanPage}
+								setRedirectToFinalPage={setRedirectToFinalPage}
 							/>
 						</Col>
 					</Row>

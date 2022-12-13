@@ -6,9 +6,9 @@ import "react-phone-number-input/style.css";
 import Thank from "../Thank";
 import FormContentUs from "./FormComponent";
 function BookProfessional() {
-	const [RedirectToThanPage, setRedirectToThanPage] = useState(false);
+	const [RedirectToFinalPage, setRedirectToFinalPage] = useState(false);
 	const [ShowServiceDropDown, setShowServiceDropDown] = useState(false);
-	if (RedirectToThanPage) {
+	if (RedirectToFinalPage) {
 		return <Thank />;
 	} else {
 		return (
@@ -17,7 +17,7 @@ function BookProfessional() {
 					setShowServiceDropDown(false);
 				}}
 			>
-				<Header />
+				<Header setRedirectToFinalPage={setRedirectToFinalPage} />
 				<div className="FormBackGroundImage">
 					<Container>
 						<div className=" HeadingOurServices text-center w-100 pt-4 flex-nowrap justify-content-center align-items-center Gap FontWeight">
@@ -26,7 +26,7 @@ function BookProfessional() {
 						</div>
 						<FormContentUs
 							display={true}
-							setRedirectToThanPage={setRedirectToThanPage}
+							setRedirectToFinalPage={setRedirectToFinalPage}
 							ShowServiceDropDown={ShowServiceDropDown}
 							setShowServiceDropDown={setShowServiceDropDown}
 						/>

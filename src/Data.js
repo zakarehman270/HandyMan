@@ -203,7 +203,7 @@ export const ServicesArray = [
 		img: CleaningImage,
 		description:
 			"Getting your private home cleaned in the UAE is only some clicks away. HomeFixRepair is right here for all your own home needs, from residence cleaning to hair salon services. residence cleaning is a critical job, and to store time and strength, you can allow us to do it.",
-		vat: "12",
+		vat: "",
 		price: "112",
 		detail: {
 			bannerImage: CleaningBanner,
@@ -247,7 +247,7 @@ export const ServicesArray = [
 		img: carPainter,
 		description:
 			"Carpentry offerings in Dubai may be a important part of our lives and it includes maximum of the tasks of a normal residence, an condominium, or a billboard building.",
-		vat: "14",
+		vat: "",
 		price: "114",
 		detail: {
 			bannerImage: CarpenterBanner,
@@ -290,7 +290,7 @@ export const ServicesArray = [
 		img: deepCleaning,
 		description:
 			"One of the main causes of breathing contamination in UAE is indoor air pollutants. The dusty climate of the us of a coupled together with the cramped up interior influences the high-quality of indoor air.",
-		vat: "17",
+		vat: "",
 		price: "117",
 		detail: {
 			bannerImage: DeepCleaningBanner,
@@ -335,7 +335,7 @@ export const ServicesArray = [
 		img: Electrician,
 		description:
 			"Have a hassle with electricity at your property? No want to fear, due to the fact our expert electricians are right here. one of our regions of know-how is providing domestic electrical offerings inside the UAE",
-		vat: "19",
+		vat: "",
 		price: "119",
 		detail: {
 			bannerImage: ElectricianBanner,
@@ -380,7 +380,7 @@ export const ServicesArray = [
 		img: Handyman,
 		description:
 			"For your house, HomeFixRepair gives the first-rate handyman offerings inside the UAE, so you can sit lower back and loosen up. We provide you with a convenient and widespread variety of handyman and upkeep offerings with dependability and obligation",
-		vat: "12",
+		vat: "",
 		price: "112",
 		detail: {
 			bannerImage: HandyManBanner,
@@ -423,7 +423,7 @@ export const ServicesArray = [
 		img: HomeFixPicPainting,
 		description:
 			"Paint offerings We offer the quality domestic painting offerings in Dubai. We exercise expert shade consulting, vibrant and decorative coating, quality splashing, interior and outdoors wall portray, fixtures & wood painting, and lots greater",
-		vat: "13",
+		vat: "",
 		price: "113",
 		detail: {
 			bannerImage: PaintingBanner,
@@ -466,7 +466,7 @@ export const ServicesArray = [
 		img: plumbing,
 		description:
 			"you may have the great plumbers within the UAE with HomeFixRepair's help. No want to attempt fixing your damaged sink your self anymore",
-		vat: "14",
+		vat: "",
 		price: "114",
 		detail: {
 			bannerImage: PlumbingBanner,
@@ -688,3 +688,10 @@ export let AreaArray = [
 	{ name: "Za'abeel Second" },
 ];
 export let HoursData = [1, 2, 3, 4, 5, 6, 7, 8];
+export let bookingTime = [
+	"13:00-14:00",
+	"14:00-15:00",
+	"15:00-16:00",
+	"16:00-17:00",
+	"15:00-18:00",
+];

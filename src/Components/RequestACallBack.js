@@ -8,8 +8,8 @@ import DubaiWater from "../assets/RequestCallBack.jpg";
 import FormContentUs from "./Form/FormComponent";
 import Thank from "./Thank";
 export const RequestACallBack = () => {
-	const [RedirectToThanPage, setRedirectToThanPage] = useState(false);
-	if (RedirectToThanPage) {
+	const [RedirectToFinalPage, setRedirectToFinalPage] = useState(false);
+	if (RedirectToFinalPage) {
 		return <Thank />;
 	} else {
 		return (
@@ -28,7 +28,7 @@ export const RequestACallBack = () => {
 						<div className="OuterWrapperFormRequestCallBack">
 							<FormContentUs
 								display={false}
-								setRedirectToThanPage={setRedirectToThanPage}
+								setRedirectToFinalPage={setRedirectToFinalPage}
 							/>
 						</div>
 						<div className="OuterWrapperContentRequestCallBack">

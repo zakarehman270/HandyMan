@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 import { Button, Dropdown, Form } from "react-bootstrap";
-import { AreaArray, HoursData, ServicesArray } from "../../Data";
+import { AreaArray, bookingTime, HoursData, ServicesArray } from "../../Data";
 import PhoneInput from "react-phone-number-input";
 import DatePicker from "react-date-picker";
 import "react-phone-number-input/style.css";
@@ -27,7 +27,11 @@ const FormContentUs = (props) => {
 	const [VatValue, setVatValue] = useState(0);
 	const [Service, setService] = useState("Choose Service");
 	const [Hours, setHours] = useState(0);
+	const [HourPrise, setHourPrise] = useState(0);
+	const [BookingTime, setBookingTime] = useState("");
 	const [Area, setArea] = useState("Area..");
+	const [ValidationArea, setValidationArea] = useState(false);
+	const [ValidationService, setValidationService] = useState(false);
 	const [DateValue, setDateValue] = useState(new Date());
 	const [Phone, setPhone] = useState();
 	const location = useLocation();
@@ -38,6 +42,10 @@ const FormContentUs = (props) => {
 			let Split = location.pathname.split("/");
 			let price = vat.substring(vat.indexOf(" ") + 1);
 			setPriceDefaultValue(price);
+			setHours(1);
+			setPriceValue(price);
+			setHourPrise(price);
+			setBookingTime("");
 			setVatDefaultValue(parseInt(vat));
 			setService(Split[2]);
 			if (
@@ -62,9 +70,15 @@ const FormContentUs = (props) => {
 	};
 	const handleSubmit = (event) => {
 		const form = event.currentTarget;
-		if (form.checkValidity() === false) {
+		if (
+			form.checkValidity() === false ||
+			Area === "Area.." ||
+			Service === "Choose Service"
+		) {
 			event.preventDefault();
 			event.stopPropagation();
+			setValidationArea(true);
+			setValidationService(true);
 		} else {
 			event.preventDefault();
 			emailjs
@@ -82,7 +96,7 @@ const FormContentUs = (props) => {
 						console.log(error.text);
 					}
 				);
-			props.setRedirectToThanPage(true);
+			props.setRedirectToFinalPage(true);
 		}
 		setValidated(true);
 	};
@@ -152,36 +166,68 @@ const FormContentUs = (props) => {
 						</div>
 					)}
 					{props.display && (
-						<Dropdown className="mb-3 w-100">
-							<label htmlFor="phone" className="Label">
-								How many hours do you need your professional to stay?:
-							</label>
-							<Dropdown.Toggle
-								id="dropdown-basic"
-								className="outerWrapperDropDownRequestACallBack FormsInputFieldsDatePicker"
-							>
-								{Hours}
-							</Dropdown.Toggle>
-							<Dropdown.Menu className="outerWrapperDropDownRequestACallBackMenu">
-								{HoursData.map((item, index) => {
-									return (
-										<Dropdown.Item
-											key={index}
-											href={`#/action-${index}`}
-											onClick={() => {
-												setHours(item);
-												let TotalPrice = item * PriceDefaultValue;
-												let TotalVat = item * VatDefaultValue;
-												setPriceValue(TotalPrice);
-												setVatValue(TotalVat);
-											}}
-										>
-											{item}
-										</Dropdown.Item>
-									);
-								})}
-							</Dropdown.Menu>
-						</Dropdown>
+						<div>
+							<Dropdown className="mb-3 w-100">
+								<label htmlFor="phone" className="Label">
+									Booking Time:
+								</label>
+								<Dropdown.Toggle
+									id="dropdown-basic"
+									className="outerWrapperDropDownRequestACallBack borderColorDropDown borderColorDropDown FormsInputFieldsDatePicker"
+								>
+									{BookingTime}
+								</Dropdown.Toggle>
+								<Dropdown.Menu className="outerWrapperDropDownRequestACallBackMenu">
+									{bookingTime.map((item, index) => {
+										return (
+											<Dropdown.Item
+												key={index}
+												onClick={() => {
+													setBookingTime(item);
+													// setHours(item);
+													// let TotalPrice = item * PriceDefaultValue;
+													// let TotalVat = item * VatDefaultValue;
+													// setPriceValue(TotalPrice);
+													// setVatValue(TotalVat);
+												}}
+											>
+												{item}
+											</Dropdown.Item>
+										);
+									})}
+								</Dropdown.Menu>
+							</Dropdown>
+							<Dropdown className="mb-3 w-100">
+								<label htmlFor="phone" className="Label">
+									How many hours do you need your professional to stay?:
+								</label>
+								<Dropdown.Toggle
+									id="dropdown-basic"
+									className="outerWrapperDropDownRequestACallBack borderColorDropDown borderColorDropDown FormsInputFieldsDatePicker"
+								>
+									{Hours}
+								</Dropdown.Toggle>
+								<Dropdown.Menu className="outerWrapperDropDownRequestACallBackMenu">
+									{HoursData.map((item, index) => {
+										return (
+											<Dropdown.Item
+												key={index}
+												// href={`#/action-${index}`}
+												onClick={() => {
+													setHours(item);
+													let TotalPrice = item * PriceDefaultValue;
+													let TotalVat = item * VatDefaultValue;
+													setPriceValue(TotalPrice);
+													setVatValue(TotalVat);
+												}}
+											>
+												{item}
+											</Dropdown.Item>
+										);
+									})}
+								</Dropdown.Menu>
+							</Dropdown>
+						</div>
 					)}
 					<p className="LabelContentUnderHoursDropDown">{Content}</p>
 				</div>
@@ -197,7 +243,10 @@ const FormContentUs = (props) => {
 									e.stopPropagation();
 								}}
 								id="dropdown-basic"
-								className="outerWrapperDropDownRequestACallBack FormsInputFieldsDatePicker"
+								className={`
+								outerWrapperDropDownRequestACallBack FormsInputFieldsDatePicker
+								${ValidationService ? "borderColorRedDropDown" : "borderColorDropDown"}
+								`}
 							>
 								{Service}
 							</Dropdown.Toggle>
@@ -209,6 +258,7 @@ const FormContentUs = (props) => {
 											onClick={() => {
 												window.scrollTo(0, 0);
 												setService(item.name);
+												setValidationService(false);
 												props.setShowServiceDropDown(false);
 											}}
 											className="text-decoration-none LinkService"
@@ -229,7 +279,10 @@ const FormContentUs = (props) => {
 						</label>
 						<Dropdown.Toggle
 							id="dropdown-basic"
-							className="outerWrapperDropDownRequestACallBack FormsInputFieldsDatePicker"
+							className={`
+								outerWrapperDropDownRequestACallBack FormsInputFieldsDatePicker
+								${ValidationArea ? "borderColorRedDropDown" : "borderColorDropDown"}
+								`}
 						>
 							{Area}
 						</Dropdown.Toggle>
@@ -264,8 +317,8 @@ const FormContentUs = (props) => {
 											onClick={() => {
 												setIndexSelectedDropDown(index);
 												setArea(item.name);
+												setValidationArea(false);
 											}}
-											href={`#/action-${index}`}
 										>
 											{item.name}
 										</Dropdown.Item>
@@ -296,7 +349,6 @@ const FormContentUs = (props) => {
 						<Form.Control
 							as="textarea"
 							placeholder="Instruction..."
-							required
 							name="instruction"
 							value={values.instruction}
 							onChange={handleInputChange}
@@ -306,24 +358,26 @@ const FormContentUs = (props) => {
 							Please provide a valid city.
 						</Form.Control.Feedback>
 					</Form.Group>
-					<Form.Group controlId="validationCustom03">
-						<label htmlFor="phone" className="Label">
-							suggestion:
-						</label>
-						<Form.Control
-							as="textarea"
-							placeholder="We want to serve you better and are committed to continuously improving our client service standards. To do this, let us know what you think!"
-							required
-							style={{ height: "100px" }}
-							name="suggestion"
-							value={values.suggestion}
-							onChange={handleInputChange}
-							className="FormsInputFieldsDatePicker"
-						/>
-						<Form.Control.Feedback type="invalid">
-							Please provide a valid city.
-						</Form.Control.Feedback>
-					</Form.Group>
+					{!props.display && (
+						<Form.Group controlId="validationCustom03">
+							<label htmlFor="phone" className="Label">
+								suggestion:
+							</label>
+							<Form.Control
+								as="textarea"
+								placeholder="We want to serve you better and are committed to continuously improving our client service standards. To do this, let us know what you think!"
+								required
+								style={{ height: "100px" }}
+								name="suggestion"
+								value={values.suggestion}
+								onChange={handleInputChange}
+								className="FormsInputFieldsDatePicker"
+							/>
+							<Form.Control.Feedback type="invalid">
+								Please provide a valid city.
+							</Form.Control.Feedback>
+						</Form.Group>
+					)}
 					{props.display && (
 						<div className="d-flex align-items-center Gap">
 							<Form.Check type={"checkbox"} id={`default-radio`} />
@@ -358,16 +412,18 @@ const FormContentUs = (props) => {
 							</label>
 							<div className="FormsInputFieldsDatePicker ContentPriceDetails FontWeight">
 								<div className="d-flex justify-content-between pb-2">
-									<p>PRICE</p>
-									<p>{PriceValue}</p>
+									<p>HOUR PRICE</p>
+									<p>{HourPrise}</p>
 								</div>
 								<div className="d-flex justify-content-between pb-2">
-									<p>VAT</p>
-									<p>{VatValue}</p>
+									<p>HOUR</p>
+									{/* {VatValue} */}
+									<p>{Hours}</p>
 								</div>
 								<div className="d-flex justify-content-between">
 									<p>TOTAL PRICE</p>
-									<p style={{ color: "#FFBB00" }}>{PriceValue + VatValue}</p>
+									<p style={{ color: "#FFBB00" }}>{PriceValue}</p>
+									{/* <p style={{ color: "#FFBB00" }}>{PriceValue + VatValue}</p> */}
 								</div>
 							</div>
 						</div>
@@ -385,7 +441,7 @@ const FormContentUs = (props) => {
 													  Service${Service}
                             Message:${values.instruction} 
 													  suggestion:${values.suggestion}
-														TotalPrice${PriceValue + VatValue}`}
+														TotalPrice${PriceValue}`}
 							onChange={() => {
 								console.log("Onchange");
 							}}

@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 import { BsInstagram } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
 import { ImWhatsapp } from "react-icons/im";
-function Header() {
+function Header(props) {
 	return (
 		<div className="outerWrapperNavBar bg-white">
 			<div className="outerWrapperUpperHeader pt-3 pb-3 FontSizeTextHolderTopOfHeader">
@@ -45,10 +45,10 @@ function Header() {
 							<p>+971558504862</p>
 						</a>
 						<a
-							href="https://mail.google.com/mail/?view=cm&fs=1&to=Babalqarya4@gmail.com"
+							href="https://mail.google.com/mail/?view=cm&fs=1&to=info@homefixrepairs.com"
 							className="PrimaryColor HoverTextColor text-decoration-none"
 						>
-							<p>Babalqarya4@gmail.com</p>
+							<p>info@homefixrepairs.com</p>
 						</a>
 					</div>
 				</Container>
@@ -81,6 +81,10 @@ function Header() {
 								</NavLink>
 							</Link>
 							<NavLink
+								onClick={() => {
+									window.scrollTo(0, 0);
+									props.setRedirectToFinalPage(false);
+								}}
 								to={`/form/choseService/?vat=${0}+${0}`}
 								className="text-decoration-none HeaderLinks text-black"
 							>

@@ -233,7 +233,7 @@ input[type="text"] {
 	width: 290px;
 	height: 100px;
 	line-height: 20px;
-	word-break: break-all;
+	word-break: break-word;
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
 	-moz-box-orient: vertical;
@@ -457,12 +457,17 @@ textarea {
 }
 .outerWrapperDropDownRequestACallBack {
 	width: 100% !important;
-	border-color: #ced4da !important;
-	background: white !important;
 	color: #212529 !important;
+	background: white !important;
 	display: flex !important;
 	align-items: center !important;
 	justify-content: space-between !important;
+}
+.borderColorDropDown {
+	border-color: #ced4da !important;
+}
+.borderColorRedDropDown {
+	border-color: red !important;
 }
 
 .outerWrapperDropDownRequestACallBackMenu {
