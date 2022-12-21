@@ -25,11 +25,23 @@ const FormContentUs = (props) => {
 	const [IndexSelectedDropDown, setIndexSelectedDropDown] = useState(0);
 	const [PriceValue, setPriceValue] = useState(0);
 	const [VatValue, setVatValue] = useState(0);
-	const [Service, setService] = useState("Choose Service");
 	const [Hours, setHours] = useState(0);
 	const [HourPrise, setHourPrise] = useState(0);
 	const [BookingTime, setBookingTime] = useState("");
-	const [Area, setArea] = useState("Area..");
+	const [Area, setArea] = useState(() => {
+		if (props.submitFormFrom === "Book Professional") {
+			return "Area..";
+		} else {
+			return "other";
+		}
+	});
+	const [Service, setService] = useState(() => {
+		if (props.submitFormFrom === "Book Professional") {
+			return "Choose Service";
+		} else {
+			return "other";
+		}
+	});
 	const [ValidationArea, setValidationArea] = useState(false);
 	const [ValidationService, setValidationService] = useState(false);
 	const [DateValue, setDateValue] = useState(new Date());
@@ -273,75 +285,80 @@ const FormContentUs = (props) => {
 							</Dropdown.Menu>
 						</Dropdown>
 					)}
-					<Dropdown className="mb-3 w-100">
-						<label htmlFor="phone" className="Label">
-							Choose Area:
-						</label>
-						<Dropdown.Toggle
-							id="dropdown-basic"
-							className={`
+					{props.display && (
+						<div>
+							<Dropdown className="mb-3 w-100">
+								<label htmlFor="phone" className="Label">
+									Choose Area:
+								</label>
+								<Dropdown.Toggle
+									id="dropdown-basic"
+									className={`
 								outerWrapperDropDownRequestACallBack FormsInputFieldsDatePicker
 								${ValidationArea ? "borderColorRedDropDown" : "borderColorDropDown"}
 								`}
-						>
-							{Area}
-						</Dropdown.Toggle>
-						<Dropdown.Menu className="outerWrapperDropDownRequestACallBackMenu OuterWrapperDropDown">
-							<div className="OuterWraperDivBoxes">
-								<input
-									value={InputData}
-									placeholder="search.."
-									onChange={(e) => {
-										setInputData(e.target.value);
-									}}
-									className="w-100 outerWrapperSearchField"
-								/>
-								{AreaArray.filter((val) => {
-									if (InputData === "") {
-										return val;
-									} else if (
-										val.name.toLowerCase().includes(InputData.toLowerCase())
-									) {
-										return val;
-									}
-								}).map((item, index) => {
-									let selected = false;
-									if (IndexSelectedDropDown === index) {
-										selected = true;
-									}
-									return (
-										<Dropdown.Item
-											key={index}
-											className="DropDownLabel"
-											style={{ color: selected ? "#FFBB00" : "" }}
-											onClick={() => {
-												setIndexSelectedDropDown(index);
-												setArea(item.name);
-												setValidationArea(false);
+								>
+									{Area}
+								</Dropdown.Toggle>
+								<Dropdown.Menu className="outerWrapperDropDownRequestACallBackMenu OuterWrapperDropDown">
+									<div className="OuterWraperDivBoxes">
+										<input
+											value={InputData}
+											placeholder="search.."
+											onChange={(e) => {
+												setInputData(e.target.value);
 											}}
-										>
-											{item.name}
-										</Dropdown.Item>
-									);
-								})}
-							</div>
-						</Dropdown.Menu>
-					</Dropdown>
-					<Form.Group className="mb-3" controlId="validationCustom02">
-						<label htmlFor="phone" className="Label">
-							Address:
-						</label>
-						<Form.Control
-							required
-							type="text"
-							placeholder="Address"
-							name="location"
-							value={values.location}
-							onChange={handleInputChange}
-							className="FormsInputFieldsDatePicker"
-						/>
-						<Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-					</Form.Group>
+											className="w-100 outerWrapperSearchField"
+										/>
+										{AreaArray.filter((val) => {
+											if (InputData === "") {
+												return val;
+											} else if (
+												val.name.toLowerCase().includes(InputData.toLowerCase())
+											) {
+												return val;
+											}
+										}).map((item, index) => {
+											let selected = false;
+											if (IndexSelectedDropDown === index) {
+												selected = true;
+											}
+											return (
+												<Dropdown.Item
+													key={index}
+													className="DropDownLabel"
+													style={{ color: selected ? "#FFBB00" : "" }}
+													onClick={() => {
+														setIndexSelectedDropDown(index);
+														setArea(item.name);
+														setValidationArea(false);
+													}}
+												>
+													{item.name}
+												</Dropdown.Item>
+											);
+										})}
+									</div>
+								</Dropdown.Menu>
+							</Dropdown>
+							<Form.Group className="mb-3" controlId="validationCustom02">
+								<label htmlFor="phone" className="Label">
+									Address:
+								</label>
+								<Form.Control
+									required
+									type="text"
+									placeholder="Address"
+									name="location"
+									value={values.location}
+									onChange={handleInputChange}
+									className="FormsInputFieldsDatePicker"
+								/>
+								<Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+							</Form.Group>
+						</div>
+					)}
+
 					<Form.Group controlId="validationCustom03">
 						<label htmlFor="phone" className="Label">
 							Instruction:
@@ -432,17 +449,19 @@ const FormContentUs = (props) => {
 						<textarea
 							name="message"
 							value={`Name: ${values.name} 
-										        Email: ${values.email} 
-														Phone: ${Phone} 
-                            Address: ${values.location} 
-													  Date:${DateValue} 
-														Area:${Area} 
-														Hours:${Hours}
-														Time:${BookingTime}
-													  Service${Service}
-                            Message:${values.instruction} 
-													  suggestion:${values.suggestion}
-														TotalPrice${PriceValue}`}
+										        Email:          ${values.email} 
+														Phone:          ${Phone} 
+                            Address:        ${values.location} 
+													  Date:           ${DateValue} 
+														Area:           ${Area} 
+														Hours:          ${Hours}
+														Time:           ${BookingTime}
+													  Service:        ${Service}
+                            Message:        ${values.instruction} 
+													  suggestion:     ${values.suggestion}
+														TotalPrice:     ${PriceValue}
+														SubmittedFrom:  ${props.submitFormFrom}
+														`}
 							onChange={() => {
 								console.log("Onchange");
 							}}

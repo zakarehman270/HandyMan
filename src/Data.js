@@ -49,7 +49,7 @@ export const AboutUsData = [
 	{
 		heading: "HomeFixRepair offerings",
 		detail:
-			" actual to their call, are available pretty available. And it isn't simply while you are shifting residence or sporting out a renovation which you need professional handyman offerings – you could even be making a brand new addition, require an extraordinary process achieved or need an emergency handyman due to the fact something wishes an pressing spot of repair. some thing your need and but small or complex the job, HomeGenie has the great handyman in Dubai for you. So whether or not it is your tv that wishes to be relocated or it's miles striking up the state-of-the-art curtains which you simply bought for the dwelling room, we've got a reasonably-priced handyman who will get your job completed.All we need you to do is down load the free HomeGenie app for Android and iOS, and a totally skilled handyman will reach your own home at a date and time that suits you. if your atypical process is some thing that needs to be sorted right now, HomeGenie also offers Emergency and identical Day handyman offerings.reserving our Emergency facility approach that a handyman will arrive at your property within 2 hours of reserving the carrier, at an extra price. The same Day carrier will location a handyman at your home to collect your modular furnishings or restore the door lock before 6PM that day, supplied you booked among 8 AM and 12 PM.",
+			"When it comes to remodeling, we do it all. We pride ourselves on our commitment to direct and honest service. Not to mention we never go over your budget unless you change the scope of work and our 5 year warranty ensures you have the best quality craftsmanship at home. No matter what home improvement project you dream of, the HOMEfix team can make it happen with ease.",
 	},
 	{
 		heading: "while is a HomeFixRepair generally required to be known as in?",
@@ -98,7 +98,7 @@ export const TermAndConditions = [
 	{
 		heading: "HomeFixRepair offerings",
 		detail:
-			" actual to their call, are available pretty available. And it isn't simply while you are shifting residence or sporting out a renovation which you need professional handyman offerings – you could even be making a brand new addition, require an extraordinary process achieved or need an emergency handyman due to the fact something wishes an pressing spot of repair. some thing your need and but small or complex the job, HomeGenie has the great handyman in Dubai for you. So whether or not it is your tv that wishes to be relocated or it's miles striking up the state-of-the-art curtains which you simply bought for the dwelling room, we've got a reasonably-priced handyman who will get your job completed.All we need you to do is down load the free HomeGenie app for Android and iOS, and a totally skilled handyman will reach your own home at a date and time that suits you. if your atypical process is some thing that needs to be sorted right now, HomeGenie also offers Emergency and identical Day handyman offerings.reserving our Emergency facility approach that a handyman will arrive at your property within 2 hours of reserving the carrier, at an extra price. The same Day carrier will location a handyman at your home to collect your modular furnishings or restore the door lock before 6PM that day, supplied you booked among 8 AM and 12 PM.",
+			"When it comes to remodeling, we do it all. We pride ourselves on our commitment to direct and honest service. Not to mention we never go over your budget unless you change the scope of work and our 5 year warranty ensures you have the best quality craftsmanship at home. No matter what home improvement project you dream of, the HOMEfix team can make it happen with ease.",
 	},
 	{
 		heading: "while is a HomeFixRepair generally required to be known as in?",
@@ -198,57 +198,57 @@ export const feedBackData = [
 	},
 ];
 export const ServicesArray = [
-	{
-		name: "Cleaning",
-		img: CleaningImage,
-		description:
-			"Getting your private home cleaned in the UAE is only some clicks away. HomeFixRepair is right here for all your own home needs, from residence cleaning to hair salon services. residence cleaning is a critical job, and to store time and strength, you can allow us to do it.",
-		vat: "",
-		price: "112",
-		detail: {
-			bannerImage: CleaningBanner,
-			upperLeftDetail: {
-				heading: "HomeRepairFix, Dubai's best house Cleaning service!",
-				details:
-					"Making your life less difficult is simple with HomeFixRepair. Our offerings are right here for you for every part of your existence, and also you received’t should worry about cleaning your house ever again. With a few easy clicks, you could hire the house cleansing provider from our website and cellular app. in case you are seeking out a domestic cleansing service in the UAE, look no further! Now, let’s observe some of the reasons why you need to lease a professional house purifier, and more information at the service.",
-			},
-			upperRightDetail: {
-				heading: "Why book residence cleaning services via HomeFixRepair",
-				number: " 800 8289",
-				details:
-					"we all lead busy lives, and our responsibilities do not make it easier. while you arrive home after a protracted paintings day, you likely need to peer a easy house, right? alas, it’s not possible with out hours of work. however, while you rent a professional purifier from HomeFixRepair, you don’t even have to move your hands for a glittery residence. Many human beings prefer hiring a residence cleaning agency because it will prevent hours. you could then spend the ones hours with your loved ones, and experience your freshly wiped clean house.",
-			},
-			midDetail: {
-				heading: "what's residence cleaning service?",
-				video: HomeFixCleaningVideo,
-				details:
-					"HomeFixRepair's house cleaning provider includes everything you need for a very well wiped clean home. Our experts are well-educated, and are geared up to easy your home with the pleasant tools. house cleansing isn't any comic story, and with HomeFixRepair, you may depart it to professionals.",
-			},
-			lowerLeftDetail: {
-				heading: "Widespread home cleansing offerings",
-				details:
-					"expert house cleaning includes widespread cleansing of the complete residence. This includes vacuuming the carpet, mopping the floors, cleaning the windows, and so forth. those are the thorough components, but it does now not stop here. whilst you finish difficult cleansing, there are nonetheless many grimy surfaces and corners left.",
-			},
-			lowerCenterDetail: {
-				heading: "Bedroom cleaning offerings",
-				details:
-					"Our specialists will trade your mattress sheets if it is necessary, dust all the wardrobes and make certain that your bedroom is fresh when they leave. no matter how messy your home is, HomeFixRepair’s experts will smooth the whole room with out issues. while they are looking after your private home cleaning, you can sit down returned and relax.",
-			},
-			lowerRightDetail: {
-				heading:
-					"Which professional residence purifier Will Come To My region?",
-				details:
-					"we will ensure to ship you the quality and most qualified cleansing experts to smooth your own home. relying on the scale of your home and your wishes, we select one or extra expert cleaners to attend to your chores. You do no longer ought to fear approximately selecting a professional, as we are able to cope with it for you.",
-			},
-		},
-	},
+	// {
+	// 	name: "Cleaning",
+	// 	img: CleaningImage,
+	// 	description:
+	// 		"Getting your private home cleaned in the UAE is only some clicks away. HomeFixRepair is right here for all your own home needs, from residence cleaning to hair salon services. residence cleaning is a critical job, and to store time and strength, you can allow us to do it.",
+	// 	vat: "",
+	// 	price: "112",
+	// 	detail: {
+	// 		bannerImage: CleaningBanner,
+	// 		upperLeftDetail: {
+	// 			heading: "HomeRepairFix, Dubai's best house Cleaning service!",
+	// 			details:
+	// 				"Making your life less difficult is simple with HomeFixRepair. Our offerings are right here for you for every part of your existence, and also you received’t should worry about cleaning your house ever again. With a few easy clicks, you could hire the house cleansing provider from our website and cellular app. in case you are seeking out a domestic cleansing service in the UAE, look no further! Now, let’s observe some of the reasons why you need to lease a professional house purifier, and more information at the service.",
+	// 		},
+	// 		upperRightDetail: {
+	// 			heading: "Why book residence cleaning services via HomeFixRepair",
+	// 			number: " 800 8289",
+	// 			details:
+	// 				"we all lead busy lives, and our responsibilities do not make it easier. while you arrive home after a protracted paintings day, you likely need to peer a easy house, right? alas, it’s not possible with out hours of work. however, while you rent a professional purifier from HomeFixRepair, you don’t even have to move your hands for a glittery residence. Many human beings prefer hiring a residence cleaning agency because it will prevent hours. you could then spend the ones hours with your loved ones, and experience your freshly wiped clean house.",
+	// 		},
+	// 		midDetail: {
+	// 			heading: "what's residence cleaning service?",
+	// 			video: HomeFixCleaningVideo,
+	// 			details:
+	// 				"HomeFixRepair's house cleaning provider includes everything you need for a very well wiped clean home. Our experts are well-educated, and are geared up to easy your home with the pleasant tools. house cleansing isn't any comic story, and with HomeFixRepair, you may depart it to professionals.",
+	// 		},
+	// 		lowerLeftDetail: {
+	// 			heading: "Widespread home cleansing offerings",
+	// 			details:
+	// 				"expert house cleaning includes widespread cleansing of the complete residence. This includes vacuuming the carpet, mopping the floors, cleaning the windows, and so forth. those are the thorough components, but it does now not stop here. whilst you finish difficult cleansing, there are nonetheless many grimy surfaces and corners left.",
+	// 		},
+	// 		lowerCenterDetail: {
+	// 			heading: "Bedroom cleaning offerings",
+	// 			details:
+	// 				"Our specialists will trade your mattress sheets if it is necessary, dust all the wardrobes and make certain that your bedroom is fresh when they leave. no matter how messy your home is, HomeFixRepair’s experts will smooth the whole room with out issues. while they are looking after your private home cleaning, you can sit down returned and relax.",
+	// 		},
+	// 		lowerRightDetail: {
+	// 			heading:
+	// 				"Which professional residence purifier Will Come To My region?",
+	// 			details:
+	// 				"we will ensure to ship you the quality and most qualified cleansing experts to smooth your own home. relying on the scale of your home and your wishes, we select one or extra expert cleaners to attend to your chores. You do no longer ought to fear approximately selecting a professional, as we are able to cope with it for you.",
+	// 		},
+	// 	},
+	// },
 	{
 		name: "CarPenter",
 		img: carPainter,
 		description:
 			"Carpentry offerings in Dubai may be a important part of our lives and it includes maximum of the tasks of a normal residence, an condominium, or a billboard building.",
 		vat: "",
-		price: "114",
+		price: "120",
 		detail: {
 			bannerImage: CarpenterBanner,
 			upperLeftDetail: {
@@ -285,58 +285,58 @@ export const ServicesArray = [
 			},
 		},
 	},
-	{
-		name: "Deep Cleaning ",
-		img: deepCleaning,
-		description:
-			"One of the main causes of breathing contamination in UAE is indoor air pollutants. The dusty climate of the us of a coupled together with the cramped up interior influences the high-quality of indoor air.",
-		vat: "",
-		price: "117",
-		detail: {
-			bannerImage: DeepCleaningBanner,
-			upperLeftDetail: {
-				heading:
-					"HomeRepairFix, Dubai's best Deep Cleaning service! In the living room",
-				details:
-					"other than dusting and mopping the ground, our specialists clean the lampshades, fan, and home windows. at the side of thorough steaming for sanitization",
-			},
-			upperRightDetail: {
-				heading: "Book DeepCleaning Service In the kitchen ",
-				number: " 800 8289",
-				details:
-					"within the kitchen, we smooth all of the difficult to attain and most forgotten spots just like the sides of the cooking variety, space above the shelves and under the sink and underneath all of the appliances in addition to scrubbing and sanitizing tables and counters. Our experts also adopt an intensive cleaning of all the kitchen home equipment like dishwasher, refrigerator, and oven.",
-			},
-			midDetail: {
-				heading:
-					"Checkout HomeRepairFix Deep Cleaning Services In the in Dubai",
-				video: HomeFixDeepCleaningVideo,
-				details:
-					"All surfaces might be vacuumed and sanitized as wanted. We make certain all toilets, tubs, and showers are scrubbed and disinfected. Mirrors and flooring also are scrubbed and cleaned nicely.",
-			},
-			lowerLeftDetail: {
-				heading: "In the bedroom:",
-				details:
-					"All electrical appliances in the bedroom like the light, fan, etc are thoroughly cleaned. The switchboards are wiped clean and stains are removed from the wall. The windows are dusted and cleaned with microfiber. Mirrors and floors are also scrubbed and cleaned properly",
-			},
-			lowerCenterDetail: {
-				heading: "In the bedroom:",
-				details:
-					"if you are searching for a deep cleansing enterprise that provides less expensive deep cleansing, then look no in addition. download our app proper away and avail the nice expert provider in town.For extra data about us and other services we provide, kindly visit: cleaning corporation, cleaning services, house cleansing, AC cleansing, Maid provider",
-			},
-			lowerRightDetail: {
-				heading: "In the bedroom:",
-				details:
-					"if you are searching for a deep cleansing enterprise that provides less expensive deep cleansing, then look no in addition. download our app proper away and avail the nice expert provider in town.For extra data about us and other services we provide, kindly visit: cleaning corporation, cleaning services, house cleansing, AC cleansing, Maid provider",
-			},
-		},
-	},
+	// {
+	// 	name: "Deep Cleaning ",
+	// 	img: deepCleaning,
+	// 	description:
+	// 		"One of the main causes of breathing contamination in UAE is indoor air pollutants. The dusty climate of the us of a coupled together with the cramped up interior influences the high-quality of indoor air.",
+	// 	vat: "",
+	// 	price: "117",
+	// 	detail: {
+	// 		bannerImage: DeepCleaningBanner,
+	// 		upperLeftDetail: {
+	// 			heading:
+	// 				"HomeRepairFix, Dubai's best Deep Cleaning service! In the living room",
+	// 			details:
+	// 				"other than dusting and mopping the ground, our specialists clean the lampshades, fan, and home windows. at the side of thorough steaming for sanitization",
+	// 		},
+	// 		upperRightDetail: {
+	// 			heading: "Book DeepCleaning Service In the kitchen ",
+	// 			number: " 800 8289",
+	// 			details:
+	// 				"within the kitchen, we smooth all of the difficult to attain and most forgotten spots just like the sides of the cooking variety, space above the shelves and under the sink and underneath all of the appliances in addition to scrubbing and sanitizing tables and counters. Our experts also adopt an intensive cleaning of all the kitchen home equipment like dishwasher, refrigerator, and oven.",
+	// 		},
+	// 		midDetail: {
+	// 			heading:
+	// 				"Checkout HomeRepairFix Deep Cleaning Services In the in Dubai",
+	// 			video: HomeFixDeepCleaningVideo,
+	// 			details:
+	// 				"All surfaces might be vacuumed and sanitized as wanted. We make certain all toilets, tubs, and showers are scrubbed and disinfected. Mirrors and flooring also are scrubbed and cleaned nicely.",
+	// 		},
+	// 		lowerLeftDetail: {
+	// 			heading: "In the bedroom:",
+	// 			details:
+	// 				"All electrical appliances in the bedroom like the light, fan, etc are thoroughly cleaned. The switchboards are wiped clean and stains are removed from the wall. The windows are dusted and cleaned with microfiber. Mirrors and floors are also scrubbed and cleaned properly",
+	// 		},
+	// 		lowerCenterDetail: {
+	// 			heading: "In the bedroom:",
+	// 			details:
+	// 				"if you are searching for a deep cleansing enterprise that provides less expensive deep cleansing, then look no in addition. download our app proper away and avail the nice expert provider in town.For extra data about us and other services we provide, kindly visit: cleaning corporation, cleaning services, house cleansing, AC cleansing, Maid provider",
+	// 		},
+	// 		lowerRightDetail: {
+	// 			heading: "In the bedroom:",
+	// 			details:
+	// 				"if you are searching for a deep cleansing enterprise that provides less expensive deep cleansing, then look no in addition. download our app proper away and avail the nice expert provider in town.For extra data about us and other services we provide, kindly visit: cleaning corporation, cleaning services, house cleansing, AC cleansing, Maid provider",
+	// 		},
+	// 	},
+	// },
 	{
 		name: "Electrician",
 		img: Electrician,
 		description:
 			"Have a hassle with electricity at your property? No want to fear, due to the fact our expert electricians are right here. one of our regions of know-how is providing domestic electrical offerings inside the UAE",
 		vat: "",
-		price: "119",
+		price: "120",
 		detail: {
 			bannerImage: ElectricianBanner,
 			upperLeftDetail: {
@@ -381,7 +381,7 @@ export const ServicesArray = [
 		description:
 			"For your house, HomeFixRepair gives the first-rate handyman offerings inside the UAE, so you can sit lower back and loosen up. We provide you with a convenient and widespread variety of handyman and upkeep offerings with dependability and obligation",
 		vat: "",
-		price: "112",
+		price: "120",
 		detail: {
 			bannerImage: HandyManBanner,
 			upperLeftDetail: {
@@ -418,56 +418,56 @@ export const ServicesArray = [
 			},
 		},
 	},
-	{
-		name: "paintWork",
-		img: HomeFixPicPainting,
-		description:
-			"Paint offerings We offer the quality domestic painting offerings in Dubai. We exercise expert shade consulting, vibrant and decorative coating, quality splashing, interior and outdoors wall portray, fixtures & wood painting, and lots greater",
-		vat: "",
-		price: "113",
-		detail: {
-			bannerImage: PaintingBanner,
-			upperLeftDetail: {
-				heading: "HomeRepairFix, Dubai's best painting service!",
-				details:
-					"Paint offerings We provide the first-class home painting services in Dubai. We practice professional color consulting, brilliant and decorative coating, first-class splashing, indoors and outside wall painting, fixtures & wooden painting, and plenty more. HomeFixRepair team also support you in redecorating restore and preservation, which includes solving discolorations, peeling, dust, and cracks in the inner and external walls. we've got a crew of the quality painters, so be assure that your painting task is accomplished in a pleasant and time-certain manner. Those groups are professionals and feature years of revel in within the field to guarantee the quality quality portray offerings. if you have simply moved to new materials, your walls want specific texture, then we, at easy finishers, are equipped to help you 24*7.",
-			},
-			upperRightDetail: {
-				heading: "High-Quality Painting Services",
-				number: " 800 8289",
-				details:
-					"Because the leading painting corporation in Dubai, we use excessive-grade paints, emulsions, and sturdy to carry out our portray offerings for an enhance enjoy that gives your house a clean new look. Our group may be very well acquaint with the today's tendencies and styles to provide you with the high-quality portray designs. whether or not you spot interior or outside wall portray offerings, we do all of it at less expensive prices. So, in case your partitions have turn stupid otherwise you want to provide your house a new fresh appearance, we're right here to help you. we are recognize as one of the first-rate and leading organizations for presenting painting services.",
-			},
-			midDetail: {
-				heading: "Experienced Painting Company in Dubai",
-				video: HomeFixPaintingVideo,
-				details:
-					"In Paint services assist with the aid of the giant experience, we offer whole makeover answers for our customers, be it relate to the inner and external wall painting offerings in Dubai with the filling of holes and cracks, subject layout, wallpapers, wall covers, or maybe a touch/patch-up paintings, end of tenancy paintworks. we've years of understanding inside the discipline. we have finished quality painting work in Dubai to test what our clients say about us in Testimonials.",
-			},
-			lowerLeftDetail: {
-				heading: "Satisfied Painting Services in Dubai",
-				details:
-					"For Paint services we grant professional conferences on colorations, materials, and estimates before one in every of our specialist groups undertakes the task of portray your house. Then, we system with the painting job with a proper plan, layout, and timeline. With us, you don’t must worry approximately the selection of colours and designs as we cope with the whole thing",
-			},
-			lowerCenterDetail: {
-				heading: "Painting Services of Unmatched Quality",
-				details:
-					"We trust in our client’s satisfaction, which has enabled us to offer portray stories in Dubai which are unMatch in great. Our paintService paint jobs have earn us a popularity of being the pleasant portray & preservation employer in Dubai.",
-			},
-			lowerRightDetail: {
-				heading: "Customer Satisfaction",
-				details:
-					"We at clean Finishers usually join our customers with the crew chief and venture manager as a unmarried factor of contact for residence portray and villa portray in Dubai. He is dedicated to making sure that our clients are happy with our portray offerings, from begin to complete!ultra-modern indoors wall paint 1170x692 every of our painting services comes complete with crack filling, putty, and the whole lot else needed to provide new paint that you’ll love.Our professional portray revel in is anywhere we shine, however our residence painting services Dubai clients have additionally come to understand the alternative matters we do that make a variation. for instance, from in the long run protective your furnishings earlier than starting to ensure that there’s no singular drop of paint on the ground when we forget about, HomeFixRepair.com is assigned to producing the type of provider that we would need for ourselves",
-			},
-		},
-	},
+	// {
+	// 	name: "paintWork",
+	// 	img: HomeFixPicPainting,
+	// 	description:
+	// 		"Paint offerings We offer the quality domestic painting offerings in Dubai. We exercise expert shade consulting, vibrant and decorative coating, quality splashing, interior and outdoors wall portray, fixtures & wood painting, and lots greater",
+	// 	vat: "",
+	// 	price: "113",
+	// 	detail: {
+	// 		bannerImage: PaintingBanner,
+	// 		upperLeftDetail: {
+	// 			heading: "HomeRepairFix, Dubai's best painting service!",
+	// 			details:
+	// 				"Paint offerings We provide the first-class home painting services in Dubai. We practice professional color consulting, brilliant and decorative coating, first-class splashing, indoors and outside wall painting, fixtures & wooden painting, and plenty more. HomeFixRepair team also support you in redecorating restore and preservation, which includes solving discolorations, peeling, dust, and cracks in the inner and external walls. we've got a crew of the quality painters, so be assure that your painting task is accomplished in a pleasant and time-certain manner. Those groups are professionals and feature years of revel in within the field to guarantee the quality quality portray offerings. if you have simply moved to new materials, your walls want specific texture, then we, at easy finishers, are equipped to help you 24*7.",
+	// 		},
+	// 		upperRightDetail: {
+	// 			heading: "High-Quality Painting Services",
+	// 			number: " 800 8289",
+	// 			details:
+	// 				"Because the leading painting corporation in Dubai, we use excessive-grade paints, emulsions, and sturdy to carry out our portray offerings for an enhance enjoy that gives your house a clean new look. Our group may be very well acquaint with the today's tendencies and styles to provide you with the high-quality portray designs. whether or not you spot interior or outside wall portray offerings, we do all of it at less expensive prices. So, in case your partitions have turn stupid otherwise you want to provide your house a new fresh appearance, we're right here to help you. we are recognize as one of the first-rate and leading organizations for presenting painting services.",
+	// 		},
+	// 		midDetail: {
+	// 			heading: "Experienced Painting Company in Dubai",
+	// 			video: HomeFixPaintingVideo,
+	// 			details:
+	// 				"In Paint services assist with the aid of the giant experience, we offer whole makeover answers for our customers, be it relate to the inner and external wall painting offerings in Dubai with the filling of holes and cracks, subject layout, wallpapers, wall covers, or maybe a touch/patch-up paintings, end of tenancy paintworks. we've years of understanding inside the discipline. we have finished quality painting work in Dubai to test what our clients say about us in Testimonials.",
+	// 		},
+	// 		lowerLeftDetail: {
+	// 			heading: "Satisfied Painting Services in Dubai",
+	// 			details:
+	// 				"For Paint services we grant professional conferences on colorations, materials, and estimates before one in every of our specialist groups undertakes the task of portray your house. Then, we system with the painting job with a proper plan, layout, and timeline. With us, you don’t must worry approximately the selection of colours and designs as we cope with the whole thing",
+	// 		},
+	// 		lowerCenterDetail: {
+	// 			heading: "Painting Services of Unmatched Quality",
+	// 			details:
+	// 				"We trust in our client’s satisfaction, which has enabled us to offer portray stories in Dubai which are unMatch in great. Our paintService paint jobs have earn us a popularity of being the pleasant portray & preservation employer in Dubai.",
+	// 		},
+	// 		lowerRightDetail: {
+	// 			heading: "Customer Satisfaction",
+	// 			details:
+	// 				"We at clean Finishers usually join our customers with the crew chief and venture manager as a unmarried factor of contact for residence portray and villa portray in Dubai. He is dedicated to making sure that our clients are happy with our portray offerings, from begin to complete!ultra-modern indoors wall paint 1170x692 every of our painting services comes complete with crack filling, putty, and the whole lot else needed to provide new paint that you’ll love.Our professional portray revel in is anywhere we shine, however our residence painting services Dubai clients have additionally come to understand the alternative matters we do that make a variation. for instance, from in the long run protective your furnishings earlier than starting to ensure that there’s no singular drop of paint on the ground when we forget about, HomeFixRepair.com is assigned to producing the type of provider that we would need for ourselves",
+	// 		},
+	// 	},
+	// },
 	{
 		name: "plumbing",
 		img: plumbing,
 		description:
 			"you may have the great plumbers within the UAE with HomeFixRepair's help. No want to attempt fixing your damaged sink your self anymore",
 		vat: "",
-		price: "114",
+		price: "120",
 		detail: {
 			bannerImage: PlumbingBanner,
 			upperLeftDetail: {
@@ -530,7 +530,7 @@ export const RequestCallBack = [
 	{
 		heading: "HomeFixRepair offerings",
 		detail:
-			" actual to their call, are available pretty available. And it isn't simply while you are shifting residence or sporting out a renovation which you need professional handyman offerings – you could even be making a brand new addition, require an extraordinary process achieved or need an emergency handyman due to the fact something wishes an pressing spot of repair. some thing your need and but small or complex the job, HomeGenie has the great handyman in Dubai for you. So whether or not it is your tv that wishes to be relocated or it's miles striking up the state-of-the-art curtains which you simply bought for the dwelling room, we've got a reasonably-priced handyman who will get your job completed.All we need you to do is down load the free HomeGenie app for Android and iOS, and a totally skilled handyman will reach your own home at a date and time that suits you. if your atypical process is some thing that needs to be sorted right now, HomeGenie also offers Emergency and identical Day handyman offerings.reserving our Emergency facility approach that a handyman will arrive at your property within 2 hours of reserving the carrier, at an extra price. The same Day carrier will location a handyman at your home to collect your modular furnishings or restore the door lock before 6PM that day, supplied you booked among 8 AM and 12 PM.",
+			"When it comes to remodeling, we do it all. We pride ourselves on our commitment to direct and honest service. Not to mention we never go over your budget unless you change the scope of work and our 5 year warranty ensures you have the best quality craftsmanship at home. No matter what home improvement project you dream of, the HOMEfix team can make it happen with ease.",
 	},
 	{
 		heading: "while is a HomeFixRepair generally required to be known as in?",
@@ -688,6 +688,7 @@ export let AreaArray = [
 	{ name: "Za'abeel Second" },
 ];
 export let HoursData = [1, 2, 3, 4, 5, 6, 7, 8];
+
 export let bookingTime = [
 	"13:00-14:00",
 	"14:00-15:00",

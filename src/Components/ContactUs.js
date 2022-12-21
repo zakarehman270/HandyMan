@@ -61,6 +61,7 @@ export const ContactUs = () => {
 							<FormContentUs
 								display={false}
 								setRedirectToFinalPage={setRedirectToFinalPage}
+								submitFormFrom={"Contact Us"}
 							/>
 						</Col>
 					</Row>
