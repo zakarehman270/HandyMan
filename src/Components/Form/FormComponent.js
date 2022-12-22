@@ -27,7 +27,7 @@ const FormContentUs = (props) => {
 	const [VatValue, setVatValue] = useState(0);
 	const [Hours, setHours] = useState(0);
 	const [HourPrise, setHourPrise] = useState(0);
-	const [BookingTime, setBookingTime] = useState("");
+	const [BookingTime, setBookingTime] = useState("13:00-14:00");
 	const [Area, setArea] = useState(() => {
 		if (props.submitFormFrom === "Book Professional") {
 			return "Area..";
@@ -57,7 +57,7 @@ const FormContentUs = (props) => {
 			setHours(1);
 			setPriceValue(price);
 			setHourPrise(price);
-			setBookingTime("");
+			setBookingTime("13:00-14:00");
 			setVatDefaultValue(parseInt(vat));
 			setService(Split[2]);
 			if (

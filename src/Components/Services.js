@@ -9,10 +9,7 @@ function Services() {
 				<p className="PrimaryColor HeadingOurServices">Our</p>
 				<p className="HeadingOurServices">Services</p>
 			</div>
-			<div
-				className="d-flex justify-content-center flex-wrap"
-				style={{ gap: "30px" }}
-			>
+			<div className="d-flex flex-wrap" style={{ gap: "30px" }}>
 				{ServicesArray.map((item, index) => {
 					return (
 						<div key={index} className="outerWrapperServices">

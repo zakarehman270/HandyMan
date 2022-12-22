@@ -18,7 +18,7 @@ const ProjectCompleted = () => {
 				>
 					<div className="innerWrapperLeftSideOfMessageBanner outerWrapperRequestCallBackButton">
 						<div className="d-flex align-items-center Gap-17">
-							<p>Request a call back option</p>
+							<p className="Fs-17">Request a call back option</p>
 							<FaPhone />
 						</div>
 					</div>

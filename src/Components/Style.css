@@ -124,7 +124,7 @@ p {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 299px;
+	width: 256px;
 	text-align: center;
 }
 .ServiceHeading {
@@ -226,11 +226,10 @@ input[type="text"] {
 }
 .ParagraphFeedBackBox {
 	color: #777;
-	font-size: 16px;
+	font-size: 13px;
 	font-weight: 500;
 }
 .HightTextHolderServiceDescription {
-	width: 290px;
 	height: 100px;
 	line-height: 20px;
 	word-break: break-word;
@@ -298,7 +297,7 @@ input[type="text"] {
 	transition: all 0.2s ease-in-out;
 	border-bottom: 3px solid transparent;
 	padding-bottom: 2px;
-	font-size: 21px;
+	font-size: 17px;
 	font-weight: 500;
 }
 .HeaderLinks:hover {
@@ -396,7 +395,7 @@ textarea {
 }
 .OuterWrapperLogoImage {
 	width: 121px;
-	height: 96px;
+	height: 75px;
 }
 .PhoneInputInput {
 	border: none !important;
@@ -520,7 +519,9 @@ textarea {
 	color: #ff8800;
 	background-color: #e9ecef;
 }
-
+.Fs-17 {
+	font-size: 17px;
+}
 @media only screen and (max-width: 1200px) {
 	.outerWrapperMessageBanner {
 		display: block;

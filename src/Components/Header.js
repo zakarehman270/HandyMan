@@ -1,6 +1,5 @@
 import React from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
-import { Link } from "react-scroll";
 import Logo from "../assets/Logo.png";
 import { NavLink } from "react-router-dom";
 import { BsInstagram } from "react-icons/bs";
@@ -68,18 +67,12 @@ function Header(props) {
 					<Navbar.Collapse id="responsive-navbar-nav">
 						<Nav className="me-auto"></Nav>
 						<Nav className="Gap-30">
-							<Link
-								to="our-services"
-								spy={true}
-								smooth={true}
-								duration={50}
-								offset={-140}
-								className="text-decoration-none HeaderLinks"
+							<NavLink
+								to="/"
+								className="text-decoration-none HeaderLinks text-black "
 							>
-								<NavLink to="/" className="text-decoration-none text-black ">
-									Our Services
-								</NavLink>
-							</Link>
+								Our Services
+							</NavLink>
 							<NavLink
 								onClick={() => {
 									window.scrollTo(0, 0);
