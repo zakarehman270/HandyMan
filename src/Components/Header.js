@@ -96,6 +96,15 @@ function Header(props) {
 								onClick={() => {
 									window.scrollTo(0, 0);
 								}}
+								to="/what-does-carpenters-do"
+								className="text-decoration-none HeaderLinks text-black"
+							>
+								Blog
+							</NavLink>
+							<NavLink
+								onClick={() => {
+									window.scrollTo(0, 0);
+								}}
 								to="/contact-us"
 								className="text-decoration-none HeaderLinks text-black"
 							>

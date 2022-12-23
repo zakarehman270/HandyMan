@@ -522,6 +522,14 @@ textarea {
 .Fs-17 {
 	font-size: 17px;
 }
+.ColorGry {
+	color: #777;
+}
+.blogImage {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+}
 @media only screen and (max-width: 1200px) {
 	.outerWrapperMessageBanner {
 		display: block;
