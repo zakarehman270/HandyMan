@@ -530,6 +530,11 @@ textarea {
 	height: 300px;
 	object-fit: cover;
 }
+.ImageHolderInService {
+	width: 50%;
+	height: 252px;
+	object-fit: cover;
+}
 @media only screen and (max-width: 1200px) {
 	.outerWrapperMessageBanner {
 		display: block;

@@ -1,11 +1,13 @@
-import React from "react";
-import { Navbar, Container, Nav } from "react-bootstrap";
+import React, { useState } from "react";
+import { Navbar, Container, Nav, Dropdown } from "react-bootstrap";
 import Logo from "../assets/Logo.png";
 import { NavLink } from "react-router-dom";
 import { BsInstagram } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
 import { ImWhatsapp } from "react-icons/im";
+import { Link } from "react-router-dom";
 function Header(props) {
+	const [ShowDropDown, setShowDropDown] = useState(false);
 	return (
 		<div className="outerWrapperNavBar bg-white">
 			<div className="outerWrapperUpperHeader pt-3 pb-3 FontSizeTextHolderTopOfHeader">
@@ -68,10 +70,31 @@ function Header(props) {
 						<Nav className="me-auto"></Nav>
 						<Nav className="Gap-30">
 							<NavLink
-								to="/"
-								className="text-decoration-none HeaderLinks text-black "
+								onMouseEnter={() => {
+									setShowDropDown(true);
+								}}
+								onMouseLeave={() => {
+									setShowDropDown(false);
+								}}
+								to="/service"
+								className="text-decoration-none HeaderLinks text-black"
 							>
 								Our Services
+								<Dropdown show={ShowDropDown}>
+									<Dropdown.Menu>
+										<Dropdown.Item>
+											<Link
+												onClick={() => {
+													window.scrollTo(0, 0);
+												}}
+												className="text-decoration-none text-black"
+												to="/carpentor-service-dubai"
+											>
+												Carpenter Service Dubai
+											</Link>
+										</Dropdown.Item>
+									</Dropdown.Menu>
+								</Dropdown>
 							</NavLink>
 							<NavLink
 								onClick={() => {
@@ -81,7 +104,7 @@ function Header(props) {
 								to={`/form/choseService/?vat=${0}+${0}`}
 								className="text-decoration-none HeaderLinks text-black"
 							>
-								Book Service
+								Book Professional
 							</NavLink>
 							<NavLink
 								onClick={() => {
@@ -96,7 +119,7 @@ function Header(props) {
 								onClick={() => {
 									window.scrollTo(0, 0);
 								}}
-								to="/what-does-carpenters-do"
+								to="/blog"
 								className="text-decoration-none HeaderLinks text-black"
 							>
 								Blog
