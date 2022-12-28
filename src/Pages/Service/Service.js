@@ -1,9 +1,8 @@
 import React from "react";
-import { Button, Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import Footer from "../../Components/Footer";
 import Header from "../../Components/Header";
 import {} from "../../../node_modules/video-react/dist/video-react.css";
-import { FaAngleRight } from "react-icons/fa";
 import dubaifamily from "../../assets/dubaifamily.jpg";
 import { Link } from "react-router-dom";
 const Service = () => {
@@ -16,22 +15,40 @@ const Service = () => {
 				</div>
 				<div className="d-flex justify-content-between ">
 					<div className="w-50">
-						<Link
-							onClick={() => {
-								window.scrollTo(0, 0);
-							}}
-							className="text-decoration-none text-black"
-							to="/carpentor-service-dubai"
-						>
-							<h4>Carpenter Service Dubai – Home Fix Repairs</h4>
-						</Link>
-						<p>
-							Are you starting to get bored with how your house looks inside and
-							out? If so consider top carpenter service Dubai as your preference
-							in this spectrum.
-						</p>
+						<div className="HyperLinks">
+							<Link
+								onClick={() => {
+									window.scrollTo(0, 0);
+								}}
+								className="text-decoration-none ColorHyperLinks"
+								to="/carpentor-service-dubai"
+							>
+								Carpenter Service Dubai – Home Fix Repairs
+							</Link>
+						</div>
+						<div className="HyperLinks">
+							<Link
+								onClick={() => {
+									window.scrollTo(0, 0);
+								}}
+								className="text-decoration-none ColorHyperLinks"
+								to="/electrical-maintenance-company-in-Dubai"
+							>
+								Electrical Maintenance Company in Dubai – Home Fix Repairs
+							</Link>
+						</div>
+						<div className="HyperLinks">
+							<Link
+								onClick={() => {
+									window.scrollTo(0, 0);
+								}}
+								className="text-decoration-none ColorHyperLinks"
+								to="/electrician-work-at-home"
+							>
+								Electrician Work at Home – Home Fix Repairs
+							</Link>
+						</div>
 					</div>
-
 					<img
 						src={dubaifamily}
 						className="ImageHolderInService"

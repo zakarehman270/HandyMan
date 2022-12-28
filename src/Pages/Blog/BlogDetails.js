@@ -40,17 +40,17 @@ const BlogDetails = () => {
 					<p className="ColorGry">Uncategorized</p>
 				</div>
 				<hr />
-				<div className="d-flex align-items-center Gap ColorGry">
+				<div className="d-md-flex align-items-center Gap ColorGry">
 					<div className="d-flex align-items-center gap-1">
 						<AiOutlineClockCircle className="PrimaryColor" />
 						<p className="text-black">December 5, 2022</p>
 					</div>
-					<p>|</p>
+					<p className="d-none d-md-block">|</p>
 					<div className="d-flex">
 						<p>Posted by:</p>
 						<p className="text-black">Zaka Rehman</p>
 					</div>
-					<p>|</p>
+					<p className="d-none d-md-block">|</p>
 					<div className="d-flex">
 						<p>Category:</p>
 						<p className="text-black">Uncategorized</p>
@@ -62,13 +62,11 @@ const BlogDetails = () => {
 					className="blogImage mt-2 mb-3"
 				/>
 				<p>
-					Let’s talk about what does carpenters do? Well they are the folks that
-					construct, erect, install, and repair wooden and non-wooden structures
-					and fittings. Carpenters participate in a variety of construction
-					projects, from the construction of highways and bridges to the
-					installation of home cabinets. Each carpentry task is unique, but most
-					require the same fundamental stages. In compliance with local building
-					codes, carpenters first perform the layout, which includes measuring,
+					Carpenters participate in a variety of construction projects, from the
+					construction of highways and bridges to the installation of home
+					cabinets. Each carpentry task is unique, but most require the same
+					fundamental stages. In compliance with local building codes,
+					carpenters first perform the layout, which includes measuring,
 					marking, and arranging materials using blueprints or supervisory
 					instructions. Using manual and power equipment such as chisels,
 					planes, saws, drills, and sanders, they cut and shape wood, plastic,

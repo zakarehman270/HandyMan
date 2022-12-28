@@ -5,9 +5,14 @@ import { NavLink } from "react-router-dom";
 import { BsInstagram } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
 import { ImWhatsapp } from "react-icons/im";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 function Header(props) {
 	const [ShowDropDown, setShowDropDown] = useState(false);
+	const location = useLocation();
+	let Split = location.pathname.split("/");
+	function handleToggleBorderBottom() {
+		return Split[Split.length - 1];
+	}
 	return (
 		<div className="outerWrapperNavBar bg-white">
 			<div className="outerWrapperUpperHeader pt-3 pb-3 FontSizeTextHolderTopOfHeader">
@@ -38,7 +43,7 @@ function Header(props) {
 							<ImWhatsapp className="SocialIconsInFooter HeaderSocialMediaIcons" />
 						</a>
 					</div>
-					<div className="outerWrapperContentNumberTopHeader align-items-center Gap-22">
+					<div className="outerWrapperContentNumberTopHeader align-items-center Gap">
 						<a
 							href="tel:+923313571616"
 							className="C-pointer PrimaryColor HoverTextColor text-decoration-none"
@@ -68,18 +73,38 @@ function Header(props) {
 					<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 					<Navbar.Collapse id="responsive-navbar-nav">
 						<Nav className="me-auto"></Nav>
-						<Nav className="Gap-30">
-							<NavLink
+						<Nav className="Gap-17">
+							<div
+								className={`HyperLinks ${
+									handleToggleBorderBottom() === "service" ||
+									handleToggleBorderBottom() === "carpentor-service-dubai" ||
+									handleToggleBorderBottom() ===
+										"electrical-maintenance-company-in-Dubai" ||
+									handleToggleBorderBottom() === "electrician-work-at-home"
+										? "ActiveHyperLinks"
+										: ""
+								}`}
 								onMouseEnter={() => {
 									setShowDropDown(true);
 								}}
 								onMouseLeave={() => {
 									setShowDropDown(false);
 								}}
-								to="/service"
-								className="text-decoration-none HeaderLinks text-black"
 							>
-								Our Services
+								<NavLink
+									to="/service"
+									className={`text-decoration-none ${
+										handleToggleBorderBottom() === "service" ||
+										handleToggleBorderBottom() === "carpentor-service-dubai" ||
+										handleToggleBorderBottom() ===
+											"electrical-maintenance-company-in-Dubai" ||
+										handleToggleBorderBottom() === "electrician-work-at-home"
+											? "ActiveLinkColor"
+											: "ColorHyperLinks"
+									}`}
+								>
+									Our Services
+								</NavLink>
 								<Dropdown show={ShowDropDown}>
 									<Dropdown.Menu>
 										<Dropdown.Item>
@@ -87,52 +112,115 @@ function Header(props) {
 												onClick={() => {
 													window.scrollTo(0, 0);
 												}}
-												className="text-decoration-none text-black"
+												className="text-decoration-none text-black FontSize13"
 												to="/carpentor-service-dubai"
 											>
 												Carpenter Service Dubai
 											</Link>
 										</Dropdown.Item>
+
+										<Dropdown.Item>
+											<Link
+												onClick={() => {
+													window.scrollTo(0, 0);
+												}}
+												className="text-decoration-none text-black FontSize13"
+												to="/electrical-maintenance-company-in-Dubai"
+											>
+												Electrical Maintenance in Dubai
+											</Link>
+										</Dropdown.Item>
+										<Dropdown.Item>
+											<Link
+												onClick={() => {
+													window.scrollTo(0, 0);
+												}}
+												className="text-decoration-none text-black FontSize13"
+												to="/electrician-work-at-home"
+											>
+												Electrician Work at Home in Dubai
+											</Link>
+										</Dropdown.Item>
 									</Dropdown.Menu>
 								</Dropdown>
-							</NavLink>
-							<NavLink
-								onClick={() => {
-									window.scrollTo(0, 0);
-									props.setRedirectToFinalPage(false);
-								}}
-								to={`/form/choseService/?vat=${0}+${0}`}
-								className="text-decoration-none HeaderLinks text-black"
+							</div>
+							<div
+								className={`HyperLinks ${
+									Split.includes("form") ? "ActiveHyperLinks" : ""
+								}`}
 							>
-								Book Professional
-							</NavLink>
-							<NavLink
-								onClick={() => {
-									window.scrollTo(0, 0);
-								}}
-								to="/about-us"
-								className="text-decoration-none HeaderLinks text-black"
+								<NavLink
+									onClick={() => {
+										window.scrollTo(0, 0);
+										props.setRedirectToFinalPage(false);
+									}}
+									to={`/form/choseService/?vat=${0}+${0}`}
+									className={`text-decoration-none ${
+										Split.includes("form")
+											? "ActiveLinkColor"
+											: "ColorHyperLinks"
+									}`}
+								>
+									Book Professional
+								</NavLink>
+							</div>
+							<div
+								className={`HyperLinks ${
+									Split.includes("about-us") ? "ActiveHyperLinks" : ""
+								}`}
 							>
-								About Us
-							</NavLink>
-							<NavLink
-								onClick={() => {
-									window.scrollTo(0, 0);
-								}}
-								to="/blog"
-								className="text-decoration-none HeaderLinks text-black"
+								<NavLink
+									onClick={() => {
+										window.scrollTo(0, 0);
+									}}
+									to="/about-us"
+									className={`text-decoration-none ${
+										Split.includes("about-us")
+											? "ActiveLinkColor"
+											: "ColorHyperLinks"
+									}`}
+								>
+									About Us
+								</NavLink>
+							</div>
+							<div
+								className={`HyperLinks ${
+									Split.includes("blog") ? "ActiveHyperLinks" : ""
+								}`}
 							>
-								Blog
-							</NavLink>
-							<NavLink
-								onClick={() => {
-									window.scrollTo(0, 0);
-								}}
-								to="/contact-us"
-								className="text-decoration-none HeaderLinks text-black"
+								<NavLink
+									onClick={() => {
+										window.scrollTo(0, 0);
+									}}
+									to="/blog"
+									className={`text-decoration-none ${
+										Split.includes("blog")
+											? "ActiveLinkColor"
+											: "ColorHyperLinks"
+									}`}
+								>
+									Blog
+								</NavLink>
+							</div>
+							<div
+								className={`HyperLinks ${
+									Split.includes("contact-us") ? "ActiveHyperLinks" : ""
+								}`}
 							>
-								Contact Us
-							</NavLink>
+								<NavLink
+									onClick={() => {
+										window.scrollTo(0, 0);
+									}}
+									to="/contact-us"
+									className={`text-decoration-none ${
+										Split.includes("contact-us")
+											? "ActiveLinkColor"
+											: "ColorHyperLinks"
+									}`}
+								>
+									Contact Us
+								</NavLink>
+							</div>
 						</Nav>
 					</Navbar.Collapse>
 				</Container>

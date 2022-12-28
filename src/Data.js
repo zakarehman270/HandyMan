@@ -1,7 +1,5 @@
-import CleaningImage from "./assets/Icons/CleaningConvert.jpg";
-import carPainter from "./assets/Icons/carPainter.jpg";
-import deepCleaning from "./assets/Icons/deepCleaning.jpg";
-import Electrician from "./assets/Icons/electrician.webp";
+import carPainter from "./assets/Icons/carPainter.png";
+import Electrician from "./assets/Icons/electrician.png";
 import Handyman from "./assets/Icons/handyman.jpg";
 import plumbing from "./assets/Icons/plumbing.jpg";
 import zaka from "./assets/zaka.jpg";
@@ -9,20 +7,13 @@ import Zulqer from "./assets/Zulqer.PNG";
 import UsamaSam from "./assets/UsamaSam.PNG";
 import Aqeel from "./assets/Aqeel.PNG";
 import Asfand from "./assets/Asfand.PNG";
-import HomeFixPicPainting from "./assets/HomeFixPicPainting.jpg";
 import CarpenterBanner from "./assets/Banners/CarpenterPic.jpg";
-import CleaningBanner from "./assets/Banners/CleaningPic.jpg";
-import DeepCleaningBanner from "./assets/Banners/DeepCleaningPic.jpg";
 import ElectricianBanner from "./assets/Banners/ElectricianPic.png";
 import HandyManBanner from "./assets/Banners/HandyManPic.jpg";
-import PaintingBanner from "./assets/Banners/PaintingPic.png";
 import PlumbingBanner from "./assets/Banners/PlumbingPic.jpg";
 import HomeFixCarpenterVideo from "./assets/Videos/HomeFixCarpenter.mp4";
-import HomeFixCleaningVideo from "./assets/Videos/HomeFixCleaning.mp4";
-import HomeFixDeepCleaningVideo from "./assets/Videos/HomeFixDeepCleaning.mp4";
 import HomeFixElectricianVideo from "./assets/Videos/HomeFixElectrician.mp4";
 import HomeFixHandyManVideo from "./assets/Videos/HomeFixHandyMan.mp4";
-import HomeFixPaintingVideo from "./assets/Videos/HomeFixPainting.mp4";
 import HomeFixPlumbingVideo from "./assets/Videos/HomeFixPlumbing.mp4";
 
 export const AboutUsData = [
@@ -688,11 +679,217 @@ export let AreaArray = [
 	{ name: "Za'abeel Second" },
 ];
 export let HoursData = [1, 2, 3, 4, 5, 6, 7, 8];
-
 export let bookingTime = [
 	"13:00-14:00",
 	"14:00-15:00",
 	"15:00-16:00",
 	"16:00-17:00",
 	"15:00-18:00",
+];
+
+export let DataService = [
+	{
+		slug: "electrical-maintenance-company-in-Dubai",
+		title: (
+			<div className="d-flex align-items-center gap-1">
+				<p className="PrimaryColor HeadingOurServices">
+					Electrical Maintenance
+				</p>
+				<p className="HeadingOurServices">Home Fix Repairs</p>
+			</div>
+		),
+		data: (
+			<div>
+				<p>electrical-maintenance-company-in-Dubai</p>
+				<p>
+					The service pertaining to Home Fix Repairs electrical maintenance
+					company in Dubai refers to the upkeep and repair of electrical systems
+					and equipment. This can include tasks such as inspecting and testing
+					electrical systems and components, identifying and repairing
+					electrical issues, and replacing worn or damaged electrical
+					components. Electrical maintenance service is typically performed by
+					trained and certified electricians who have the knowledge and skills
+					to safely and effectively perform these tasks. Electrical maintenance
+					is important for ensuring the safety and reliability of electrical
+					systems and for preventing costly repairs or downtime due to
+					electrical issues. It is recommended to schedule regular maintenance
+					to keep your electrical systems in good working order.", // question:
+					"Why need for electrical maintenance company in Dubai
+				</p>
+				<h1>Why need for electrical maintenance company in Dubai </h1>
+				<p>There are several reasons why you require our services.</p>
+				<p>
+					<b>Safety:</b> Electrical systems and equipment can be dangerous if
+					they are not properly maintained. Regular maintenance helps to
+					identify and fix any potential safety hazards, such as frayed wiring
+					or outdated electrical panels
+				</p>
+				<p>
+					<b>Reliability:</b> Electrical systems and equipment can be dangerous
+					if they are not properly maintained. Regular maintenance helps to
+					identify and fix any potential safety hazards, such as frayed wiring
+					or outdated electrical panels
+				</p>
+				<p>
+					<b>Cost-effective: </b> Regular maintenance can help to identify and
+					fix electrical issues before they turn into bigger, more expensive
+					problems. This can help to save money on costly repairs and
+					replacements.
+				</p>
+				<p>
+					<b>Energy efficiency: </b> Electrical systems that are well-maintained
+					tend to be more energy efficient. This can help to reduce energy costs
+					and reduce the carbon footprint of a building or facility.
+				</p>
+				<p>
+					Overall, acquiring Home Fix Repairs
+					<b>electrical maintenance company</b> in Dubai is important for
+					ensuring the safety, reliability, cost-effectiveness, and energy
+					efficiency of electrical systems and equipment. Contact us for the
+					economical quotes and packages.
+				</p>
+			</div>
+		),
+	},
+	{
+		slug: "electrician-work-at-home",
+		title: (
+			<div className="d-flex align-items-center gap-1">
+				<p className="PrimaryColor HeadingOurServices">
+					Electrician Work at Home
+				</p>
+				<p className="HeadingOurServices">Home Fix Repairs</p>
+			</div>
+		),
+		data: (
+			<div>
+				<p>
+					Before talking about electrician work at home let’s discuss what these
+					services are. Electrician services refer to the work performed by
+					professionals who are trained and licensed to install, repair, and
+					maintain electrical systems and equipment. This can include tasks such
+					as wiring a new home or office building, installing and repairing
+					electrical outlets and switches, and troubleshooting and repairing
+					electrical problems. Electricians may also be responsible for
+					installing and maintaining lighting systems, as well as working on
+					motors, generators, and other electrical machinery. It is important to
+					hire a licensed and qualified electrician for any electrician work at
+					home to ensure that the job is completed safely and to code.
+					Improperly installed or repaired electrical systems can pose a serious
+					safety hazard and can cause damage to your home or business. If you
+					need electrician services, it is recommended to research and compare
+					electricians in your area to find a reputable and reliable
+					professional like Home Fix Repairs.
+				</p>
+				<h1>Electrician Work at Home</h1>
+				<p>
+					There are many tasks that an electrician may be able to perform at
+					your home, including:
+				</p>
+				<p>
+					<b>Installing new outlets, switches, and light fixtures:</b>
+					If you need to add new electrical outlets, switches, or light fixtures
+					to your home, an electrician can help you with the installation. They
+					will make sure that the work is completed safely and to code, and can
+					also advise you on the best options for your needs.
+				</p>
+				<p>
+					<b>Upgrading your electrical panel:</b>
+					If your home has an older electrical panel, an electrician may
+					recommend upgrading it to a newer, more efficient model. This can help
+					to improve the safety and reliability of your electrical system.
+				</p>
+				<p>
+					<b>Troubleshooting and repairing electrical problems:</b> If you are
+					experiencing electrical issues such as flickering lights or outlets
+					that don't work, an electrician can help you diagnose the problem and
+					make the necessary repairs.
+				</p>
+				<p>
+					<b>Installing and maintaining outdoor lighting:</b>
+					An electrician can help you install and maintain outdoor lighting,
+					such as floodlights or security lights, to help improve the safety and
+					security of your home.
+				</p>
+				<p>
+					<b>Installing and maintaining home security systems:</b> If you want
+					to install a home security system, an electrician can help you with
+					the installation and maintenance of the system. It is important to
+					hire a licensed and qualified professional from Home Fix Repairs for
+					<b>electrician work</b> at home. We will ensure that the work is
+					completed safely and to code, and will also protect you from potential
+					liability if something goes wrong.
+				</p>
+			</div>
+		),
+	},
+	{
+		slug: "carpentor-service-dubai",
+		title: (
+			<div className="d-flex align-items-center gap-1">
+				<p className="PrimaryColor HeadingOurServices">
+					Carpenter Service Dubai
+				</p>
+				<p className="HeadingOurServices">Home Fix Repairs</p>
+			</div>
+		),
+		data: (
+			<div>
+				<p>
+					Are you starting to get bored with how your house looks inside and
+					out? If so consider top carpenter service Dubai as your preference in
+					this spectrum. If you have an idea or a plan that has been brewing in
+					your head for a few months, or even a year, about how to breathe new
+					life into your home but do not have the carpentry skills to turn your
+					ideas into reality, it is time to look for carpenter services to
+					assist you. In every city and every town, there are a good number
+					skilled professionals working under banner of top notch carpenter
+					service Dubai like us. And these carpenters have a diverse set of
+					skills, which vary according to their experience and the size of the
+					company. For example, a lone carpenter who has been in his trade for
+					only a couple of years must just be specializing in home repairs. That
+					is for things like fixing your door and window, fixing a creaking
+					floor, or building a nice tree house for your kids. There are also the
+					big-time guys, the carpenters, who can work on every carpentry and
+					construction project, and for the typical homeowner customer, they are
+					offering home improvement services. These are the guys that you would
+					want to contact if your home remodeling ideas consist of putting up an
+					addition to your house, re-roofing, or completely remodeling the
+					inside of your home.
+				</p>
+				<h1>
+					For big projects always rely on top carpenter service Dubai like Home
+					Fix Repairs{" "}
+				</h1>
+				<p>
+					When projects as big as these are part of your home improvement plan,
+					then you should put much effort into finding and hiring the right
+					carpenter service Dubai for the job. You can start by asking a friend
+					who recently had a home improvement project of his own if he can
+					recommend the carpenter that worked for him. That is the best kind of
+					recommendation that you can get because not only is your friend a
+					reliable source, but you can actually see the work of that carpenter.
+					If that does not work for you, then simply make some phone calls and
+					individually interview these carpenter service Dubai. Look for the
+					amount of experience that they have, and most importantly, ask for a
+					portfolio of their previous carpentry projects so that you can get a
+					good idea if they are the right people to do your home improvement.
+					However, if all you want is a set of new kitchen cabinets, then you
+					will have to look for carpenters who specialize in cabinetry. Some
+					carpenters would prefer to just work on one specialty rather than
+					spread their services too thinly. Because this allows them to master
+					the art of cabinetry and establish themselves as the expert or
+					authority on that type of carpentry service. And there are the
+					multitude of professionals from carpenter service Dubai who call
+					themselves "handymen" and who can do all the minor home repairs,
+					including some electrical and plumbing repairs. These are the people
+					that you will call when all you want are some minor repair jobs. As a
+					result, the most important thing is to determine how complicated or
+					large your home improvement or home repair is. Then narrow down your
+					list to Home Fix Repairs as your prime carpenter service Dubai. Give
+					us a call now to discuss the bright prospects.
+				</p>
+			</div>
+		),
+	},
 ];
