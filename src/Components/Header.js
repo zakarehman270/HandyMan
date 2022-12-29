@@ -80,7 +80,9 @@ function Header(props) {
 									handleToggleBorderBottom() === "carpentor-service-dubai" ||
 									handleToggleBorderBottom() ===
 										"electrical-maintenance-company-in-Dubai" ||
-									handleToggleBorderBottom() === "electrician-work-at-home"
+									handleToggleBorderBottom() === "electrician-work-at-home" ||
+									handleToggleBorderBottom() ===
+										"family-handyman-customer-service"
 										? "ActiveHyperLinks"
 										: ""
 								}`}
@@ -98,7 +100,9 @@ function Header(props) {
 										handleToggleBorderBottom() === "carpentor-service-dubai" ||
 										handleToggleBorderBottom() ===
 											"electrical-maintenance-company-in-Dubai" ||
-										handleToggleBorderBottom() === "electrician-work-at-home"
+										handleToggleBorderBottom() === "electrician-work-at-home" ||
+										handleToggleBorderBottom() ===
+											"family-handyman-customer-service"
 											? "ActiveLinkColor"
 											: "ColorHyperLinks"
 									}`}
@@ -118,7 +122,6 @@ function Header(props) {
 												Carpenter Service Dubai
 											</Link>
 										</Dropdown.Item>
-
 										<Dropdown.Item>
 											<Link
 												onClick={() => {
@@ -139,6 +142,17 @@ function Header(props) {
 												to="/electrician-work-at-home"
 											>
 												Electrician Work at Home in Dubai
+											</Link>
+										</Dropdown.Item>
+										<Dropdown.Item>
+											<Link
+												onClick={() => {
+													window.scrollTo(0, 0);
+												}}
+												className="text-decoration-none text-black FontSize13"
+												to="/family-handyman-customer-service"
+											>
+												Family Handyman Customer Service
 											</Link>
 										</Dropdown.Item>
 									</Dropdown.Menu>

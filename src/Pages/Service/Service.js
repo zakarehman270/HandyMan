@@ -48,6 +48,17 @@ const Service = () => {
 								Electrician Work at Home – Home Fix Repairs
 							</Link>
 						</div>
+						<div className="HyperLinks">
+							<Link
+								onClick={() => {
+									window.scrollTo(0, 0);
+								}}
+								className="text-decoration-none ColorHyperLinks"
+								to="/family-handyman-customer-service"
+							>
+								Family Handyman Customer Service – Home Fix Repairs
+							</Link>
+						</div>
 					</div>
 					<img
 						src={dubaifamily}

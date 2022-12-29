@@ -35,6 +35,11 @@ function Routing() {
 				path="/electrician-work-at-home"
 				element={<ServiceDetails />}
 			/>
+			<Route
+				exact
+				path="/family-handyman-customer-service"
+				element={<ServiceDetails />}
+			/>
 			<Route exact path="/term-and-condition" element={<TermAndCondition />} />
 			<Route exact path="/form/:id" element={<BookProfessional />} />
 			<Route exact path="/about-us" element={<AboutUs />} />
