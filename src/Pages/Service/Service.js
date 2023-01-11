@@ -59,6 +59,17 @@ const Service = () => {
 								Family Handyman Customer Service – Home Fix Repairs
 							</Link>
 						</div>
+						<div className="HyperLinks">
+							<Link
+								onClick={() => {
+									window.scrollTo(0, 0);
+								}}
+								className="text-decoration-none ColorHyperLinks"
+								to="/emergency-plumbing-Dubai"
+							>
+								Emergency Plumbing Dubai – Home Fix Repairs
+							</Link>
+						</div>
 					</div>
 					<img
 						src={dubaifamily}

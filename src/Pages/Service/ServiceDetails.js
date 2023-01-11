@@ -4,11 +4,15 @@ import Footer from "../../Components/Footer";
 import Header from "../../Components/Header";
 import {} from "../../../node_modules/video-react/dist/video-react.css";
 import { useLocation } from "react-router-dom";
-import dubaifamily from "../../assets/dubaifamily.jpg";
-import { DataService } from "../../Data";
+import { DataService } from "../../SeoData/Service";
 const ServiceDetails = () => {
 	const [Data, setData] = useState();
 	const [Title, setTitle] = useState();
+	const [Image, setImage] = useState({
+		alt: "",
+		title: "",
+		src: "",
+	});
 	const location = useLocation();
 	let Split = location.pathname.split("/");
 
@@ -17,6 +21,7 @@ const ServiceDetails = () => {
 			if (DataService[i].slug === Split[Split.length - 1]) {
 				setData(DataService[i].data);
 				setTitle(DataService[i].title);
+				setImage(DataService[i].image);
 				break;
 			}
 		}
@@ -25,13 +30,14 @@ const ServiceDetails = () => {
 		<div className="backgroundColor-grey">
 			<Header />
 			<Container className="pt-5 pb-5">
-				<div className="d-flex justify-content-center align-items-center Gap pb-3">
+				<div className="d-flex justify-content-center align-items-center Gap pb-2">
 					{Title}
 				</div>
 				<img
-					src={dubaifamily}
-					alt="CarpenterBlog"
-					className="blogImage mt-2 mb-3"
+					src={Image.src}
+					alt={Image.alt}
+					title={Image.title}
+					className="blogImage mt-1 mb-3"
 				/>
 				{Data}
 			</Container>

@@ -19,6 +19,11 @@ function Routing() {
 			<Route exact path="/requestcallback" element={<RequestACallBack />} />
 			<Route exact path="/blog" element={<Blogs />} />
 			<Route exact path="/what-does-carpenters-do" element={<BlogDetails />} />
+			<Route
+				exact
+				path="/low-cost-handyman-serivces"
+				element={<BlogDetails />}
+			/>
 			<Route exact path="/service" element={<Service />} />
 			<Route
 				exact
@@ -38,6 +43,11 @@ function Routing() {
 			<Route
 				exact
 				path="/family-handyman-customer-service"
+				element={<ServiceDetails />}
+			/>
+			<Route
+				exact
+				path="/emergency-plumbing-Dubai"
 				element={<ServiceDetails />}
 			/>
 			<Route exact path="/term-and-condition" element={<TermAndCondition />} />
