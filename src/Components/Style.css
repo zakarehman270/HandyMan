@@ -319,6 +319,7 @@ input[type="text"] {
 	width: 100%;
 	background: #ffbb00;
 }
+
 .HyperLinks:hover:after {
 	width: 100%;
 	background: #ffbb00;
@@ -329,6 +330,7 @@ input[type="text"] {
 .HyperLinks:hover .ColorHyperLinks {
 	color: #ffbb00 !important;
 }
+
 .dropdown-menu[data-bs-popper] {
 	margin-top: 0.225rem !important;
 }
@@ -340,13 +342,13 @@ input[type="text"] {
 	letter-spacing: 3px;
 	font-weight: 500;
 	margin: 0px !important;
-	color: #ffbb00 !important;
+	color: black !important;
 }
 .CarouselDescription {
 	font-size: 30px;
 	font-weight: 500;
 	line-height: 30px;
-	color: #ffbb00 !important;
+	color: black !important;
 }
 .carousel-caption {
 	bottom: 4.25rem !important;
@@ -447,15 +449,14 @@ textarea {
 	font-size: 16px;
 	border-radius: 7px;
 }
-.outerWrapperMessageBanner {
-	background-color: #222222;
-	display: flex;
-}
 .outerWrapperSearchField:focus {
 	border-color: #ff8800;
 	outline: unset !important;
 }
-
+.outerWrapperMessageBanner {
+	background-color: #222222;
+	display: flex;
+}
 .outerWrapperLeftSideOfMessageBanner {
 	transform: skew(30deg);
 	background-color: #ffbb00;
@@ -562,6 +563,12 @@ textarea {
 	width: 50%;
 	height: 252px;
 	object-fit: cover;
+}
+.ContentAboutUsInFooter {
+	line-height: 22px;
+}
+.CursorPointer {
+	cursor: pointer;
 }
 @media only screen and (max-width: 1200px) {
 	.outerWrapperMessageBanner {

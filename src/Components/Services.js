@@ -18,7 +18,7 @@ function Services() {
 									window.scrollTo(0, 0);
 								}}
 								className="text-decoration-none text-black"
-								to={`/form/${item.name.replace(/\s/g, "")}/?vat=${item.vat}+${
+								to={`/form/${item.name.replace(/\s/g, "")}?vat=${item.vat}+${
 									item.price
 								}`}
 							>
@@ -40,7 +40,7 @@ function Services() {
 								{item.description}
 							</p>
 							<Link
-								to={`/detail/${item.name.replace(/\s/g, "")}`}
+								to={`/detail/${item.name.replace(/\s/g, "").toLowerCase()}`}
 								state={{ details: item.detail }}
 								onClick={() => {
 									window.scrollTo(0, 0);

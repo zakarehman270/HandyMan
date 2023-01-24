@@ -13,21 +13,26 @@ function Footer() {
 			<Container>
 				<Row>
 					<Col className="pt-5 pb-5 text-white">
-						<p className="FooterLeftContent">
-							HomeFixRepair person doing work about the house mainly focuses 1
-							in making living simple, not hard
-							<br />
-							and trouble free for the home maker by making ready
-							<br /> best support at the best price,that to all under one
-							<br /> roof.
-						</p>
-						<br />
-						<br />
-						<p className="FooterLeftContent">
-							It is a product of unlimited number or measure buildings business
-							managers
-							<br /> and Services L.L.C.
-						</p>
+						<Link
+							onClick={() => {
+								window.scrollTo(0, 0);
+							}}
+							className="text-decoration-none text-white"
+							to="/about-us"
+						>
+							<p className="HeadingFooterMidContent FontWeight">About Us</p>
+						</Link>
+						<Row className="FooterMidContent">
+							<p className="ContentAboutUsInFooter">
+								HomeFixRepair is one of the leading regional incorporated
+								centers management answers company within the center East. Its
+								service specialties are unfold across integrated facilities
+								control, waste control, and lots of greater. HomeFixRepair
+								released its domestic pro maintenance offerings in 2009 as an
+								one-of-a-kind carrier department to hold and keep houses within
+								the center East.
+							</p>
+						</Row>
 					</Col>
 					<Col className="pt-5 pb-5 text-white">
 						<p className="HeadingFooterMidContent FontWeight">
@@ -42,7 +47,7 @@ function Footer() {
 											window.scrollTo(0, 0);
 										}}
 										className="text-decoration-none text-white"
-										to={`/form/${item.name.replace(/\s/g, "")}/?vat=${
+										to={`/form/${item.name.replace(/\s/g, "")}?vat=${
 											item.vat
 										}+${item.price}`}
 									>
@@ -50,6 +55,15 @@ function Footer() {
 									</Link>
 								);
 							})}
+							<Link
+								onClick={() => {
+									window.scrollTo(0, 0);
+								}}
+								className="text-decoration-none text-white"
+								to="/blog"
+							>
+								<p className="HeadingFooterMidContent FontWeight">Blog</p>
+							</Link>
 						</Row>
 					</Col>
 					<Col className="pt-5 pb-5 text-start text-white">

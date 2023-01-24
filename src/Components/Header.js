@@ -7,7 +7,6 @@ import { FaFacebookF } from "react-icons/fa";
 import { ImWhatsapp } from "react-icons/im";
 import { Link, useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import Carpenter from "../assets/FeaturesImagesService/Carpenter.jpeg";
 import { BlogService } from "../SeoData/BlogData";
 import { DataService } from "../SeoData/Service";
 function Header(props) {
@@ -19,6 +18,21 @@ function Header(props) {
 
 	function handleToggleBorderBottom() {
 		return Split[Split.length - 1];
+	}
+	function HandleActiveHyperLinks() {
+		console.log("kala", Split);
+		if (Split[Split.length - 1]) {
+			return "";
+		} else {
+			return "ActiveHyperLinks";
+		}
+	}
+	function HandlerActiveLinkColor() {
+		if (Split[Split.length - 1]) {
+			return "ColorHyperLinks";
+		} else {
+			return "ActiveLinkColor";
+		}
 	}
 	useEffect(() => {
 		let data = Split[Split.length - 1];
@@ -44,6 +58,7 @@ function Header(props) {
 			}
 		}
 	}, [Split[Split.length - 1]]);
+
 	return (
 		<div>
 			<Helmet>
@@ -115,6 +130,18 @@ function Header(props) {
 						<Navbar.Collapse id="responsive-navbar-nav">
 							<Nav className="me-auto"></Nav>
 							<Nav className="Gap-17">
+								<div className={`HyperLinks ${HandleActiveHyperLinks()}`}>
+									<NavLink
+										onClick={() => {
+											window.scrollTo(0, 0);
+											props.setRedirectToFinalPage(false);
+										}}
+										to="/"
+										className={`text-decoration-none ${HandlerActiveLinkColor()}`}
+									>
+										Home
+									</NavLink>
+								</div>
 								<div
 									className={`HyperLinks ${
 										handleToggleBorderBottom() === "service" ||
@@ -152,7 +179,7 @@ function Header(props) {
 												: "ColorHyperLinks"
 										}`}
 									>
-										Our Services
+										Services
 									</NavLink>
 									<Dropdown show={ShowDropDown}>
 										<Dropdown.Menu>
@@ -216,6 +243,25 @@ function Header(props) {
 								</div>
 								<div
 									className={`HyperLinks ${
+										Split.includes("blog") ? "ActiveHyperLinks" : ""
+									}`}
+								>
+									<NavLink
+										onClick={() => {
+											window.scrollTo(0, 0);
+										}}
+										to="/blog"
+										className={`text-decoration-none ${
+											Split.includes("blog")
+												? "ActiveLinkColor"
+												: "ColorHyperLinks"
+										}`}
+									>
+										Blog
+									</NavLink>
+								</div>
+								<div
+									className={`HyperLinks ${
 										Split.includes("form") ? "ActiveHyperLinks" : ""
 									}`}
 								>
@@ -224,14 +270,14 @@ function Header(props) {
 											window.scrollTo(0, 0);
 											props.setRedirectToFinalPage(false);
 										}}
-										to={`/form/choseService/?vat=${0}+${0}`}
+										to={`/form/choseService?vat=${0}+${0}`}
 										className={`text-decoration-none ${
 											Split.includes("form")
 												? "ActiveLinkColor"
 												: "ColorHyperLinks"
 										}`}
 									>
-										Book Professional
+										Instant Booking
 									</NavLink>
 								</div>
 								<div
@@ -251,25 +297,6 @@ function Header(props) {
 										}`}
 									>
 										About Us
-									</NavLink>
-								</div>
-								<div
-									className={`HyperLinks ${
-										Split.includes("blog") ? "ActiveHyperLinks" : ""
-									}`}
-								>
-									<NavLink
-										onClick={() => {
-											window.scrollTo(0, 0);
-										}}
-										to="/blog"
-										className={`text-decoration-none ${
-											Split.includes("blog")
-												? "ActiveLinkColor"
-												: "ColorHyperLinks"
-										}`}
-									>
-										Blog
 									</NavLink>
 								</div>
 								<div

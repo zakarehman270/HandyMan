@@ -9,7 +9,7 @@ export let BlogService = [
 			src: LowCostHandyman,
 		},
 		title: (
-			<div className="d-flex align-items-center gap-1">
+			<div className="d-flex align-items-center gap-2">
 				<p className="PrimaryColor HeadingOurServices">
 					Low Cost Handyman Services
 				</p>
@@ -21,8 +21,21 @@ export let BlogService = [
 				<p className="mt-2 mb-2">
 					People in Dubai are always in need for low cost handyman services like
 					Home Fix Repairs. A handyman is a qualified generalist who can do a
-					variety of household or business building repairs, maintenance, and
-					improvement jobs. Common handyman jobs include repairing leaking
+					variety of household or business building repairs, maintenance,
+					{"  "}
+					<span className="HyperLinks">
+						<a
+							href={"/what-does-carpenters-do"}
+							onClick={() => {
+								window.scrollTo(0, 0);
+							}}
+							className="text-decoration-none  ColorHyperLinks"
+						>
+							<b>Carpenter</b>
+						</a>
+					</span>
+					{"  "}
+					and improvement jobs. Common handyman jobs include repairing leaking
 					faucets, replacing light fixtures, repairing or replacing damaged
 					drywall, hanging shelves or draperies, and putting together furniture.
 					Depending on their degree of training and expertise, handymen may also
@@ -49,8 +62,19 @@ export let BlogService = [
 					experience to do jobs safely and quickly. Frequently, handymen can
 					complete multiple tasks in a single visit, making it easier to get
 					everything done at once. Contact Home Fix Repairs if you would like to
-					take advantage of any of these low cost handyman services for your
-					domestic or commercial needs
+					take advantage of any of these{" "}
+					<span className="HyperLinks">
+						<a
+							href={"/"}
+							onClick={() => {
+								window.scrollTo(0, 0);
+							}}
+							className="text-decoration-none  ColorHyperLinks"
+						>
+							<b>low cost handyman services </b>
+						</a>
+					</span>{" "}
+					for your domestic or commercial needs
 				</p>
 			</div>
 		),
@@ -112,7 +136,19 @@ export let BlogService = [
 					repair damaged furniture. In manufacturing companies, carpenters may
 					aid in the relocation or installation of machinery. We hope that you
 					have liked our post for what does carpenters do. Stay intact with Home
-					Fix Repairs to get the best and most of carpenter services in Dubai
+					Fix Repairs to get the best and most of{" "}
+					<span className="HyperLinks">
+						<a
+							href={"/"}
+							onClick={() => {
+								window.scrollTo(0, 0);
+							}}
+							className="text-decoration-none  ColorHyperLinks"
+						>
+							<b>carpenter services</b>
+						</a>{" "}
+					</span>
+					in Dubai
 				</p>
 			</div>
 		),

@@ -234,7 +234,7 @@ export const ServicesArray = [
 	// 	},
 	// },
 	{
-		name: "CarPenter",
+		name: "Carpenter",
 		img: carPainter,
 		description:
 			"Carpentry offerings in Dubai may be a important part of our lives and it includes maximum of the tasks of a normal residence, an condominium, or a billboard building.",
@@ -367,7 +367,7 @@ export const ServicesArray = [
 		},
 	},
 	{
-		name: "Handy Man",
+		name: "Handyman",
 		img: Handyman,
 		description:
 			"For your house, HomeFixRepair gives the first-rate handyman offerings inside the UAE, so you can sit lower back and loosen up. We provide you with a convenient and widespread variety of handyman and upkeep offerings with dependability and obligation",
@@ -453,7 +453,7 @@ export const ServicesArray = [
 	// 	},
 	// },
 	{
-		name: "plumbing",
+		name: "Plumbing",
 		img: plumbing,
 		description:
 			"you may have the great plumbers within the UAE with HomeFixRepair's help. No want to attempt fixing your damaged sink your self anymore",

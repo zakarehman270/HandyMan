@@ -12,7 +12,7 @@ export let DataService = [
 			src: electrician,
 		},
 		title: (
-			<div className="d-flex align-items-center gap-1">
+			<div className="d-flex align-items-center gap-2">
 				<p className="PrimaryColor HeadingOurServices">
 					Electrical Maintenance
 				</p>
@@ -29,12 +29,26 @@ export let DataService = [
 						testing electrical systems and components, identifying and repairing
 						electrical issues, and replacing worn or damaged electrical
 						components. Electrical maintenance service is typically performed by
-						trained and certified electricians who have the knowledge and skills
-						to safely and effectively perform these tasks. Electrical
-						maintenance is important for ensuring the safety and reliability of
-						electrical systems and for preventing costly repairs or downtime due
-						to electrical issues. It is recommended to schedule regular
-						maintenance to keep your electrical systems in good working order.",
+						trained and certified
+						{"  "}
+						<span className="HyperLinks">
+							<a
+								href={"/electrician-work-at-home"}
+								onClick={() => {
+									window.scrollTo(0, 0);
+								}}
+								className="text-decoration-none  ColorHyperLinks"
+							>
+								<b>Electrician</b>
+							</a>
+						</span>
+						{"  "}
+						who have the knowledge and skills to safely and effectively perform
+						these tasks. Electrical maintenance is important for ensuring the
+						safety and reliability of electrical systems and for preventing
+						costly repairs or downtime due to electrical issues. It is
+						recommended to schedule regular maintenance to keep your electrical
+						systems in good working order.",
 					</p>
 				</div>
 
@@ -65,12 +79,23 @@ export let DataService = [
 					tend to be more energy efficient. This can help to reduce energy costs
 					and reduce the carbon footprint of a building or facility.
 				</p>
+				<br />
 				<p>
-					Overall, acquiring Home Fix Repairs
-					<b>electrical maintenance company</b> in Dubai is important for
-					ensuring the safety, reliability, cost-effectiveness, and energy
-					efficiency of electrical systems and equipment. Contact us for the
-					economical quotes and packages.
+					Overall, acquiring Home Fix Repairs{" "}
+					<span className="HyperLinks">
+						<a
+							href={"/"}
+							onClick={() => {
+								window.scrollTo(0, 0);
+							}}
+							className="text-decoration-none  ColorHyperLinks"
+						>
+							<b>electrical maintenance company</b>
+						</a>
+					</span>
+					in Dubai is important for ensuring the safety, reliability,
+					cost-effectiveness, and energy efficiency of electrical systems and
+					equipment. Contact us for the economical quotes and packages.
 				</p>
 			</div>
 		),
@@ -83,7 +108,7 @@ export let DataService = [
 			src: electricianAtHome,
 		},
 		title: (
-			<div className="d-flex align-items-center gap-1">
+			<div className="d-flex align-items-center gap-2">
 				<p className="PrimaryColor HeadingOurServices">
 					Electrician Work at Home
 				</p>
@@ -136,18 +161,43 @@ export let DataService = [
 				</p>
 				<p>
 					<b>Installing and maintaining outdoor lighting:</b>
-					An electrician can help you install and maintain outdoor lighting,
-					such as floodlights or security lights, to help improve the safety and
+					An electrician such as
+					{"  "}
+					<span className="HyperLinks">
+						<a
+							href={"/family-handyman-customer-service"}
+							onClick={() => {
+								window.scrollTo(0, 0);
+							}}
+							className="text-decoration-none  ColorHyperLinks"
+						>
+							<b>Family Handyman</b>
+						</a>
+					</span>
+					{"  "}
+					can help you install and maintain outdoor lighting, such as
+					floodlights or security lights, to help improve the safety and
 					security of your home.
 				</p>
 				<p>
 					<b>Installing and maintaining home security systems:</b> If you want
 					to install a home security system, an electrician can help you with
 					the installation and maintenance of the system. It is important to
-					hire a licensed and qualified professional from Home Fix Repairs for
-					<b>electrician work</b> at home. We will ensure that the work is
-					completed safely and to code, and will also protect you from potential
-					liability if something goes wrong.
+					hire a licensed and qualified professional from Home Fix Repairs for{" "}
+					<span className="HyperLinks">
+						<a
+							href={"/"}
+							onClick={() => {
+								window.scrollTo(0, 0);
+							}}
+							className="text-decoration-none  ColorHyperLinks"
+						>
+							<b>electrician work</b>
+						</a>
+					</span>{" "}
+					at home. We will ensure that the work is completed safely and to code,
+					and will also protect you from potential liability if something goes
+					wrong.
 				</p>
 			</div>
 		),
@@ -160,7 +210,7 @@ export let DataService = [
 			src: Carpenter,
 		},
 		title: (
-			<div className="d-flex align-items-center gap-1">
+			<div className="d-flex align-items-center gap-2">
 				<p className="PrimaryColor HeadingOurServices">
 					Carpenter Service Dubai
 				</p>
@@ -214,14 +264,52 @@ export let DataService = [
 					spread their services too thinly. Because this allows them to master
 					the art of cabinetry and establish themselves as the expert or
 					authority on that type of carpentry service. And there are the
-					multitude of professionals from carpenter service Dubai who call
-					themselves "handymen" and who can do all the minor home repairs,
-					including some electrical and plumbing repairs. These are the people
-					that you will call when all you want are some minor repair jobs. As a
-					result, the most important thing is to determine how complicated or
-					large your home improvement or home repair is. Then narrow down your
-					list to Home Fix Repairs as your prime carpenter service Dubai. Give
-					us a call now to discuss the bright prospects.
+					multitude of professionals from{" "}
+					<span className="HyperLinks">
+						<a
+							href={"/"}
+							target="_blank"
+							onClick={() => {
+								window.scrollTo(0, 0);
+							}}
+							className="text-decoration-none  ColorHyperLinks"
+						>
+							<b>carpenter service</b>{" "}
+						</a>
+					</span>{" "}
+					Dubai who call themselves "handymen" and who can do all the minor home
+					repairs, including some{" "}
+					<span className="HyperLinks">
+						<a
+							href={"/electrical-maintenance-company-in-Dubai"}
+							target="_blank"
+							onClick={() => {
+								window.scrollTo(0, 0);
+							}}
+							className="text-decoration-none  ColorHyperLinks"
+						>
+							<b>Electrical</b>
+						</a>
+					</span>{" "}
+					and{" "}
+					<span className="HyperLinks">
+						<a
+							href={"/emergency-plumbing-Dubai"}
+							onClick={() => {
+								window.scrollTo(0, 0);
+							}}
+							className="text-decoration-none  ColorHyperLinks"
+						>
+							<b>Plumbing</b>
+						</a>
+					</span>
+					{"  "}
+					repairs. These are the people that you will call when all you want are
+					some minor repair jobs. As a result, the most important thing is to
+					determine how complicated or large your home improvement or home
+					repair is. Then narrow down your list to Home Fix Repairs as your
+					prime carpenter service Dubai. Give us a call now to discuss the
+					bright prospects.
 				</p>
 			</div>
 		),
@@ -234,7 +322,7 @@ export let DataService = [
 			src: handyman,
 		},
 		title: (
-			<div className="d-flex align-items-center gap-1">
+			<div className="d-flex align-items-center gap-2">
 				<p className="PrimaryColor HeadingOurServices">
 					Family Handyman Customer Service
 				</p>
@@ -251,14 +339,42 @@ export let DataService = [
 					services include fixing leaky faucets, replacing light fixtures,
 					repairing or replacing damaged drywall, hanging shelves or curtains,
 					and assembling furniture. Handymen may also be able to provide more
-					specialized services, such as plumbing or electrical work, depending
-					on their level of training and experience. If you're looking for a
-					handyman to help with a specific task or project, you can usually find
-					one through a local family handyman customer service or by contacting
-					individual handymen in your area. It's a good idea to get estimates
-					from multiple handymen before deciding on one, and to ask for
-					references or examples of previous work to ensure that you're hiring a
-					reliable and skilled professional.
+					specialized services, such as
+					{"  "}
+					<span className="HyperLinks">
+						<a
+							href={"/emergency-plumbing-Dubai"}
+							target="_blank"
+							onClick={() => {
+								window.scrollTo(0, 0);
+							}}
+							className="text-decoration-none  ColorHyperLinks"
+						>
+							<b>Plumbing</b>
+						</a>
+					</span>
+					{"  "}
+					or
+					{"  "}
+					<span className="HyperLinks">
+						<a
+							href={"/electrician-work-at-home"}
+							onClick={() => {
+								window.scrollTo(0, 0);
+							}}
+							className="text-decoration-none  ColorHyperLinks"
+						>
+							<b>Electrical</b>
+						</a>
+					</span>
+					{"  "}
+					work , depending on their level of training and experience. If you're
+					looking for a handyman to help with a specific task or project, you
+					can usually find one through a local family handyman customer service
+					or by contacting individual handymen in your area. It's a good idea to
+					get estimates from multiple handymen before deciding on one, and to
+					ask for references or examples of previous work to ensure that you're
+					hiring a reliable and skilled professional.
 				</p>
 				<h1 className="mt-3 mb-3">
 					Benefits of acquiring a top family handyman customer service in Dubai
@@ -296,7 +412,18 @@ export let DataService = [
 					one visit, making it easier for you to get everything done at once.
 				</p>
 				<p>
-					If you are looking to benefit any of these <b>family handyman</b>{" "}
+					If you are looking to benefit any of these{" "}
+					<span className="HyperLinks">
+						<a
+							href={"/"}
+							onClick={() => {
+								window.scrollTo(0, 0);
+							}}
+							className="text-decoration-none  ColorHyperLinks"
+						>
+							<b>family handyman</b>
+						</a>
+					</span>{" "}
 					customer service then contact Home Fix repairs to make the best of
 					these services.
 				</p>
@@ -311,7 +438,7 @@ export let DataService = [
 			src: Carpenter,
 		},
 		title: (
-			<div className="d-flex align-items-center gap-1">
+			<div className="d-flex align-items-center gap-2">
 				<p className="PrimaryColor HeadingOurServices">
 					Emergency Plumbing Dubai
 				</p>
@@ -339,10 +466,23 @@ export let DataService = [
 					Fix Repairs
 				</h1>
 				<p>
-					<b>Expertise:</b> Plumbers have the knowledge, skills, and experience
-					to properly diagnose and fix a wide range of plumbing issues. They can
-					identify the cause of a problem and choose the best solution to{" "}
-					<b>fix it.</b>
+					<b>Expertise:</b> Plumbers like
+					{"  "}
+					<span className="HyperLinks">
+						<a
+							href={"family-handyman-customer-service"}
+							onClick={() => {
+								window.scrollTo(0, 0);
+							}}
+							className="text-decoration-none  ColorHyperLinks"
+						>
+							<b>Handyman</b>
+						</a>
+					</span>
+					{"  "}
+					have the knowledge, skills, and experience to properly diagnose and
+					fix a wide range of plumbing issues. They can identify the cause of a
+					problem and choose the best solution to <b>fix it.</b>
 				</p>
 				<p>
 					<b>Safety:</b> Plumbing repairs and installations can be dangerous if
@@ -371,8 +511,18 @@ export let DataService = [
 				</p>
 				<p>
 					If you want to take advantage of all of these{" "}
-					<b>emergency plumbing</b> services, then contact Home Fix Repairs for
-					a free quote.
+					<span className="HyperLinks">
+						<a
+							href={"/"}
+							onClick={() => {
+								window.scrollTo(0, 0);
+							}}
+							className="text-decoration-none  ColorHyperLinks"
+						>
+							<b>emergency plumbing</b>
+						</a>
+					</span>{" "}
+					services, then contact Home Fix Repairs for a free quote.
 				</p>
 			</div>
 		),

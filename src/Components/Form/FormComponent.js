@@ -196,11 +196,6 @@ const FormContentUs = (props) => {
 												key={index}
 												onClick={() => {
 													setBookingTime(item);
-													// setHours(item);
-													// let TotalPrice = item * PriceDefaultValue;
-													// let TotalVat = item * VatDefaultValue;
-													// setPriceValue(TotalPrice);
-													// setVatValue(TotalVat);
 												}}
 											>
 												{item}
