@@ -9,8 +9,12 @@ import { Link, useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { BlogService } from "../SeoData/BlogData";
 import { DataService } from "../SeoData/Service";
+import HomeFeaturedImage from "../assets/HomeFeaturedImage.jpeg";
 function Header(props) {
 	const [Title, setTitle] = useState("Home Fix Repair");
+	const [Description, setDescription] = useState(
+		"Best Home Fix Repairs, Carpenter, Handyman, Plumbing, Home Electrician, Electrical Maintenance Services in Dubai."
+	);
 	const [ShowDropDown, setShowDropDown] = useState(false);
 	const [FeaturedImage, setFeaturedImage] = useState("");
 	const location = useLocation();
@@ -20,7 +24,6 @@ function Header(props) {
 		return Split[Split.length - 1];
 	}
 	function HandleActiveHyperLinks() {
-		console.log("kala", Split);
 		if (Split[Split.length - 1]) {
 			return "";
 		} else {
@@ -44,18 +47,26 @@ function Header(props) {
 				data.replace(/\b\w/g, (l) => l.toUpperCase()) + " – Home Fix Repairs"
 			);
 		}
-
-		for (let i = 0; i < BlogService.length; i++) {
-			if (BlogService[i].slug === Split[Split.length - 1]) {
-				setFeaturedImage(BlogService[i].image.src);
-				break;
+		if (Split[Split.length - 1]) {
+			for (let i = 0; i < BlogService.length; i++) {
+				if (BlogService[i].slug === Split[Split.length - 1]) {
+					setFeaturedImage(BlogService[i].image.src);
+					setDescription(BlogService[i].image.des);
+					break;
+				}
 			}
-		}
-		for (let i = 0; i < DataService.length; i++) {
-			if (DataService[i].slug === Split[Split.length - 1]) {
-				setFeaturedImage(DataService[i].image.src);
-				break;
+			for (let i = 0; i < DataService.length; i++) {
+				if (DataService[i].slug === Split[Split.length - 1]) {
+					setFeaturedImage(DataService[i].image.src);
+					setDescription(DataService[i].image.des);
+					break;
+				}
 			}
+		} else {
+			setFeaturedImage(HomeFeaturedImage);
+			setDescription(
+				"Best Home Fix Repairs, Carpenter, Handyman, Plumbing, Home Electrician, Electrical Maintenance Services in Dubai."
+			);
 		}
 	}, [Split[Split.length - 1]]);
 
@@ -63,11 +74,9 @@ function Header(props) {
 		<div>
 			<Helmet>
 				<title>{Title}</title>
-				<meta
-					property="og:url"
-					content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html"
-				/>
+				<meta name="description" content={Description} />
 				<meta property="og:title" content={Title} />
+				<meta name="og:description" content={Description} />
 				<meta property="og:image" content={FeaturedImage} />
 			</Helmet>
 			<div className="outerWrapperNavBar bg-white">

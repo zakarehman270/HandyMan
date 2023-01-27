@@ -8,6 +8,7 @@ export let DataService = [
 		slug: "electrical-maintenance-company-in-Dubai",
 		image: {
 			alt: "electrical maintenance company in Dubai",
+			des: "Are you looking for a topnotch electrical maintenance company in Dubai? If so then Home Fix Repairs should be your preferred choice.",
 			title: "electrical maintenance company in Dubai",
 			src: electrician,
 		},
@@ -104,6 +105,7 @@ export let DataService = [
 		slug: "electrician-work-at-home",
 		image: {
 			alt: "electrician work at home",
+			des: "",
 			title: "electrician work at home",
 			src: electricianAtHome,
 		},
@@ -206,6 +208,7 @@ export let DataService = [
 		slug: "carpentor-service-dubai",
 		image: {
 			alt: "carpenter service Dubai",
+			des: "Are you starting to get bored with how your house looks inside and out? If so consider top carpenter service Dubai as your preference in this spectrum.",
 			title: "carpenter service Dubai",
 			src: Carpenter,
 		},
@@ -318,6 +321,7 @@ export let DataService = [
 		slug: "family-handyman-customer-service",
 		image: {
 			alt: "family handyman customer service",
+			des: "People in Dubai always seek for a family handyman customer service like Home Fix Repairs. A handyman is a skilled generalist who can perform a wide range of repair, maintenance.",
 			title: "family handyman customer service",
 			src: handyman,
 		},
@@ -434,6 +438,7 @@ export let DataService = [
 		slug: "emergency-plumbing-Dubai",
 		image: {
 			alt: "carpenter service Dubai",
+			des: "Before we get into the need for emergency plumbing Dubai services, let's define plumbing.",
 			title: "carpenter service Dubai",
 			src: Carpenter,
 		},

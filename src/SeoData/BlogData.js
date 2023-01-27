@@ -5,6 +5,7 @@ export let BlogService = [
 		slug: "low-cost-handyman-serivces",
 		image: {
 			alt: "low cost handyman services",
+			des: "Are you looking for low cost handyman services? If so Home Fix Repairs is currently stealing the show in terms of quality repair and maintenance services.",
 			title: "low cost handyman services",
 			src: LowCostHandyman,
 		},
@@ -83,6 +84,7 @@ export let BlogService = [
 		slug: "what-does-carpenters-do",
 		image: {
 			alt: "what does carpenters do",
+			des: "Let’s talk about what does carpenters do? Well they are the folks that construct, erect, install, and repair wooden and non-wooden structures and fittings.",
 			title: "what does carpenters do",
 			src: Carpenter,
 		},
